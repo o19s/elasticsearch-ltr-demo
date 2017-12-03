@@ -5,7 +5,7 @@
 Python 3
 
 ``` bash
-python3 -m http.server 800
+python3 -m http.server 8001
 ```
 
 MacOs with brew
