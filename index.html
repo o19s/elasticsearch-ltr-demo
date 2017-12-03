@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>test post page</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/flatly.css">
+
+<div class="container">
+    <form>
+        <div class="form-row align-items-center">
+
+            <div class="form-group row">
+                <div class="col-auto">
+                    <input type="search" class="form-control" id="inputSearch" value="Rocky">
+                </div>
+                <div class="col-auto">
+                    <a class="btn btn-primary" href="#"
+                       onclick='getResults(document.getElementById("inputSearch").value);' role="button">Search</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row" style="border: 1px solid">
+        <div class="col-md-9">
+            <div id="target"></div>
+        </div>
+        <div class="col-md-3">
+            <fieldset>
+                <legend>Algorithms</legend>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="text_node" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'
+                                checked="true">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">None</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_0" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">MART</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_1" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">RankNet</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_2" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">RankBoost</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_3" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">AdaRank</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_4" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">coord Ascent</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_5" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">LambdaMART</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_6" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">ListNET</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_7" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Random Forests</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_8" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Linear Regression</span>
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+</div>
+<script id="template" type="x-tmpl-mustache">
+    <h4 class="text-right">
+        <span class="badge badge-primary">
+        score {{doc._score}}
+        </span>
+    </h4>
+
+    <div class="row">
+        <div class="col-md-9">
+            <h2>{{ doc._source.title }}</h2>
+            <h4>popularity <span class="badge badge-primary">{{doc._source.popularity}}</span></h4>
+            <h4>release date <span class="badge badge-primary">{{doc._source.release_date}}</span></h4>
+            <h4>tag line <span class="badge badge-primary">{{doc._source.tagline}}</span></h4>
+        </div>
+        <div class="col-md-3 text-right">
+            <img src="http://image.tmdb.org/t/p/w130/{{doc._source.poster_path}}" />
+        </div>
+    </div>
+    <h4>overview</h4>
+    <hr/>
+    <p>{{doc._source.overview}}</p>
+</script>
+<script>
+  function renderResults(data, search) {
+    // handle requested data from server
+    var template = document.getElementById('template').innerHTML;
+    Mustache.parse(template);   // optional, speeds up future uses
+    var rendered = "<h1>" + search + "</h2>";
+    data.hits.hits.forEach(function (document) {
+      rendered = rendered + Mustache.render(template, {doc: document, search: search});
+    });
+    document.getElementById('target').innerHTML = rendered;
+  };
+
+  function getResults(search) {
+    var data = {
+      "query": {
+        "bool": {
+          "should": {
+            "match": {
+              "title": search
+            },
+            "match": {
+              "overview": search
+            }
+          }
+        }
+      },
+      "rescore": {
+        "query": {
+          "rescore_query": {
+            "sltr": {
+              "params": {
+                "keywords": search
+              },
+              "model": "test_1"
+            }
+          }
+        }
+      }
+    };
+
+
+    switch (true) {
+      case document.getElementById('test_0').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_0';
+        break;
+      case document.getElementById('test_1').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_1';
+        break;
+      case document.getElementById('test_2').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_2';
+        break;
+      case document.getElementById('test_3').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_3';
+        break;
+      case document.getElementById('test_4').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_4';
+        break;
+      case document.getElementById('test_5').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_5';
+        break;
+      case document.getElementById('test_6').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_6';
+        break;
+      case document.getElementById('test_7').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_7';
+        break;
+      case document.getElementById('test_8').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_8';
+        break;
+      default:
+        delete data.rescore;
+    }
+
+    $.ajax({
+      method: "GET",
+      url: "http://localhost:9200/tmdb/_search",
+      crossDomain: true,
+      async: false,
+      data: "source=" + JSON.stringify(data),
+      dataType: 'json',
+      contentType: 'application/json',
+    })
+      .done(function (data) {
+        renderResults(data, search);
+      })
+      .fail(function (data) {
+        console.log(data);
+      });
+  }
+
+  getResults(document.getElementById("inputSearch").value);
+</script>
+</body>
+
+</html>
