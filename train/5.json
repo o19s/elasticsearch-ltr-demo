@@ -1,0 +1,13 @@
+
+{
+    "query": {
+        "constant_score": {
+            "query": {"match_phrase": {
+                "title": "{{keywords}}"
+            }},
+            "boost": 1.0
+
+        }
+    }
+}
+

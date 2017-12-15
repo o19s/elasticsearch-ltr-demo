@@ -1,0 +1,20 @@
+{
+    "query": {
+      "function_score": {
+        
+        "functions": [
+          {
+          "filter":{
+              "exists":{
+                 "field": "vote_count"
+              }
+           },
+            "field_value_factor": { 
+              "field": "vote_count",
+              "missing": 0
+            }
+          }
+        ]
+      }
+    }
+  }

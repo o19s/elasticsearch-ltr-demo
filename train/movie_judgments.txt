@@ -1,0 +1,413 @@
+# qid:1: rambo*1
+# qid:2: rocky*1
+# qid:3: war games*1
+# qid:4: crocodile dundee*1
+# qid:5: matrix*1
+# qid:6: contact*1
+# qid:7: space jam*1
+# qid:8: battlestar galactica*1
+# qid:9: her*1
+# qid:10: jobs*1
+# qid:11: social network*1
+# qid:12: rocky horror*1
+# qid:13: shawshank redemption*1
+# qid:14: french connection*1
+# qid:15: star wars new hope*1
+# qid:16: lego batman*1
+# qid:17: crouching tiger hidden dragon*1
+# qid:18: fight club*1
+# qid:19: die hard*1
+# qid:20: last temptation of christ*1
+# qid:21: tree of life*1
+# qid:22: murray saves christmas*1
+# qid:23: black swan*1
+# qid:24: emma*1
+
+4	qid:1	 # 7555	rambo
+3	qid:1	 # 1370	rambo
+3	qid:1	 # 1369	rambo
+3	qid:1	 # 13258	rambo
+4	qid:1	 # 1368	rambo
+1	qid:1	 # 31362	rambo
+1	qid:1	 # 61410	rambo
+4	qid:2	 # 1366	rocky
+3	qid:2	 # 1374	rocky
+3	qid:2	 # 1371	rocky
+3	qid:2	 # 1246	rocky
+3	qid:2	 # 1375	rocky
+3	qid:2	 # 1367	rocky
+3	qid:2	 # 60375	rocky
+1	qid:2	 # 110123	rocky
+1	qid:2	 # 36685	rocky
+1	qid:2	 # 17711	rocky
+3	qid:3	 # 14154	war games
+0	qid:3	 # 365371	war games
+0	qid:3	 # 116059	war games
+0	qid:3	 # 335988	war games
+0	qid:3	 # 354287	war games
+0	qid:3	 # 390054	war games
+0	qid:3	 # 346672	war games
+0	qid:3	 # 369885	war games
+0	qid:3	 # 293767	war games
+0	qid:3	 # 381288	war games
+4	qid:4	 # 9671	crocodile dundee
+3	qid:4	 # 9396	crocodile dundee
+3	qid:4	 # 9290	crocodile dundee
+1	qid:4	 # 248390	crocodile dundee
+1	qid:4	 # 221737	crocodile dundee
+0	qid:4	 # 13022	crocodile dundee
+0	qid:4	 # 10539	crocodile dundee
+1	qid:4	 # 17043	crocodile dundee
+1	qid:4	 # 78402	crocodile dundee
+1	qid:4	 # 25652	crocodile dundee
+4	qid:5	 # 603	matrix
+3	qid:5	 # 604	matrix
+3	qid:5	 # 605	matrix
+2	qid:5	 # 55931	matrix
+0	qid:5	 # 1857	matrix
+0	qid:5	 # 10999	matrix
+0	qid:5	 # 4247	matrix
+0	qid:5	 # 21874	matrix
+4	qid:6	 # 686	contact
+1	qid:6	 # 7011	contact
+1	qid:6	 # 20236	contact
+1	qid:6	 # 31337	contact
+1	qid:6	 # 199	contact
+1	qid:6	 # 21136	contact
+1	qid:6	 # 109572	contact
+1	qid:6	 # 68730	contact
+1	qid:6	 # 340676	contact
+1	qid:6	 # 364433	contact
+4	qid:7	 # 2300	space jam
+0	qid:7	 # 395992	space jam
+0	qid:7	 # 365942	space jam
+0	qid:7	 # 188927	space jam
+0	qid:7	 # 279096	space jam
+0	qid:7	 # 332502	space jam
+0	qid:7	 # 158852	space jam
+0	qid:7	 # 301728	space jam
+0	qid:7	 # 243938	space jam
+0	qid:7	 # 157336	space jam
+4	qid:8	 # 325553	battlestar galactica
+3	qid:8	 # 69315	battlestar galactica
+3	qid:8	 # 105077	battlestar galactica
+4	qid:9	 # 152601	her
+1	qid:9	 # 17819	her
+0	qid:9	 # 198001	her
+0	qid:9	 # 170430	her
+0	qid:9	 # 18206	her
+0	qid:9	 # 96769	her
+0	qid:9	 # 86457	her
+0	qid:9	 # 130750	her
+0	qid:9	 # 59527	her
+0	qid:9	 # 5143	her
+0	qid:9	 # 1919	her
+0	qid:9	 # 23967	her
+0	qid:9	 # 53156	her
+0	qid:9	 # 79887	her
+0	qid:9	 # 11931	her
+0	qid:9	 # 45241	her
+0	qid:9	 # 14556	her
+0	qid:9	 # 9374	her
+0	qid:9	 # 66113	her
+0	qid:9	 # 265966	her
+4	qid:10	 # 115782	jobs
+4	qid:10	 # 321697	jobs
+3	qid:10	 # 89638	jobs
+0	qid:10	 # 127929	jobs
+0	qid:10	 # 47099	jobs
+0	qid:10	 # 16406	jobs
+0	qid:10	 # 15302	jobs
+0	qid:10	 # 41588	jobs
+0	qid:10	 # 281289	jobs
+0	qid:10	 # 14773	jobs
+0	qid:10	 # 55069	jobs
+0	qid:10	 # 21629	jobs
+0	qid:10	 # 3293	jobs
+3	qid:10	 # 186606	jobs
+0	qid:10	 # 213938	jobs
+0	qid:10	 # 54559	jobs
+0	qid:10	 # 13119	jobs
+0	qid:10	 # 27223	jobs
+0	qid:10	 # 133469	jobs
+0	qid:10	 # 1774	jobs
+4	qid:11	 # 37799	social network
+0	qid:11	 # 267752	social network
+0	qid:11	 # 18467	social network
+0	qid:11	 # 78294	social network
+0	qid:11	 # 10774	social network
+0	qid:11	 # 49980	social network
+0	qid:11	 # 38408	social network
+0	qid:11	 # 39002	social network
+0	qid:11	 # 59387	social network
+0	qid:11	 # 28303	social network
+0	qid:11	 # 32547	social network
+0	qid:11	 # 268735	social network
+0	qid:11	 # 328069	social network
+0	qid:11	 # 16988	social network
+0	qid:11	 # 24664	social network
+0	qid:11	 # 25218	social network
+0	qid:11	 # 23451	social network
+0	qid:11	 # 39750	social network
+0	qid:11	 # 11779	social network
+0	qid:11	 # 33358	social network
+4	qid:12	 # 36685	rocky horror
+0	qid:12	 # 1374	rocky horror
+0	qid:12	 # 1246	rocky horror
+0	qid:12	 # 1371	rocky horror
+0	qid:12	 # 1375	rocky horror
+0	qid:12	 # 1367	rocky horror
+0	qid:12	 # 81830	rocky horror
+0	qid:12	 # 60375	rocky horror
+0	qid:12	 # 110123	rocky horror
+0	qid:12	 # 33475	rocky horror
+0	qid:12	 # 1366	rocky horror
+0	qid:12	 # 13696	rocky horror
+0	qid:12	 # 17711	rocky horror
+0	qid:12	 # 7443	rocky horror
+0	qid:12	 # 300669	rocky horror
+0	qid:12	 # 14228	rocky horror
+0	qid:12	 # 791	rocky horror
+0	qid:12	 # 27997	rocky horror
+0	qid:12	 # 16139	rocky horror
+0	qid:12	 # 49445	rocky horror
+4	qid:13	 # 278	shawshank redemption
+0	qid:13	 # 214857	shawshank redemption
+0	qid:13	 # 31781	shawshank redemption
+0	qid:13	 # 295958	shawshank redemption
+0	qid:13	 # 81657	shawshank redemption
+0	qid:13	 # 198130	shawshank redemption
+0	qid:13	 # 46016	shawshank redemption
+0	qid:13	 # 241287	shawshank redemption
+0	qid:13	 # 126056	shawshank redemption
+0	qid:13	 # 78049	shawshank redemption
+0	qid:13	 # 13989	shawshank redemption
+0	qid:13	 # 136418	shawshank redemption
+0	qid:13	 # 38124	shawshank redemption
+0	qid:13	 # 38234	shawshank redemption
+0	qid:13	 # 135714	shawshank redemption
+0	qid:13	 # 220820	shawshank redemption
+0	qid:13	 # 75576	shawshank redemption
+0	qid:13	 # 288162	shawshank redemption
+0	qid:13	 # 166901	shawshank redemption
+0	qid:13	 # 48199	shawshank redemption
+4	qid:14	 # 1051	french connection
+3	qid:14	 # 10711	french connection
+1	qid:14	 # 197950	french connection
+0	qid:14	 # 288953	french connection
+0	qid:14	 # 44379	french connection
+0	qid:14	 # 59558	french connection
+0	qid:14	 # 27067	french connection
+0	qid:14	 # 24166	french connection
+0	qid:14	 # 19086	french connection
+0	qid:14	 # 288290	french connection
+0	qid:14	 # 2011	french connection
+0	qid:14	 # 266040	french connection
+0	qid:14	 # 33996	french connection
+0	qid:14	 # 223519	french connection
+0	qid:14	 # 236661	french connection
+0	qid:14	 # 30238	french connection
+0	qid:14	 # 36095	french connection
+0	qid:14	 # 61462	french connection
+0	qid:14	 # 15053	french connection
+0	qid:14	 # 37845	french connection
+2	qid:15	 # 278604	star wars new hope
+2	qid:15	 # 278468	star wars new hope
+3	qid:15	 # 12180	star wars new hope
+2	qid:15	 # 20787	star wars new hope
+2	qid:15	 # 76180	star wars new hope
+3	qid:15	 # 1895	star wars new hope
+3	qid:15	 # 1894	star wars new hope
+4	qid:15	 # 11	star wars new hope
+3	qid:15	 # 330459	star wars new hope
+1	qid:15	 # 101609	star wars new hope
+1	qid:15	 # 81899	star wars new hope
+0	qid:15	 # 29587	star wars new hope
+0	qid:15	 # 11008	star wars new hope
+3	qid:15	 # 140607	star wars new hope
+3	qid:15	 # 1893	star wars new hope
+0	qid:15	 # 25872	star wars new hope
+0	qid:15	 # 19837	star wars new hope
+0	qid:15	 # 18046	star wars new hope
+0	qid:15	 # 10521	star wars new hope
+0	qid:15	 # 5717	star wars new hope
+4	qid:16	 # 324849	lego batman
+3	qid:16	 # 177271	lego batman
+3	qid:16	 # 322456	lego batman
+3	qid:16	 # 137106	lego batman
+2	qid:16	 # 33427	lego batman
+1	qid:16	 # 45162	lego batman
+1	qid:16	 # 364	lego batman
+1	qid:16	 # 251519	lego batman
+1	qid:16	 # 382322	lego batman
+1	qid:16	 # 321528	lego batman
+1	qid:16	 # 415	lego batman
+1	qid:16	 # 29751	lego batman
+1	qid:16	 # 15805	lego batman
+1	qid:16	 # 17074	lego batman
+1	qid:16	 # 125249	lego batman
+1	qid:16	 # 40662	lego batman
+1	qid:16	 # 366924	lego batman
+1	qid:16	 # 21683	lego batman
+1	qid:16	 # 20077	lego batman
+1	qid:16	 # 93560	lego batman
+4	qid:17	 # 146	crouching tiger hidden dragon
+3	qid:17	 # 263341	crouching tiger hidden dragon
+1	qid:17	 # 15860	crouching tiger hidden dragon
+0	qid:17	 # 214857	crouching tiger hidden dragon
+0	qid:17	 # 16407	crouching tiger hidden dragon
+0	qid:17	 # 103173	crouching tiger hidden dragon
+0	qid:17	 # 81870	crouching tiger hidden dragon
+0	qid:17	 # 10473	crouching tiger hidden dragon
+0	qid:17	 # 21521	crouching tiger hidden dragon
+0	qid:17	 # 75465	crouching tiger hidden dragon
+0	qid:17	 # 287233	crouching tiger hidden dragon
+0	qid:17	 # 22752	crouching tiger hidden dragon
+0	qid:17	 # 220504	crouching tiger hidden dragon
+0	qid:17	 # 39144	crouching tiger hidden dragon
+0	qid:17	 # 47626	crouching tiger hidden dragon
+0	qid:17	 # 2805	crouching tiger hidden dragon
+0	qid:17	 # 75507	crouching tiger hidden dragon
+0	qid:17	 # 35868	crouching tiger hidden dragon
+0	qid:17	 # 27245	crouching tiger hidden dragon
+0	qid:17	 # 39148	crouching tiger hidden dragon
+4	qid:18	 # 550	fight club
+1	qid:18	 # 1366	fight club
+0	qid:18	 # 26555	fight club
+0	qid:18	 # 51976	fight club
+0	qid:18	 # 248774	fight club
+0	qid:18	 # 43522	fight club
+0	qid:18	 # 277622	fight club
+0	qid:18	 # 293660	fight club
+0	qid:18	 # 17136	fight club
+0	qid:18	 # 276120	fight club
+0	qid:18	 # 110491	fight club
+0	qid:18	 # 13973	fight club
+0	qid:18	 # 137145	fight club
+0	qid:18	 # 5951	fight club
+0	qid:18	 # 39578	fight club
+0	qid:18	 # 23683	fight club
+0	qid:18	 # 213983	fight club
+0	qid:18	 # 55831	fight club
+0	qid:18	 # 39254	fight club
+0	qid:18	 # 197033	fight club
+4	qid:19	 # 562	die hard
+3	qid:19	 # 1573	die hard
+3	qid:19	 # 1572	die hard
+3	qid:19	 # 1571	die hard
+3	qid:19	 # 47964	die hard
+0	qid:19	 # 26244	die hard
+0	qid:19	 # 7517	die hard
+0	qid:19	 # 269494	die hard
+0	qid:19	 # 201414	die hard
+0	qid:19	 # 90374	die hard
+0	qid:19	 # 20160	die hard
+0	qid:19	 # 44103	die hard
+0	qid:19	 # 4836	die hard
+0	qid:19	 # 73335	die hard
+0	qid:19	 # 233487	die hard
+0	qid:19	 # 23449	die hard
+0	qid:19	 # 13063	die hard
+0	qid:19	 # 31046	die hard
+0	qid:19	 # 289010	die hard
+0	qid:19	 # 259616	die hard
+4	qid:20	 # 11051	last temptation of christ
+1	qid:20	 # 28169	last temptation of christ
+0	qid:20	 # 23830	last temptation of christ
+2	qid:20	 # 615	last temptation of christ
+2	qid:20	 # 19401	last temptation of christ
+0	qid:20	 # 20268	last temptation of christ
+2	qid:20	 # 47980	last temptation of christ
+0	qid:20	 # 97006	last temptation of christ
+1	qid:20	 # 262904	last temptation of christ
+1	qid:20	 # 96973	last temptation of christ
+2	qid:20	 # 24192	last temptation of christ
+1	qid:20	 # 36226	last temptation of christ
+2	qid:20	 # 12545	last temptation of christ
+0	qid:20	 # 23522	last temptation of christ
+2	qid:20	 # 31510	last temptation of christ
+2	qid:20	 # 199512	last temptation of christ
+0	qid:20	 # 68981	last temptation of christ
+0	qid:20	 # 46756	last temptation of christ
+2	qid:20	 # 213386	last temptation of christ
+0	qid:20	 # 149145	last temptation of christ
+4	qid:21	 # 8967	tree of life
+0	qid:21	 # 62394	tree of life
+0	qid:21	 # 51409	tree of life
+0	qid:21	 # 45974	tree of life
+0	qid:21	 # 165911	tree of life
+0	qid:21	 # 30177	tree of life
+0	qid:21	 # 91737	tree of life
+0	qid:21	 # 43008	tree of life
+0	qid:21	 # 37284	tree of life
+0	qid:21	 # 43767	tree of life
+0	qid:21	 # 94706	tree of life
+0	qid:21	 # 117730	tree of life
+0	qid:21	 # 36540	tree of life
+0	qid:21	 # 61080	tree of life
+0	qid:21	 # 72358	tree of life
+0	qid:21	 # 25435	tree of life
+0	qid:21	 # 79042	tree of life
+0	qid:21	 # 36072	tree of life
+0	qid:21	 # 159138	tree of life
+0	qid:21	 # 158711	tree of life
+2	qid:22	 # 26386	murray saves christmas
+3	qid:22	 # 364067	murray saves christmas
+2	qid:22	 # 9647	murray saves christmas
+0	qid:22	 # 175555	murray saves christmas
+0	qid:22	 # 5825	murray saves christmas
+0	qid:22	 # 10433	murray saves christmas
+0	qid:22	 # 28033	murray saves christmas
+1	qid:22	 # 81393	murray saves christmas
+1	qid:22	 # 21501	murray saves christmas
+1	qid:22	 # 172413	murray saves christmas
+1	qid:22	 # 20785	murray saves christmas
+1	qid:22	 # 46240	murray saves christmas
+1	qid:22	 # 86778	murray saves christmas
+1	qid:22	 # 45697	murray saves christmas
+1	qid:22	 # 13187	murray saves christmas
+1	qid:22	 # 14813	murray saves christmas
+1	qid:22	 # 49742	murray saves christmas
+1	qid:22	 # 850	murray saves christmas
+1	qid:22	 # 13189	murray saves christmas
+1	qid:22	 # 13358	murray saves christmas
+4	qid:23	 # 44214	black swan
+4	qid:23	 # 29882	black swan
+1	qid:23	 # 8966	black swan
+0	qid:23	 # 124461	black swan
+0	qid:23	 # 27327	black swan
+0	qid:23	 # 39424	black swan
+0	qid:23	 # 18239	black swan
+0	qid:23	 # 95242	black swan
+2	qid:23	 # 22586	black swan
+2	qid:23	 # 15016	black swan
+1	qid:23	 # 28302	black swan
+1	qid:23	 # 54113	black swan
+0	qid:23	 # 50619	black swan
+0	qid:23	 # 54491	black swan
+1	qid:23	 # 61048	black swan
+0	qid:23	 # 40440	black swan
+0	qid:23	 # 24021	black swan
+0	qid:23	 # 199818	black swan
+0	qid:23	 # 25757	black swan
+0	qid:23	 # 39914	black swan
+4	qid:24	 # 104221	emma
+4	qid:24	 # 183894	emma
+4	qid:24	 # 3573	emma
+4	qid:24	 # 12254	emma
+3	qid:24	 # 17813	emma
+0	qid:24	 # 78646	emma
+0	qid:24	 # 12432	emma
+0	qid:24	 # 63727	emma
+0	qid:24	 # 152584	emma
+0	qid:24	 # 77468	emma
+0	qid:24	 # 26985	emma
+0	qid:24	 # 2528	emma
+0	qid:24	 # 23512	emma
+0	qid:24	 # 13319	emma
+1	qid:24	 # 43798	emma
+0	qid:24	 # 51828	emma
+0	qid:24	 # 250235	emma
+0	qid:24	 # 24869	emma
+0	qid:24	 # 253161	emma
+0	qid:24	 # 11050	emma

@@ -1,0 +1,8 @@
+{
+    "query": {
+        "match_phrase": {
+            "title": "{{keywords}}"
+        }
+    }
+}
+
