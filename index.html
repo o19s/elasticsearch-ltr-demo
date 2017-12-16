@@ -86,7 +86,7 @@
                 </div>
                 <div class="form-check">
                     <label class="custom-control custom-radio">
-                        <input id="test_5" name="radio" type="radio" class="custom-control-input"
+                        <input id="test_6" name="radio" type="radio" class="custom-control-input"
                                onclick='getResults(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">LambdaMART</span>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="form-check">
                     <label class="custom-control custom-radio">
-                        <input id="test_6" name="radio" type="radio" class="custom-control-input"
+                        <input id="test_7" name="radio" type="radio" class="custom-control-input"
                                onclick='getResults(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">ListNET</span>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="form-check">
                     <label class="custom-control custom-radio">
-                        <input id="test_7" name="radio" type="radio" class="custom-control-input"
+                        <input id="test_8" name="radio" type="radio" class="custom-control-input"
                                onclick='getResults(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Random Forests</span>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="form-check">
                     <label class="custom-control custom-radio">
-                        <input id="test_8" name="radio" type="radio" class="custom-control-input"
+                        <input id="test_9" name="radio" type="radio" class="custom-control-input"
                                onclick='getResults(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Linear Regression</span>
@@ -200,9 +200,6 @@
       case document.getElementById('test_4').checked:
         data.rescore.query.rescore_query.sltr.model = 'test_4';
         break;
-      case document.getElementById('test_5').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_5';
-        break;
       case document.getElementById('test_6').checked:
         data.rescore.query.rescore_query.sltr.model = 'test_6';
         break;
@@ -211,6 +208,9 @@
         break;
       case document.getElementById('test_8').checked:
         data.rescore.query.rescore_query.sltr.model = 'test_8';
+        break;
+      case document.getElementById('test_9').checked:
+        data.rescore.query.rescore_query.sltr.model = 'test_9';
         break;
       default:
         delete data.rescore;
