@@ -9,6 +9,9 @@ class Judgment:
         self.features = [] # 0th feature is ranklib feature 1
         self.weight = weight
 
+    def sameQueryAndDoc(self, other):
+        return self.qid == other.qid and self.docId == other.docId
+
     def __str__(self):
         return "grade:%s qid:%s (%s) docid:%s" % (self.grade, self.qid, self.keywords, self.docId)
 

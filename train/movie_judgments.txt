@@ -41,6 +41,8 @@
 4	qid:1	 # 1368	rambo
 1	qid:1	 # 31362	rambo
 1	qid:1	 # 61410	rambo
+0	qid:1	 # 319074	rambo
+0	qid:1	 # 10296	rambo
 4	qid:2	 # 1366	rocky
 3	qid:2	 # 1374	rocky
 3	qid:2	 # 1371	rocky

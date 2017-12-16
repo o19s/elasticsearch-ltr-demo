@@ -39,7 +39,7 @@ def gradeResults(results, keywords, qid):
         if 'fields' in result:
             print("")
             print("")
-            print("## %s " % result['fields'][titleField])
+            print("## %s %s " % (result['fields'][titleField], result['_id']))
             print("")
             print("   %s " % result['fields'][overviewField])
             while grade not in ["0", "1", "2", "3", "4"]:
@@ -50,13 +50,7 @@ def gradeResults(results, keywords, qid):
     return ratings
 
 
-
-if __name__ == "__main__":
-    """ Usage python rateShit.py esURL ratingsFileName """
-    from sys import argv
-
-    judgFile = argv[2]
-
+def loadJudgments(judgFile):
     currJudgments = []
     existingKws = set()
     lastQid = 0
@@ -67,22 +61,70 @@ if __name__ == "__main__":
     except FileNotFoundError:
         pass
 
+    return (currJudgments, existingKws, lastQid)
+
+
+def handleKeywords(inputKws, currJudgments):
+
+    keywordsWithExpansion = inputKws.split(';')
+    keywordsWithSearchInstead = inputKws.split(';;')
+    keywords = keywordsWithExpansion[0]
+    searchWith = keywords
+    if (len(keywordsWithExpansion) > 1):
+        searchWith += " %s" % keywordsWithExpansion[1]
+    if (len(keywordsWithSearchInstead) > 1):
+        searchWith = keywordsWithSearchInstead[1]
+
+    existingQid = -1
+    thisQueryJudgments = []
+    if keywords in existingKws:
+        for judgment in currJudgments:
+            if judgment.keywords == keywords:
+                thisQueryJudgments.append(judgment)
+                existingQid = judgment.qid
+
+    return keywords, searchWith, thisQueryJudgments, existingQid
+
+
+def foldInNewRatings(fullJudgments, origJudgments, newJudgs):
+    for newJudg in newJudgs:
+        wasAnUpdate = False
+        for origJudg in origJudgments:
+            if (origJudg.sameQueryAndDoc(newJudg)):
+                origJudg.grade = newJudg.grade
+                wasAnUpdate = True
+        if not wasAnUpdate:
+            fullJudgments.append(newJudg)
+
+
+
+if __name__ == "__main__":
+    """ Usage python rateShit.py esURL ratingsFileName """
+    from sys import argv
+
+    judgFile = argv[2]
+    fullJudgments, existingKws, lastQid = loadJudgments(judgFile)
 
     keywords = "-"
-    qid = lastQid + 1
+    newQid = lastQid + 1
     while len(keywords) > 0:
-        keywords = input("Enter the Keywords ('GTFO' to exit) ")
+        inputKws = input("Enter the Keywords ('GTFO' to exit) ")
 
-        if keywords == "GTFO":
+        if inputKws == "GTFO":
             break
 
-        if keywords in existingKws:
-            print ("Sorry, we already have ratings for %s. Try again" % keywords)
+        keywords, searchWith, origQueryJudgments, existingQid = handleKeywords(inputKws, fullJudgments)
+        currQid = 0
+        if existingQid > 0:
+            currQid = existingQid
+            print("Updating judgments for qid:%s" % currQid)
         else:
-            results = getPotentialResults(argv[1], keywords)
-            ratings = gradeResults(results, keywords, qid)
-            currJudgments += ratings
+            currQid = newQid
+            newQid += 1
 
-            qid += 1
+        results = getPotentialResults(argv[1], searchWith)
+        newQueryJudgments = gradeResults(results, keywords, currQid)
 
-    judgmentsToFile(judgFile, currJudgments)
+        foldInNewRatings(fullJudgments, origQueryJudgments, newQueryJudgments)
+
+    judgmentsToFile(judgFile, fullJudgments)
