@@ -1,0 +1,11 @@
+{
+    "query": {
+        "match": {
+            "_all": {
+                "query": "{{keywords}}",
+                "minimum_should_match": "100%"
+            }
+        }
+    }
+}
+
