@@ -33,6 +33,7 @@
 # qid:33: life is beautiful*1
 # qid:34: dark knight*1
 # qid:35: the green mile*1
+# qid:36: forrest gump*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -43,6 +44,14 @@
 1	qid:1	 # 61410	rambo
 0	qid:1	 # 319074	rambo
 0	qid:1	 # 10296	rambo
+0	qid:1	 # 35868	rambo
+0	qid:1	 # 131457	rambo
+0	qid:1	 # 94794	rambo
+0	qid:1	 # 169869	rambo
+0	qid:1	 # 34561	rambo
+0	qid:1	 # 13763	rambo
+0	qid:1	 # 62414	rambo
+0	qid:1	 # 21989	rambo
 4	qid:2	 # 1366	rocky
 3	qid:2	 # 1374	rocky
 3	qid:2	 # 1371	rocky
@@ -53,6 +62,17 @@
 1	qid:2	 # 110123	rocky
 1	qid:2	 # 36685	rocky
 1	qid:2	 # 17711	rocky
+0	qid:2	 # 2153	rocky
+0	qid:2	 # 339403	rocky
+0	qid:2	 # 21501	rocky
+0	qid:2	 # 81182	rocky
+0	qid:2	 # 62414	rocky
+0	qid:2	 # 21989	rocky
+0	qid:2	 # 11	rocky
+0	qid:2	 # 12180	rocky
+0	qid:2	 # 140607	rocky
+0	qid:2	 # 1893	rocky
+0	qid:2	 # 330459	rocky
 3	qid:3	 # 14154	war games
 0	qid:3	 # 365371	war games
 0	qid:3	 # 116059	war games
@@ -444,6 +464,11 @@
 0	qid:25	 # 228150	mad max fury road
 0	qid:25	 # 47608	mad max fury road
 0	qid:25	 # 201086	mad max fury road
+0	qid:25	 # 239573	mad max fury road
+0	qid:25	 # 13911	mad max fury road
+0	qid:25	 # 28036	mad max fury road
+0	qid:25	 # 9346	mad max fury road
+0	qid:25	 # 32074	mad max fury road
 4	qid:26	 # 251516	kung fury
 1	qid:26	 # 18666	kung fury
 0	qid:26	 # 37776	kung fury
@@ -464,6 +489,11 @@
 1	qid:26	 # 49444	kung fury
 0	qid:26	 # 228150	kung fury
 1	qid:26	 # 9502	kung fury
+0	qid:26	 # 46147	kung fury
+0	qid:26	 # 86577	kung fury
+0	qid:26	 # 41870	kung fury
+0	qid:26	 # 339428	kung fury
+0	qid:26	 # 9614	kung fury
 4	qid:27	 # 3083	mr smith goes to washington
 2	qid:27	 # 25058	mr smith goes to washington
 1	qid:27	 # 266814	mr smith goes to washington
@@ -544,6 +574,16 @@
 0	qid:30	 # 97251	pulp fiction
 0	qid:30	 # 15990	pulp fiction
 0	qid:30	 # 10249	pulp fiction
+2	qid:30	 # 393	pulp fiction
+2	qid:30	 # 24	pulp fiction
+0	qid:30	 # 37517	pulp fiction
+0	qid:30	 # 330711	pulp fiction
+0	qid:30	 # 46691	pulp fiction
+0	qid:30	 # 21501	pulp fiction
+0	qid:30	 # 81182	pulp fiction
+0	qid:30	 # 340402	pulp fiction
+0	qid:30	 # 9656	pulp fiction
+0	qid:30	 # 16412	pulp fiction
 4	qid:31	 # 5825	christmas vacation
 1	qid:31	 # 13673	christmas vacation
 1	qid:31	 # 77499	christmas vacation
@@ -564,6 +604,11 @@
 1	qid:31	 # 13187	christmas vacation
 1	qid:31	 # 14813	christmas vacation
 1	qid:31	 # 49742	christmas vacation
+0	qid:31	 # 88293	christmas vacation
+0	qid:31	 # 4247	christmas vacation
+0	qid:31	 # 4248	christmas vacation
+0	qid:31	 # 131916	christmas vacation
+0	qid:31	 # 4256	christmas vacation
 4	qid:32	 # 11252	psycho
 4	qid:32	 # 539	psycho
 3	qid:32	 # 12662	psycho
@@ -584,6 +629,11 @@
 0	qid:32	 # 10890	psycho
 0	qid:32	 # 112336	psycho
 0	qid:32	 # 9877	psycho
+0	qid:32	 # 9614	psycho
+0	qid:32	 # 125842	psycho
+0	qid:32	 # 427760	psycho
+1	qid:32	 # 4247	psycho
+0	qid:32	 # 30335	psycho
 4	qid:33	 # 637	life is beautiful
 0	qid:33	 # 288162	life is beautiful
 0	qid:33	 # 83860	life is beautiful
@@ -604,6 +654,12 @@
 0	qid:33	 # 20122	life is beautiful
 0	qid:33	 # 29483	life is beautiful
 0	qid:33	 # 6414	life is beautiful
+0	qid:33	 # 201859	life is beautiful
+0	qid:33	 # 13982	life is beautiful
+0	qid:33	 # 66178	life is beautiful
+0	qid:33	 # 60405	life is beautiful
+0	qid:33	 # 242076	life is beautiful
+0	qid:33	 # 85593	life is beautiful
 4	qid:34	 # 72003	dark knight
 3	qid:34	 # 49026	dark knight
 4	qid:34	 # 155	dark knight
@@ -624,6 +680,11 @@
 0	qid:34	 # 98851	dark knight
 2	qid:34	 # 14919	dark knight
 0	qid:34	 # 213270	dark knight
+0	qid:34	 # 319074	dark knight
+0	qid:34	 # 10296	dark knight
+0	qid:34	 # 45148	dark knight
+0	qid:34	 # 101860	dark knight
+0	qid:34	 # 153158	dark knight
 4	qid:35	 # 497	the green mile
 0	qid:35	 # 57537	the green mile
 0	qid:35	 # 252147	the green mile
@@ -644,3 +705,18 @@
 0	qid:35	 # 267188	the green mile
 0	qid:35	 # 71864	the green mile
 0	qid:35	 # 30584	the green mile
+0	qid:35	 # 250503	the green mile
+0	qid:35	 # 7443	the green mile
+0	qid:35	 # 9982	the green mile
+0	qid:35	 # 13343	the green mile
+0	qid:35	 # 78206	the green mile
+0	qid:36	 # 482	forrest gump
+0	qid:36	 # 479	forrest gump
+0	qid:36	 # 11492	forrest gump
+0	qid:36	 # 494	forrest gump
+0	qid:36	 # 493	forrest gump
+4	qid:36	 # 13	forrest gump
+0	qid:36	 # 26686	forrest gump
+0	qid:36	 # 13155	forrest gump
+0	qid:36	 # 43688	forrest gump
+0	qid:36	 # 33034	forrest gump
