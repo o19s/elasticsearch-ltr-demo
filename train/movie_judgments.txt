@@ -22,6 +22,17 @@
 # qid:22: murray saves christmas*1
 # qid:23: black swan*1
 # qid:24: emma*1
+# qid:25: mad max fury road*1
+# qid:26: kung fury*1
+# qid:27: mr smith goes to washington*1
+# qid:28: kill bill*1
+# qid:29: the godfather*1
+# qid:30: pulp fiction*1
+# qid:31: christmas vacation*1
+# qid:32: psycho*1
+# qid:33: life is beautiful*1
+# qid:34: dark knight*1
+# qid:35: the green mile*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -411,3 +422,223 @@
 0	qid:24	 # 24869	emma
 0	qid:24	 # 253161	emma
 0	qid:24	 # 11050	emma
+4	qid:25	 # 76341	mad max fury road
+3	qid:25	 # 8810	mad max fury road
+3	qid:25	 # 9659	mad max fury road
+3	qid:25	 # 9355	mad max fury road
+1	qid:25	 # 290999	mad max fury road
+0	qid:25	 # 37776	mad max fury road
+0	qid:25	 # 9770	mad max fury road
+0	qid:25	 # 149172	mad max fury road
+0	qid:25	 # 27460	mad max fury road
+0	qid:25	 # 62529	mad max fury road
+0	qid:25	 # 92667	mad max fury road
+0	qid:25	 # 27543	mad max fury road
+0	qid:25	 # 24351	mad max fury road
+0	qid:25	 # 159615	mad max fury road
+0	qid:25	 # 26258	mad max fury road
+0	qid:25	 # 251516	mad max fury road
+0	qid:25	 # 4148	mad max fury road
+0	qid:25	 # 228150	mad max fury road
+0	qid:25	 # 47608	mad max fury road
+0	qid:25	 # 201086	mad max fury road
+4	qid:26	 # 251516	kung fury
+1	qid:26	 # 18666	kung fury
+0	qid:26	 # 37776	kung fury
+0	qid:26	 # 149172	kung fury
+0	qid:26	 # 27460	kung fury
+0	qid:26	 # 62529	kung fury
+0	qid:26	 # 11891	kung fury
+1	qid:26	 # 50393	kung fury
+1	qid:26	 # 9470	kung fury
+0	qid:26	 # 92667	kung fury
+0	qid:26	 # 27543	kung fury
+0	qid:26	 # 24351	kung fury
+0	qid:26	 # 159615	kung fury
+1	qid:26	 # 58255	kung fury
+1	qid:26	 # 18725	kung fury
+1	qid:26	 # 15854	kung fury
+1	qid:26	 # 60639	kung fury
+1	qid:26	 # 49444	kung fury
+0	qid:26	 # 228150	kung fury
+1	qid:26	 # 9502	kung fury
+4	qid:27	 # 3083	mr smith goes to washington
+2	qid:27	 # 25058	mr smith goes to washington
+1	qid:27	 # 266814	mr smith goes to washington
+0	qid:27	 # 15670	mr smith goes to washington
+0	qid:27	 # 78140	mr smith goes to washington
+0	qid:27	 # 787	mr smith goes to washington
+0	qid:27	 # 45019	mr smith goes to washington
+0	qid:27	 # 35262	mr smith goes to washington
+0	qid:27	 # 31309	mr smith goes to washington
+0	qid:27	 # 162284	mr smith goes to washington
+0	qid:27	 # 260	mr smith goes to washington
+0	qid:27	 # 303742	mr smith goes to washington
+0	qid:27	 # 44383	mr smith goes to washington
+0	qid:27	 # 77012	mr smith goes to washington
+0	qid:27	 # 33831	mr smith goes to washington
+0	qid:27	 # 24197	mr smith goes to washington
+0	qid:27	 # 101449	mr smith goes to washington
+0	qid:27	 # 55863	mr smith goes to washington
+0	qid:27	 # 909	mr smith goes to washington
+0	qid:27	 # 14434	mr smith goes to washington
+3	qid:28	 # 393	kill bill
+4	qid:28	 # 24	kill bill
+0	qid:28	 # 37517	kill bill
+0	qid:28	 # 330711	kill bill
+0	qid:28	 # 46691	kill bill
+0	qid:28	 # 318922	kill bill
+0	qid:28	 # 8141	kill bill
+0	qid:28	 # 114888	kill bill
+0	qid:28	 # 190906	kill bill
+0	qid:28	 # 115199	kill bill
+0	qid:28	 # 315	kill bill
+0	qid:28	 # 61943	kill bill
+0	qid:28	 # 28049	kill bill
+0	qid:28	 # 17285	kill bill
+0	qid:28	 # 27261	kill bill
+0	qid:28	 # 13589	kill bill
+0	qid:28	 # 53063	kill bill
+0	qid:28	 # 128276	kill bill
+0	qid:28	 # 167305	kill bill
+0	qid:28	 # 54102	kill bill
+4	qid:29	 # 238	the godfather
+3	qid:29	 # 242	the godfather
+3	qid:29	 # 240	the godfather
+0	qid:29	 # 77403	the godfather
+2	qid:29	 # 70829	the godfather
+1	qid:29	 # 18973	the godfather
+0	qid:29	 # 154779	the godfather
+2	qid:29	 # 45485	the godfather
+0	qid:29	 # 49852	the godfather
+0	qid:29	 # 54102	the godfather
+0	qid:29	 # 13533	the godfather
+0	qid:29	 # 8995	the godfather
+0	qid:29	 # 29887	the godfather
+0	qid:29	 # 62836	the godfather
+0	qid:29	 # 36909	the godfather
+0	qid:29	 # 82866	the godfather
+0	qid:29	 # 75579	the godfather
+1	qid:29	 # 400	the godfather
+0	qid:29	 # 21469	the godfather
+0	qid:29	 # 1374	the godfather
+4	qid:30	 # 680	pulp fiction
+1	qid:30	 # 28131	pulp fiction
+0	qid:30	 # 37988	pulp fiction
+0	qid:30	 # 18451	pulp fiction
+0	qid:30	 # 75404	pulp fiction
+0	qid:30	 # 33470	pulp fiction
+0	qid:30	 # 25208	pulp fiction
+0	qid:30	 # 43317	pulp fiction
+0	qid:30	 # 10349	pulp fiction
+0	qid:30	 # 91063	pulp fiction
+0	qid:30	 # 55086	pulp fiction
+0	qid:30	 # 19562	pulp fiction
+0	qid:30	 # 20781	pulp fiction
+0	qid:30	 # 47369	pulp fiction
+0	qid:30	 # 13166	pulp fiction
+0	qid:30	 # 1092	pulp fiction
+0	qid:30	 # 54300	pulp fiction
+0	qid:30	 # 97251	pulp fiction
+0	qid:30	 # 15990	pulp fiction
+0	qid:30	 # 10249	pulp fiction
+4	qid:31	 # 5825	christmas vacation
+1	qid:31	 # 13673	christmas vacation
+1	qid:31	 # 77499	christmas vacation
+0	qid:31	 # 16342	christmas vacation
+1	qid:31	 # 75132	christmas vacation
+0	qid:31	 # 249072	christmas vacation
+1	qid:31	 # 13397	christmas vacation
+0	qid:31	 # 76452	christmas vacation
+1	qid:31	 # 81393	christmas vacation
+0	qid:31	 # 158382	christmas vacation
+1	qid:31	 # 21501	christmas vacation
+1	qid:31	 # 11419	christmas vacation
+1	qid:31	 # 172413	christmas vacation
+1	qid:31	 # 20785	christmas vacation
+1	qid:31	 # 46240	christmas vacation
+1	qid:31	 # 86778	christmas vacation
+1	qid:31	 # 45697	christmas vacation
+1	qid:31	 # 13187	christmas vacation
+1	qid:31	 # 14813	christmas vacation
+1	qid:31	 # 49742	christmas vacation
+4	qid:32	 # 11252	psycho
+4	qid:32	 # 539	psycho
+3	qid:32	 # 12662	psycho
+2	qid:32	 # 1359	psycho
+3	qid:32	 # 10576	psycho
+1	qid:32	 # 27723	psycho
+1	qid:32	 # 35683	psycho
+1	qid:32	 # 10726	psycho
+0	qid:32	 # 11629	psycho
+0	qid:32	 # 560	psycho
+0	qid:32	 # 32836	psycho
+0	qid:32	 # 29103	psycho
+0	qid:32	 # 42307	psycho
+0	qid:32	 # 28604	psycho
+0	qid:32	 # 16092	psycho
+0	qid:32	 # 79363	psycho
+0	qid:32	 # 49691	psycho
+0	qid:32	 # 10890	psycho
+0	qid:32	 # 112336	psycho
+0	qid:32	 # 9877	psycho
+4	qid:33	 # 637	life is beautiful
+0	qid:33	 # 288162	life is beautiful
+0	qid:33	 # 83860	life is beautiful
+0	qid:33	 # 226247	life is beautiful
+1	qid:33	 # 58197	life is beautiful
+0	qid:33	 # 14002	life is beautiful
+0	qid:33	 # 219781	life is beautiful
+0	qid:33	 # 59437	life is beautiful
+0	qid:33	 # 25228	life is beautiful
+0	qid:33	 # 669	life is beautiful
+0	qid:33	 # 32630	life is beautiful
+0	qid:33	 # 302496	life is beautiful
+0	qid:33	 # 147729	life is beautiful
+0	qid:33	 # 75720	life is beautiful
+0	qid:33	 # 38834	life is beautiful
+0	qid:33	 # 41659	life is beautiful
+0	qid:33	 # 40651	life is beautiful
+0	qid:33	 # 20122	life is beautiful
+0	qid:33	 # 29483	life is beautiful
+0	qid:33	 # 6414	life is beautiful
+4	qid:34	 # 72003	dark knight
+3	qid:34	 # 49026	dark knight
+4	qid:34	 # 155	dark knight
+3	qid:34	 # 142061	dark knight
+3	qid:34	 # 123025	dark knight
+3	qid:34	 # 29751	dark knight
+0	qid:34	 # 114875	dark knight
+0	qid:34	 # 17240	dark knight
+0	qid:34	 # 83233	dark knight
+0	qid:34	 # 82485	dark knight
+3	qid:34	 # 13851	dark knight
+0	qid:34	 # 30584	dark knight
+0	qid:34	 # 577	dark knight
+0	qid:34	 # 124080	dark knight
+0	qid:34	 # 58595	dark knight
+0	qid:34	 # 5765	dark knight
+0	qid:34	 # 37834	dark knight
+0	qid:34	 # 98851	dark knight
+2	qid:34	 # 14919	dark knight
+0	qid:34	 # 213270	dark knight
+4	qid:35	 # 497	the green mile
+0	qid:35	 # 57537	the green mile
+0	qid:35	 # 252147	the green mile
+0	qid:35	 # 117375	the green mile
+0	qid:35	 # 22734	the green mile
+0	qid:35	 # 8275	the green mile
+0	qid:35	 # 65	the green mile
+0	qid:35	 # 24739	the green mile
+0	qid:35	 # 31005	the green mile
+0	qid:35	 # 61988	the green mile
+0	qid:35	 # 9285	the green mile
+0	qid:35	 # 165534	the green mile
+0	qid:35	 # 13794	the green mile
+0	qid:35	 # 86084	the green mile
+0	qid:35	 # 250666	the green mile
+0	qid:35	 # 28323	the green mile
+0	qid:35	 # 251260	the green mile
+0	qid:35	 # 267188	the green mile
+0	qid:35	 # 71864	the green mile
+0	qid:35	 # 30584	the green mile

@@ -1,7 +1,12 @@
 {
     "query": {
-        "match_phrase": {
-            "title": "{{keywords}}"
+        "constant_score": {
+            "filter": {
+                "match_phrase": {
+                    "title": "{{keywords}}"
+                }
+            },
+            "boost": 1.0
         }
     }
 }

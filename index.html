@@ -161,16 +161,16 @@
         "bool": {
           "should": {
             "match": {
-              "title": search
-            },
-            "match": {
-              "overview": search
+              "_all": search
             }
           }
         }
       },
       "rescore": {
+        "window_size": 500,
         "query": {
+          "query_weight": 0.1,
+          "rescore_query_weight": 5.0,
           "rescore_query": {
             "sltr": {
               "params": {

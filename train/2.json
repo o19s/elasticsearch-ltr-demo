@@ -1,7 +1,12 @@
 {
     "query": {
-        "match": {
-            "overview": "{{keywords}}"
+        "constant_score": {
+            "filter": {
+                "match_phrase": {
+                    "overview": "{{keywords}}"
+                }
+            },
+            "boost": 1.0
         }
     }
 }

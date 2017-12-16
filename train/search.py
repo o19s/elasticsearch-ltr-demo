@@ -33,4 +33,6 @@ if __name__ == "__main__":
     results = es.search(index='tmdb', doc_type='movie', body=ltrQuery(argv[1], model))
     for result in results['hits']['hits']:
              print("%s " % (result['_source']['title']))
+             print("%s " % (result['_source']['overview']))
+             print("---------------------------------------")
 

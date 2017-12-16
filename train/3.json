@@ -5,8 +5,13 @@
         "functions": [
           {
           "filter":{
-              "exists":{
-                 "field": "vote_count"
+              "bool": {
+                "must": [{
+                  "exists":{
+                     "field": "vote_count"
+                  }},
+                  {"match": {"_all": " {{ keywords }} "}}
+                  ]
               }
            },
             "field_value_factor": { 
