@@ -1,0 +1,9 @@
+
+{
+    "query": {
+        "match": {
+            "genres.name.bigramed": "{{keywords}}"
+        }
+    }
+}
+

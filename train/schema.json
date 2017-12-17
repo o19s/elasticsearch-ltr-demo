@@ -7,24 +7,68 @@
                     "properties": {
                         "name": {
                             "type": "text",
-                            "fielddata": true
+                            "fielddata": true,
+                            "fields": {
+                                "bigramed": {
+                                    "type": "text",
+                                    "analyzer": "std_bigrams",
+                                    "fielddata": true
+                                },
+                                "en": {
+                                    "type": "text",
+                                    "analyzer": "english"
+                                }
+                            }
                         }
                     }
                 },
                 "overview": {
                     "type": "text",
                     "fielddata": true,
-                    "copy_to": "text_all"
+                    "copy_to": "text_all",
+                    "fields": {
+                        "bigramed": {
+                            "type": "text",
+                            "analyzer": "std_bigrams",
+                            "fielddata": true
+                        },
+                        "en": {
+                            "type": "text",
+                            "analyzer": "english"
+                        }
+                    }
                 },
                 "title": {
                     "type": "text",
                     "fielddata": true,
-                    "copy_to": "text_all"
+                    "copy_to": "text_all",
+                    "fields": {
+                        "bigramed": {
+                            "type": "text",
+                            "analyzer": "std_bigrams",
+                            "fielddata": true
+                        },
+                        "en": {
+                            "type": "text",
+                            "analyzer": "english"
+                        }
+                    }
                 },
                 "tagline": {
                     "type": "text",
                     "fielddata": true,
-                    "copy_to": "text_all"
+                    "copy_to": "text_all",
+                    "fields": {
+                        "bigramed": {
+                            "type": "text",
+                            "analyzer": "std_bigrams",
+                            "fielddata": true
+                        },
+                        "en": {
+                            "type": "text",
+                            "analyzer": "english"
+                        }
+                    }
                 },
                 "text_all": {
                     "type": "text",

@@ -35,31 +35,13 @@
 # qid:35: the green mile*1
 # qid:36: forrest gump*1
 # qid:37: spaceship movie*1
-# qid:38: spaceship movie*1
-# qid:39: spaceship movie*1
-# qid:40: spaceship movie*1
-# qid:41: basketball cartoon aliens*1
-# qid:42: basketball cartoon aliens*1
-# qid:43: basketball cartoon aliens*1
-# qid:44: christmas movie*1
-# qid:45: christmas movie*1
-# qid:46: christmas movie*1
-# qid:47: reindeer movie*1
-# qid:48: reindeer movie*1
-# qid:49: reindeer movie*1
-# qid:50: reindeer movie*1
-# qid:51: alien invasion*1
-# qid:52: alien invasion*1
-# qid:53: alien invasion*1
-# qid:54: alien invasion*1
-# qid:55: video game movie*1
-# qid:56: video game movie*1
-# qid:57: video game movie*1
-# qid:58: football sunday*1
-# qid:59: football sunday*1
-# qid:60: football sunday*1
-# qid:61: football titans*1
-# qid:62: football titans*1
+# qid:38: basketball cartoon aliens*1
+# qid:39: christmas movie*1
+# qid:40: reindeer movie*1
+# qid:41: alien invasion*1
+# qid:42: video game movie*1
+# qid:43: football sunday*1
+# qid:44: football titans*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -757,139 +739,139 @@
 3	qid:37	 # 193	spaceship movie
 3	qid:37	 # 199	spaceship movie
 4	qid:37	 # 188927	spaceship movie
-4	qid:38	 # 11	spaceship movie
-3	qid:38	 # 12180	spaceship movie
-4	qid:38	 # 140607	spaceship movie
-3	qid:38	 # 1893	spaceship movie
-4	qid:38	 # 330459	spaceship movie
-4	qid:39	 # 325553	spaceship movie
-3	qid:39	 # 69315	spaceship movie
-3	qid:39	 # 105077	spaceship movie
-0	qid:40	 # 497	spaceship movie
-0	qid:40	 # 57537	spaceship movie
-0	qid:40	 # 252147	spaceship movie
-0	qid:40	 # 117375	spaceship movie
-0	qid:40	 # 22734	spaceship movie
-1	qid:40	 # 13068	spaceship movie
-2	qid:40	 # 168742	spaceship movie
-1	qid:40	 # 13685	spaceship movie
-1	qid:40	 # 58434	spaceship movie
-1	qid:40	 # 49081	spaceship movie
-4	qid:41	 # 2300	basketball cartoon aliens
-0	qid:41	 # 71139	basketball cartoon aliens
-0	qid:41	 # 72744	basketball cartoon aliens
-0	qid:41	 # 18968	basketball cartoon aliens
-0	qid:41	 # 64335	basketball cartoon aliens
-2	qid:42	 # 10715	basketball cartoon aliens
-2	qid:42	 # 41394	basketball cartoon aliens
-2	qid:42	 # 26540	basketball cartoon aliens
-2	qid:42	 # 80607	basketball cartoon aliens
-4	qid:42	 # 2300	basketball cartoon aliens
-0	qid:43	 # 7555	basketball cartoon aliens
-0	qid:43	 # 1370	basketball cartoon aliens
-0	qid:43	 # 1369	basketball cartoon aliens
-0	qid:43	 # 1368	basketball cartoon aliens
-0	qid:43	 # 288183	basketball cartoon aliens
-3	qid:44	 # 13352	christmas movie
-3	qid:44	 # 35257	christmas movie
-3	qid:44	 # 79818	christmas movie
-3	qid:44	 # 81393	christmas movie
-3	qid:44	 # 28535	christmas movie
-3	qid:45	 # 14813	christmas movie
-3	qid:45	 # 49742	christmas movie
-4	qid:45	 # 45697	christmas movie
-3	qid:45	 # 48874	christmas movie
-4	qid:45	 # 16716	christmas movie
-0	qid:46	 # 18113	christmas movie
-0	qid:46	 # 319070	christmas movie
-0	qid:46	 # 56965	christmas movie
-4	qid:46	 # 5825	christmas movie
-0	qid:46	 # 44181	christmas movie
-4	qid:47	 # 81294	reindeer movie
-4	qid:47	 # 13382	reindeer movie
-3	qid:47	 # 33719	reindeer movie
-0	qid:47	 # 43876	reindeer movie
-0	qid:47	 # 38715	reindeer movie
-0	qid:48	 # 14267	reindeer movie
-0	qid:48	 # 1654	reindeer movie
-4	qid:49	 # 24951	reindeer movie
-4	qid:49	 # 33719	reindeer movie
-0	qid:49	 # 14560	reindeer movie
-0	qid:50	 # 62414	reindeer movie
-0	qid:50	 # 21989	reindeer movie
-0	qid:50	 # 313050	reindeer movie
-0	qid:50	 # 9025	reindeer movie
-0	qid:50	 # 33321	reindeer movie
-4	qid:51	 # 602	alien invasion
-3	qid:51	 # 47933	alien invasion
-0	qid:51	 # 125344	alien invasion
-0	qid:51	 # 63727	alien invasion
-0	qid:51	 # 154140	alien invasion
-1	qid:52	 # 26946	alien invasion
-0	qid:52	 # 143336	alien invasion
-0	qid:52	 # 35395	alien invasion
-0	qid:52	 # 184322	alien invasion
-0	qid:52	 # 252178	alien invasion
-3	qid:53	 # 16268	alien invasion
-4	qid:53	 # 34812	alien invasion
-4	qid:53	 # 74	alien invasion
-0	qid:53	 # 18974	alien invasion
-0	qid:53	 # 80410	alien invasion
-4	qid:54	 # 75	alien invasion
-1	qid:54	 # 289318	alien invasion
-0	qid:54	 # 43512	alien invasion
-0	qid:54	 # 29143	alien invasion
-1	qid:54	 # 7348	alien invasion
-4	qid:55	 # 82690	video game movie
-0	qid:55	 # 15493	video game movie
-0	qid:55	 # 86295	video game movie
-0	qid:55	 # 114618	video game movie
-0	qid:55	 # 32033	video game movie
-3	qid:56	 # 80215	video game movie
-3	qid:56	 # 94590	video game movie
-3	qid:56	 # 269100	video game movie
-3	qid:56	 # 38510	video game movie
-3	qid:56	 # 13158	video game movie
-0	qid:57	 # 85633	video game movie
-0	qid:57	 # 26186	video game movie
-0	qid:57	 # 52355	video game movie
-0	qid:57	 # 68200	video game movie
-0	qid:57	 # 9595	video game movie
-0	qid:57	 # 24273	video game movie
-0	qid:57	 # 44909	video game movie
-4	qid:57	 # 257344	video game movie
-0	qid:57	 # 58574	video game movie
-0	qid:57	 # 71730	video game movie
-0	qid:57	 # 432517	video game movie
-0	qid:57	 # 59013	video game movie
-0	qid:57	 # 104880	video game movie
-1	qid:57	 # 13929	video game movie
-0	qid:57	 # 10955	video game movie
-0	qid:57	 # 80919	video game movie
-0	qid:57	 # 91010	video game movie
-0	qid:57	 # 21712	video game movie
-0	qid:58	 # 45938	football sunday
-0	qid:58	 # 29251	football sunday
-0	qid:58	 # 70805	football sunday
-0	qid:58	 # 28414	football sunday
-0	qid:58	 # 46754	football sunday
-4	qid:59	 # 9563	football sunday
-0	qid:59	 # 29251	football sunday
-0	qid:59	 # 45938	football sunday
-0	qid:59	 # 47161	football sunday
-0	qid:59	 # 70805	football sunday
-0	qid:60	 # 54551	football sunday
-0	qid:60	 # 11340	football sunday
-0	qid:60	 # 91456	football sunday
-0	qid:60	 # 195833	football sunday
-0	qid:60	 # 84177	football sunday
-0	qid:61	 # 57165	football titans
-0	qid:61	 # 379291	football titans
-0	qid:61	 # 18823	football titans
-0	qid:61	 # 10323	football titans
-4	qid:61	 # 10637	football titans
-0	qid:62	 # 6320	football titans
-0	qid:62	 # 53414	football titans
-0	qid:62	 # 183113	football titans
-0	qid:62	 # 9336	football titans
-0	qid:62	 # 38034	football titans
+4	qid:37	 # 11	spaceship movie
+3	qid:37	 # 12180	spaceship movie
+4	qid:37	 # 140607	spaceship movie
+3	qid:37	 # 1893	spaceship movie
+4	qid:37	 # 330459	spaceship movie
+4	qid:37	 # 325553	spaceship movie
+3	qid:37	 # 69315	spaceship movie
+3	qid:37	 # 105077	spaceship movie
+0	qid:37	 # 497	spaceship movie
+0	qid:37	 # 57537	spaceship movie
+0	qid:37	 # 252147	spaceship movie
+0	qid:37	 # 117375	spaceship movie
+0	qid:37	 # 22734	spaceship movie
+1	qid:37	 # 13068	spaceship movie
+2	qid:37	 # 168742	spaceship movie
+1	qid:37	 # 13685	spaceship movie
+1	qid:37	 # 58434	spaceship movie
+1	qid:37	 # 49081	spaceship movie
+4	qid:38	 # 2300	basketball cartoon aliens
+0	qid:38	 # 71139	basketball cartoon aliens
+0	qid:38	 # 72744	basketball cartoon aliens
+0	qid:38	 # 18968	basketball cartoon aliens
+0	qid:38	 # 64335	basketball cartoon aliens
+2	qid:38	 # 10715	basketball cartoon aliens
+2	qid:38	 # 41394	basketball cartoon aliens
+2	qid:38	 # 26540	basketball cartoon aliens
+2	qid:38	 # 80607	basketball cartoon aliens
+4	qid:38	 # 2300	basketball cartoon aliens
+0	qid:38	 # 7555	basketball cartoon aliens
+0	qid:38	 # 1370	basketball cartoon aliens
+0	qid:38	 # 1369	basketball cartoon aliens
+0	qid:38	 # 1368	basketball cartoon aliens
+0	qid:38	 # 288183	basketball cartoon aliens
+3	qid:39	 # 13352	christmas movie
+3	qid:39	 # 35257	christmas movie
+3	qid:39	 # 79818	christmas movie
+3	qid:39	 # 81393	christmas movie
+3	qid:39	 # 28535	christmas movie
+3	qid:39	 # 14813	christmas movie
+3	qid:39	 # 49742	christmas movie
+4	qid:39	 # 45697	christmas movie
+3	qid:39	 # 48874	christmas movie
+4	qid:39	 # 16716	christmas movie
+0	qid:39	 # 18113	christmas movie
+0	qid:39	 # 319070	christmas movie
+0	qid:39	 # 56965	christmas movie
+4	qid:39	 # 5825	christmas movie
+0	qid:39	 # 44181	christmas movie
+4	qid:40	 # 81294	reindeer movie
+4	qid:40	 # 13382	reindeer movie
+3	qid:40	 # 33719	reindeer movie
+0	qid:40	 # 43876	reindeer movie
+0	qid:40	 # 38715	reindeer movie
+0	qid:40	 # 14267	reindeer movie
+0	qid:40	 # 1654	reindeer movie
+4	qid:40	 # 24951	reindeer movie
+4	qid:40	 # 33719	reindeer movie
+0	qid:40	 # 14560	reindeer movie
+0	qid:40	 # 62414	reindeer movie
+0	qid:40	 # 21989	reindeer movie
+0	qid:40	 # 313050	reindeer movie
+0	qid:40	 # 9025	reindeer movie
+0	qid:40	 # 33321	reindeer movie
+4	qid:41	 # 602	alien invasion
+3	qid:41	 # 47933	alien invasion
+0	qid:41	 # 125344	alien invasion
+0	qid:41	 # 63727	alien invasion
+0	qid:41	 # 154140	alien invasion
+1	qid:41	 # 26946	alien invasion
+0	qid:41	 # 143336	alien invasion
+0	qid:41	 # 35395	alien invasion
+0	qid:41	 # 184322	alien invasion
+0	qid:41	 # 252178	alien invasion
+3	qid:41	 # 16268	alien invasion
+4	qid:41	 # 34812	alien invasion
+4	qid:41	 # 74	alien invasion
+0	qid:41	 # 18974	alien invasion
+0	qid:41	 # 80410	alien invasion
+4	qid:41	 # 75	alien invasion
+1	qid:41	 # 289318	alien invasion
+0	qid:41	 # 43512	alien invasion
+0	qid:41	 # 29143	alien invasion
+1	qid:41	 # 7348	alien invasion
+4	qid:42	 # 82690	video game movie
+0	qid:42	 # 15493	video game movie
+0	qid:42	 # 86295	video game movie
+0	qid:42	 # 114618	video game movie
+0	qid:42	 # 32033	video game movie
+3	qid:42	 # 80215	video game movie
+3	qid:42	 # 94590	video game movie
+3	qid:42	 # 269100	video game movie
+3	qid:42	 # 38510	video game movie
+3	qid:42	 # 13158	video game movie
+0	qid:42	 # 85633	video game movie
+0	qid:42	 # 26186	video game movie
+0	qid:42	 # 52355	video game movie
+0	qid:42	 # 68200	video game movie
+0	qid:42	 # 9595	video game movie
+0	qid:42	 # 24273	video game movie
+0	qid:42	 # 44909	video game movie
+4	qid:42	 # 257344	video game movie
+0	qid:42	 # 58574	video game movie
+0	qid:42	 # 71730	video game movie
+0	qid:42	 # 432517	video game movie
+0	qid:42	 # 59013	video game movie
+0	qid:42	 # 104880	video game movie
+1	qid:42	 # 13929	video game movie
+0	qid:42	 # 10955	video game movie
+0	qid:42	 # 80919	video game movie
+0	qid:42	 # 91010	video game movie
+0	qid:42	 # 21712	video game movie
+0	qid:43	 # 45938	football sunday
+0	qid:43	 # 29251	football sunday
+0	qid:43	 # 70805	football sunday
+0	qid:43	 # 28414	football sunday
+0	qid:43	 # 46754	football sunday
+4	qid:43	 # 9563	football sunday
+0	qid:43	 # 29251	football sunday
+0	qid:43	 # 45938	football sunday
+0	qid:43	 # 47161	football sunday
+0	qid:43	 # 70805	football sunday
+0	qid:44	 # 54551	football sunday
+0	qid:44	 # 11340	football sunday
+0	qid:44	 # 91456	football sunday
+0	qid:44	 # 195833	football sunday
+0	qid:44	 # 84177	football sunday
+0	qid:44	 # 57165	football titans
+0	qid:44	 # 379291	football titans
+0	qid:44	 # 18823	football titans
+0	qid:44	 # 10323	football titans
+4	qid:44	 # 10637	football titans
+0	qid:44	 # 6320	football titans
+0	qid:44	 # 53414	football titans
+0	qid:44	 # 183113	football titans
+0	qid:44	 # 9336	football titans
+0	qid:44	 # 38034	football titans
