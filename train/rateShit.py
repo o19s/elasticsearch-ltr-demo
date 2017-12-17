@@ -101,8 +101,13 @@ def foldInNewRatings(fullJudgments, origJudgments, newJudgs):
 if __name__ == "__main__":
     """ Usage python rateShit.py esURL ratingsFileName """
     from sys import argv
+    import configparser
 
-    judgFile = argv[2]
+    config = configparser.ConfigParser()
+    config.read('settings.cfg')
+    esUrl = config['DEFAULT']['ESHost']
+
+    judgFile = argv[1]
     fullJudgments, existingKws, lastQid = loadJudgments(judgFile)
 
     keywords = "-"
@@ -122,7 +127,7 @@ if __name__ == "__main__":
             currQid = newQid
             newQid += 1
 
-        results = getPotentialResults(argv[1], searchWith)
+        results = getPotentialResults(esUrl, searchWith)
         newQueryJudgments = gradeResults(results, keywords, currQid)
 
         foldInNewRatings(fullJudgments, origQueryJudgments, newQueryJudgments)
