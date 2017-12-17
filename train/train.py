@@ -11,7 +11,7 @@ def trainModel(trainingData, testData, modelOutput, whichModel=8):
     #  - each is trained against a proportion of the training data (-srate)
     #  - each is trained using a subset of the features (-frate)
     #  - each can be either a MART or LambdaMART model (-rtype 6 lambda mart)
-    cmd = "java -jar RankyMcRankFace.jar -metric2t NDCG@10 -bag 10 -srate 0.64 -frate 0.3 -rtype 6 -shrinkage 0.1 -tree 40 -ranker %s -train %s -test %s -save %s -feature features.txt" % (whichModel, trainingData, testData, modelOutput)
+    cmd = "java -jar RankyMcRankFace.jar -metric2t NDCG@10 -bag 10 -srate 0.64 -frate 0.6 -rtype 6 -shrinkage 0.1 -tree 40 -ranker %s -train %s -test %s -save %s -feature features.txt" % (whichModel, trainingData, testData, modelOutput)
     print("*********************************************************************")
     print("*********************************************************************")
     print("Running %s" % cmd)

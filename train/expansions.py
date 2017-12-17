@@ -45,7 +45,7 @@ def expansionTitle(es, keywords):
     return getExpansions(es, keywords, expandField='title', minDocCount=1)
 
 def expansionGenre(es, keywords):
-    return getExpansions(es, keywords, expandField='genre.name', minDocCount=1)
+    return getExpansions(es, keywords, expandField='genres.name', minDocCount=1)
 
 if __name__ == "__main__":
     from sys import argv

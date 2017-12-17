@@ -48,6 +48,18 @@
 # qid:48: reindeer movie*1
 # qid:49: reindeer movie*1
 # qid:50: reindeer movie*1
+# qid:51: alien invasion*1
+# qid:52: alien invasion*1
+# qid:53: alien invasion*1
+# qid:54: alien invasion*1
+# qid:55: video game movie*1
+# qid:56: video game movie*1
+# qid:57: video game movie*1
+# qid:58: football sunday*1
+# qid:59: football sunday*1
+# qid:60: football sunday*1
+# qid:61: football titans*1
+# qid:62: football titans*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -808,3 +820,76 @@
 0	qid:50	 # 313050	reindeer movie
 0	qid:50	 # 9025	reindeer movie
 0	qid:50	 # 33321	reindeer movie
+4	qid:51	 # 602	alien invasion
+3	qid:51	 # 47933	alien invasion
+0	qid:51	 # 125344	alien invasion
+0	qid:51	 # 63727	alien invasion
+0	qid:51	 # 154140	alien invasion
+1	qid:52	 # 26946	alien invasion
+0	qid:52	 # 143336	alien invasion
+0	qid:52	 # 35395	alien invasion
+0	qid:52	 # 184322	alien invasion
+0	qid:52	 # 252178	alien invasion
+3	qid:53	 # 16268	alien invasion
+4	qid:53	 # 34812	alien invasion
+4	qid:53	 # 74	alien invasion
+0	qid:53	 # 18974	alien invasion
+0	qid:53	 # 80410	alien invasion
+4	qid:54	 # 75	alien invasion
+1	qid:54	 # 289318	alien invasion
+0	qid:54	 # 43512	alien invasion
+0	qid:54	 # 29143	alien invasion
+1	qid:54	 # 7348	alien invasion
+4	qid:55	 # 82690	video game movie
+0	qid:55	 # 15493	video game movie
+0	qid:55	 # 86295	video game movie
+0	qid:55	 # 114618	video game movie
+0	qid:55	 # 32033	video game movie
+3	qid:56	 # 80215	video game movie
+3	qid:56	 # 94590	video game movie
+3	qid:56	 # 269100	video game movie
+3	qid:56	 # 38510	video game movie
+3	qid:56	 # 13158	video game movie
+0	qid:57	 # 85633	video game movie
+0	qid:57	 # 26186	video game movie
+0	qid:57	 # 52355	video game movie
+0	qid:57	 # 68200	video game movie
+0	qid:57	 # 9595	video game movie
+0	qid:57	 # 24273	video game movie
+0	qid:57	 # 44909	video game movie
+4	qid:57	 # 257344	video game movie
+0	qid:57	 # 58574	video game movie
+0	qid:57	 # 71730	video game movie
+0	qid:57	 # 432517	video game movie
+0	qid:57	 # 59013	video game movie
+0	qid:57	 # 104880	video game movie
+1	qid:57	 # 13929	video game movie
+0	qid:57	 # 10955	video game movie
+0	qid:57	 # 80919	video game movie
+0	qid:57	 # 91010	video game movie
+0	qid:57	 # 21712	video game movie
+0	qid:58	 # 45938	football sunday
+0	qid:58	 # 29251	football sunday
+0	qid:58	 # 70805	football sunday
+0	qid:58	 # 28414	football sunday
+0	qid:58	 # 46754	football sunday
+4	qid:59	 # 9563	football sunday
+0	qid:59	 # 29251	football sunday
+0	qid:59	 # 45938	football sunday
+0	qid:59	 # 47161	football sunday
+0	qid:59	 # 70805	football sunday
+0	qid:60	 # 54551	football sunday
+0	qid:60	 # 11340	football sunday
+0	qid:60	 # 91456	football sunday
+0	qid:60	 # 195833	football sunday
+0	qid:60	 # 84177	football sunday
+0	qid:61	 # 57165	football titans
+0	qid:61	 # 379291	football titans
+0	qid:61	 # 18823	football titans
+0	qid:61	 # 10323	football titans
+4	qid:61	 # 10637	football titans
+0	qid:62	 # 6320	football titans
+0	qid:62	 # 53414	football titans
+0	qid:62	 # 183113	football titans
+0	qid:62	 # 9336	football titans
+0	qid:62	 # 38034	football titans

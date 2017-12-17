@@ -2,7 +2,7 @@
 {
     "query": {
         "query_string": {
-            "default_field": "text_all",
+            "default_field": "genres.name",
             "query": "{{expansions_genre}}"
         }
     }

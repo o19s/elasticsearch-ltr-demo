@@ -1,0 +1,9 @@
+
+{
+    "query": {
+        "match": {
+            "text_all.en": "{{keywords}}"
+        }
+    }
+}
+

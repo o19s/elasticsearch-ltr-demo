@@ -3,6 +3,14 @@
     "mappings": {
         "movie": {
             "properties": {
+                "genres": {
+                    "properties": {
+                        "name": {
+                            "type": "text",
+                            "fielddata": true
+                        }
+                    }
+                },
                 "overview": {
                     "type": "text",
                     "fielddata": true,
@@ -26,6 +34,10 @@
                             "type": "text",
                             "analyzer": "std_bigrams",
                             "fielddata": true
+                        },
+                        "en": {
+                            "type": "text",
+                            "analyzer": "english"
                         }
                     }
                 }
