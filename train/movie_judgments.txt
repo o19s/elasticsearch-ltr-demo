@@ -34,6 +34,16 @@
 # qid:34: dark knight*1
 # qid:35: the green mile*1
 # qid:36: forrest gump*1
+# qid:37: spaceship movie*1
+# qid:38: spaceship movie*1
+# qid:39: spaceship movie*1
+# qid:40: spaceship movie*1
+# qid:41: basketball cartoon aliens*1
+# qid:42: basketball cartoon aliens*1
+# qid:43: basketball cartoon aliens*1
+# qid:44: christmas movie*1
+# qid:45: christmas movie*1
+# qid:46: christmas movie*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -121,6 +131,12 @@
 0	qid:7	 # 301728	space jam
 0	qid:7	 # 243938	space jam
 0	qid:7	 # 157336	space jam
+0	qid:7	 # 36373	space jam
+0	qid:7	 # 7555	space jam
+0	qid:7	 # 1370	space jam
+0	qid:7	 # 1369	space jam
+0	qid:7	 # 1368	space jam
+0	qid:7	 # 288183	space jam
 4	qid:8	 # 325553	battlestar galactica
 3	qid:8	 # 69315	battlestar galactica
 3	qid:8	 # 105077	battlestar galactica
@@ -720,3 +736,56 @@
 0	qid:36	 # 13155	forrest gump
 0	qid:36	 # 43688	forrest gump
 0	qid:36	 # 33034	forrest gump
+4	qid:37	 # 13475	spaceship movie
+3	qid:37	 # 200	spaceship movie
+3	qid:37	 # 193	spaceship movie
+3	qid:37	 # 199	spaceship movie
+4	qid:37	 # 188927	spaceship movie
+4	qid:38	 # 11	spaceship movie
+3	qid:38	 # 12180	spaceship movie
+4	qid:38	 # 140607	spaceship movie
+3	qid:38	 # 1893	spaceship movie
+4	qid:38	 # 330459	spaceship movie
+4	qid:39	 # 325553	spaceship movie
+3	qid:39	 # 69315	spaceship movie
+3	qid:39	 # 105077	spaceship movie
+0	qid:40	 # 497	spaceship movie
+0	qid:40	 # 57537	spaceship movie
+0	qid:40	 # 252147	spaceship movie
+0	qid:40	 # 117375	spaceship movie
+0	qid:40	 # 22734	spaceship movie
+1	qid:40	 # 13068	spaceship movie
+2	qid:40	 # 168742	spaceship movie
+1	qid:40	 # 13685	spaceship movie
+1	qid:40	 # 58434	spaceship movie
+1	qid:40	 # 49081	spaceship movie
+4	qid:41	 # 2300	basketball cartoon aliens
+0	qid:41	 # 71139	basketball cartoon aliens
+0	qid:41	 # 72744	basketball cartoon aliens
+0	qid:41	 # 18968	basketball cartoon aliens
+0	qid:41	 # 64335	basketball cartoon aliens
+2	qid:42	 # 10715	basketball cartoon aliens
+2	qid:42	 # 41394	basketball cartoon aliens
+2	qid:42	 # 26540	basketball cartoon aliens
+2	qid:42	 # 80607	basketball cartoon aliens
+4	qid:42	 # 2300	basketball cartoon aliens
+0	qid:43	 # 7555	basketball cartoon aliens
+0	qid:43	 # 1370	basketball cartoon aliens
+0	qid:43	 # 1369	basketball cartoon aliens
+0	qid:43	 # 1368	basketball cartoon aliens
+0	qid:43	 # 288183	basketball cartoon aliens
+3	qid:44	 # 13352	christmas movie
+3	qid:44	 # 35257	christmas movie
+3	qid:44	 # 79818	christmas movie
+3	qid:44	 # 81393	christmas movie
+3	qid:44	 # 28535	christmas movie
+3	qid:45	 # 14813	christmas movie
+3	qid:45	 # 49742	christmas movie
+4	qid:45	 # 45697	christmas movie
+3	qid:45	 # 48874	christmas movie
+4	qid:45	 # 16716	christmas movie
+0	qid:46	 # 18113	christmas movie
+0	qid:46	 # 319070	christmas movie
+0	qid:46	 # 56965	christmas movie
+4	qid:46	 # 5825	christmas movie
+0	qid:46	 # 44181	christmas movie
