@@ -1,0 +1,62 @@
+
+{
+    "mappings": {
+        "movie": {
+            "properties": {
+                "overview": {
+                    "type": "text",
+                    "fielddata": true,
+                    "copy_to": "text_all"
+                },
+                "title": {
+                    "type": "text",
+                    "fielddata": true,
+                    "copy_to": "text_all"
+                },
+                "tagline": {
+                    "type": "text",
+                    "fielddata": true,
+                    "copy_to": "text_all"
+                },
+                "text_all": {
+                    "type": "text",
+                    "fielddata": true,
+                    "fields": {
+                        "bigramed": {
+                            "type": "text",
+                            "analyzer": "std_bigrams",
+                            "fielddata": true
+                        }
+                    }
+                }
+
+            }
+        }
+    },
+    "settings": {
+        "number_of_shards": 1,
+        "index": {
+            "analysis" : {
+                "filter": {
+                    "bigram_filter": {
+                        "type": "shingle",
+                        "max_shingle_size": 2,
+                        "min_shingle_size": 2,
+                        "output_unigrams": false
+                    }
+                },
+                "analyzer": {
+                    "std_bigrams": {
+                        "type": "custom",
+                        "tokenizer": "standard",
+                        "filter": [
+                            "standard",
+                            "lowercase",
+                            "bigram_filter"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

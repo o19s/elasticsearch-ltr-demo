@@ -5,17 +5,9 @@ def enrich(movie):
     if 'title' in movie:
         movie['title_sent'] = 'SENTINEL_BEGIN ' + movie['title']
 
-def reindex(es, analysisSettings={}, mappingSettings={}, movieDict={}, index='tmdb', esUrl='http://localhost:9200'):
+def reindex(es, movieDict={}, index='tmdb', esUrl='http://localhost:9200'):
     import elasticsearch.helpers
-    settings = {
-        "settings": {
-            "number_of_shards": 1,
-            "index": {
-                "analysis" : analysisSettings,
-            }}}
-
-    if mappingSettings:
-        settings['mappings'] = mappingSettings #C
+    settings = json.load(open('schema.json'))
 
     es.indices.delete(index, ignore=[400, 404])
     es.indices.create(index, body=settings)

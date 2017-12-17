@@ -1,0 +1,10 @@
+
+{
+    "query": {
+        "query_string": {
+            "default_field": "text_all",
+            "query": "{{expansions_genre}}"
+        }
+    }
+}
+

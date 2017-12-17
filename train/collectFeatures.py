@@ -46,13 +46,16 @@ def featureDictToList(ranklibLabeledFeatures):
     return rVal
 
 
-
 def logFeatures(es, judgmentsByQid):
+    from expansions import expansionTextAllBigrams, expansionTextAll, expansionGenre
     for qid, judgments in judgmentsByQid.items():
         keywords = judgments[0].keywords
         docIds = [judgment.docId for judgment in judgments]
         logQuery['query']['bool']['must'][0]['terms']['_id'] = docIds
         logQuery['query']['bool']['should'][0]['sltr']['params']['keywords'] = keywords
+        logQuery['query']['bool']['should'][0]['sltr']['params']['expansions_text_all_bigrams'] = expansionTextAllBigrams(es, keywords)
+        logQuery['query']['bool']['should'][0]['sltr']['params']['expansions_text_all'] = expansionTextAll(es, keywords)
+        logQuery['query']['bool']['should'][0]['sltr']['params']['expansions_genre'] = expansionGenre(es, keywords)
         print("POST")
         print(json.dumps(logQuery, indent=2))
         res = es.search(index='tmdb', body=logQuery)

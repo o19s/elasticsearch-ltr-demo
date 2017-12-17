@@ -2,7 +2,8 @@ baseQuery = {
       "query": {
         "sltr": {
             "params": {
-                "keywords": ""
+                "keywords": "",
+                "expansions": ""
             },
             "model": "",
       }
@@ -11,6 +12,10 @@ baseQuery = {
 
 def ltrQuery(keywords, modelName):
     import json
+    from expansions import expansionTextAllBigrams, expansionTextAll, expansionGenre
+    baseQuery['query']['sltr']['params']['expansions_text_all_bigrams'] = expansionTextAllBigrams(es, keywords)
+    baseQuery['query']['sltr']['params']['expansions_text_all'] = expansionTextAll(es, keywords)
+    baseQuery['query']['sltr']['params']['expansions_genre'] = expansionGenre(es, keywords)
     baseQuery['query']['sltr']['model'] = model
     baseQuery['query']['sltr']['params']['keywords'] = keywords
     print("%s" % json.dumps(baseQuery))
@@ -30,7 +35,8 @@ if __name__ == "__main__":
     model = "test_6"
     if len(argv) > 2:
         model = argv[2]
-    results = es.search(index='tmdb', doc_type='movie', body=ltrQuery(argv[1], model))
+    keywords = argv[1]
+    results = es.search(index='tmdb', doc_type='movie', body=ltrQuery(keywords, model))
     for result in results['hits']['hits']:
              print("%s " % (result['_source']['title']))
              print("%s " % (result['_source']['overview']))
