@@ -44,6 +44,10 @@
 # qid:44: christmas movie*1
 # qid:45: christmas movie*1
 # qid:46: christmas movie*1
+# qid:47: reindeer movie*1
+# qid:48: reindeer movie*1
+# qid:49: reindeer movie*1
+# qid:50: reindeer movie*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -789,3 +793,18 @@
 0	qid:46	 # 56965	christmas movie
 4	qid:46	 # 5825	christmas movie
 0	qid:46	 # 44181	christmas movie
+4	qid:47	 # 81294	reindeer movie
+4	qid:47	 # 13382	reindeer movie
+3	qid:47	 # 33719	reindeer movie
+0	qid:47	 # 43876	reindeer movie
+0	qid:47	 # 38715	reindeer movie
+0	qid:48	 # 14267	reindeer movie
+0	qid:48	 # 1654	reindeer movie
+4	qid:49	 # 24951	reindeer movie
+4	qid:49	 # 33719	reindeer movie
+0	qid:49	 # 14560	reindeer movie
+0	qid:50	 # 62414	reindeer movie
+0	qid:50	 # 21989	reindeer movie
+0	qid:50	 # 313050	reindeer movie
+0	qid:50	 # 9025	reindeer movie
+0	qid:50	 # 33321	reindeer movie

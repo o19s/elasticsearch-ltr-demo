@@ -106,7 +106,7 @@ if __name__ == "__main__":
     buildFeaturesJudgmentsFile(testJudgments, filename=TEST_JUDGMENTS)
 
     # Train each ranklib model type
-    for modelType in [6,8]:
+    for modelType in [6,8,9]:
         # 0, MART
         # 1, RankNet
         # 2, RankBoost

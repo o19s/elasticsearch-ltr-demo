@@ -46,58 +46,10 @@
                 </div>
                 <div class="form-check">
                     <label class="custom-control custom-radio">
-                        <input id="test_0" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">MART</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
-                        <input id="test_1" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">RankNet</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
-                        <input id="test_2" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">RankBoost</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
-                        <input id="test_3" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">AdaRank</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
-                        <input id="test_4" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">coord Ascent</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
                         <input id="test_6" name="radio" type="radio" class="custom-control-input"
                                onclick='getResults(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">LambdaMART</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
-                        <input id="test_7" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">ListNET</span>
                     </label>
                 </div>
                 <div class="form-check">
@@ -155,82 +107,134 @@
     document.getElementById('target').innerHTML = rendered;
   };
 
-  function getResults(search) {
-    var data = {
-      "query": {
-        "bool": {
-          "should": {
-            "match": {
-              "_all": search
-            }
+  function getExpansions(search, searchField, expandField, shardSize, minDocCount, onDone) {
+      body = {
+          "size": 0,
+          "query": {
+              "match": {
+              }
+          },
+          "aggs": {
+               "over_top_n" : {
+                  "sampler" : {
+                      "shard_size" : shardSize
+                  },
+                  "aggs": {
+                      "expansions": {
+                          "significant_terms": {
+                              "field": expandField,            
+                              "min_doc_count": minDocCount
+                          }
+                      }
+                  }
+               }
           }
-        }
-      },
-      "rescore": {
-        "window_size": 500,
-        "query": {
-          "query_weight": 0.1,
-          "rescore_query_weight": 5.0,
-          "rescore_query": {
-            "sltr": {
-              "params": {
-                "keywords": search
-              },
-              "model": "test_1"
-            }
-          }
-        }
       }
-    };
-
-
-    switch (true) {
-      case document.getElementById('test_0').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_0';
-        break;
-      case document.getElementById('test_1').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_1';
-        break;
-      case document.getElementById('test_2').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_2';
-        break;
-      case document.getElementById('test_3').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_3';
-        break;
-      case document.getElementById('test_4').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_4';
-        break;
-      case document.getElementById('test_6').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_6';
-        break;
-      case document.getElementById('test_7').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_7';
-        break;
-      case document.getElementById('test_8').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_8';
-        break;
-      case document.getElementById('test_9').checked:
-        data.rescore.query.rescore_query.sltr.model = 'test_9';
-        break;
-      default:
-        delete data.rescore;
-    }
-
-    $.ajax({
-      method: "GET",
-      url: "http://localhost:9200/tmdb/_search",
-      crossDomain: true,
-      async: false,
-      data: "source=" + JSON.stringify(data),
-      dataType: 'json',
-      contentType: 'application/json',
-    })
-      .done(function (data) {
-        renderResults(data, search);
+      body.query.match[searchField] = search;
+      $.ajax({
+        method: "GET",
+        //url: "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search",
+        url: "http://localhost:9200/tmdb/_search",
+        crossDomain: true,
+        async: false,
+        data: "source=" + JSON.stringify(body),
+        dataType: 'json',
+        contentType: 'application/json',
       })
-      .fail(function (data) {
-        console.log(data);
-      });
+        .done(function (data) {
+          // for sigTerm in results['aggregations']['over_top_n']['expansions']['buckets']:
+          var rVal = "";
+          data.aggregations.over_top_n.expansions.buckets.forEach(function (sigTerm) {
+
+            var term = sigTerm.key;
+            var weight = sigTerm.score;
+            
+            var multiTerm = term.split(/s+/);
+            if (multiTerm.length > 0) {
+              var i = 0;
+              term = "\"";
+              for (i = 0; i < multiTerm.length; i++) {
+                term += multiTerm[i] + " "; 
+              }
+              term += "\"";
+            }
+            rVal += " " + term + "^" + weight;
+
+          });
+
+          onDone(rVal);
+        })
+  }
+
+  function getResults(search) {
+    getExpansions(search, 'text_all', 'text_all.bigramed', 100, 1, (expansionsTextAllBigrams) => {
+      getExpansions(search, 'text_all', 'text_all', 100, 1, (expansionsTextAll) => {
+        getExpansions(search, 'text_all', 'genre.name', 100, 1, (expansionsGenre) => {
+          
+          var data = {
+            "query": {
+              "multi_match": {
+                "query": search,
+                "fields": ["title", "overview", "tagline"],
+                "type": "cross_fields"
+              }
+            },
+            "rescore": {
+              "window_size": 500,
+              "query": {
+                "query_weight": 1.0,
+                "rescore_query_weight": 100.0,
+                "rescore_query": {
+                  "sltr": {
+                    "params": {
+                      "keywords": search,
+                      "expansions_text_all_bigrams": expansionsTextAllBigrams,
+                      "expansions_text_all": expansionsTextAll,
+                      "expansions_genre": expansionsGenre,
+                    },
+                    "model": "test_1"
+                  }
+                }
+              }
+            }
+          };
+          switch (true) {
+            case document.getElementById('test_6').checked:
+              data.rescore.query.rescore_query.sltr.model = 'test_6';
+              break;
+            case document.getElementById('test_8').checked:
+              data.rescore.query.rescore_query.sltr.model = 'test_8';
+              break;
+            case document.getElementById('test_9').checked:
+              data.rescore.query.rescore_query.sltr.model = 'test_9';
+              break;
+            default:
+              delete data.rescore;
+          }
+
+          $.ajax({
+            method: "GET",
+            //url: "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search",
+            url: "http://localhost:9200/tmdb/_search",
+            crossDomain: true,
+            async: false,
+            data: "source=" + JSON.stringify(data),
+            dataType: 'json',
+            contentType: 'application/json',
+          })
+            .done(function (data) {
+              renderResults(data, search);
+            })
+            .fail(function (data) {
+              console.log(data);
+            });
+
+
+        })
+      })
+
+    })
+
   }
 
   getResults(document.getElementById("inputSearch").value);

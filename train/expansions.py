@@ -36,16 +36,16 @@ def getExpansions(es, keywords, minDocCount=3, searchField='text_all', expandFie
         raise e
 
 def expansionTextAllBigrams(es, keywords):
-    return getExpansions(es, keywords, expandField='text_all.bigramed')
+    return getExpansions(es, keywords, expandField='text_all.bigramed', minDocCount=1)
 
 def expansionTextAll(es, keywords):
-    return getExpansions(es, keywords, expandField='text_all')
+    return getExpansions(es, keywords, expandField='text_all', minDocCount=1)
 
 def expansionTitle(es, keywords):
-    return getExpansions(es, keywords, expandField='title')
+    return getExpansions(es, keywords, expandField='title', minDocCount=1)
 
 def expansionGenre(es, keywords):
-    return getExpansions(es, keywords, expandField='genre.name')
+    return getExpansions(es, keywords, expandField='genre.name', minDocCount=1)
 
 if __name__ == "__main__":
     from sys import argv
