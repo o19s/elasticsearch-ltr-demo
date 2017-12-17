@@ -1,0 +1,6 @@
+__pycache__/
+venv/
+model.txt
+movie_judgments_wfeatures.*.txt
+movie_judgments_wfeatur*.txt
+tmdb.json
