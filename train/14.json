@@ -1,7 +1,7 @@
 {
     "query": {
-        "match": {
-            "genres.name.en": "{{keywords}}"
+        "match_phrase": {
+            "title": "{{keywords}}"
         }
     }
 }

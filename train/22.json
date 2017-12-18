@@ -1,7 +1,7 @@
 {
     "query": {
         "match": {
-            "text_all": "{{keywords}}"
+            "genres.name.en": "{{keywords}}"
         }
     }
 }

@@ -1,13 +1,25 @@
-
 {
     "query": {
-        "constant_score": {
-            "query": {"match_phrase": {
-                "title": "{{keywords}}"
-            }},
-            "boost": 1.0
-
-        }
+      "function_score": {
+        
+        "functions": [
+          {
+          "filter":{
+              "bool": {
+                "must": [{
+                  "exists":{
+                     "field": "vote_average"
+                  }},
+                  {"match": {"text_all.en": " {{ keywords }} "}}
+                  ]
+              }
+           },
+            "field_value_factor": { 
+              "field": "vote_average",
+              "missing": 0
+            }
+          }
+        ]
+      }
     }
-}
-
+  }

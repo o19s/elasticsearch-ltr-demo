@@ -5,7 +5,7 @@
         "functions": [
           {
             "filter": {
-                "match": {"_all": "{{ keywords }}"}
+                "match": {"text_all.en": "{{ keywords }}"}
             },
             "field_value_factor": { 
               "field": "title_len",

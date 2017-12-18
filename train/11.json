@@ -1,12 +1,7 @@
 {
     "query": {
-        "constant_score": {
-            "filter": {
-                "match_phrase": {
-                    "text_all.en": "{{keywords}}"
-                }
-            },
-            "boost": 1.0
+        "match": {
+            "text_all.en": "{{keywords}}"
         }
     }
 }

@@ -10,7 +10,7 @@
                   "exists":{
                      "field": "vote_count"
                   }},
-                  {"match": {"_all": " {{ keywords }} "}}
+                  {"match": {"text_all.en": " {{ keywords }} "}}
                   ]
               }
            },

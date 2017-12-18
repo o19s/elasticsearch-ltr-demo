@@ -3,7 +3,7 @@
         "constant_score": {
             "filter": {
                 "match_phrase": {
-                    "title": "{{keywords}}"
+                    "title.en": "{{keywords}}"
                 }
             },
             "boost": 1.0

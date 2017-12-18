@@ -1,8 +1,8 @@
 
 {
     "query": {
-        "match": {
-            "genres.name.bigramed": "{{keywords}}"
+        "match":{ 
+            "overview.bigramed": "{{keywords}}"
         }
     }
 }
