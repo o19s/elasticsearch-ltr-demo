@@ -42,6 +42,8 @@
 # qid:42: video game movie*1
 # qid:43: football sunday*1
 # qid:44: football titans*1
+# qid:45: stuck on mars*1
+# qid:46: world war 2*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -860,11 +862,11 @@
 0	qid:43	 # 45938	football sunday
 0	qid:43	 # 47161	football sunday
 0	qid:43	 # 70805	football sunday
-0	qid:44	 # 54551	football sunday
-0	qid:44	 # 11340	football sunday
-0	qid:44	 # 91456	football sunday
-0	qid:44	 # 195833	football sunday
-0	qid:44	 # 84177	football sunday
+0	qid:43	 # 54551	football sunday
+0	qid:43	 # 11340	football sunday
+0	qid:43	 # 91456	football sunday
+0	qid:43	 # 195833	football sunday
+0	qid:43	 # 84177	football sunday
 0	qid:44	 # 57165	football titans
 0	qid:44	 # 379291	football titans
 0	qid:44	 # 18823	football titans
@@ -875,3 +877,23 @@
 0	qid:44	 # 183113	football titans
 0	qid:44	 # 9336	football titans
 0	qid:44	 # 38034	football titans
+4	qid:45	 # 286217	stuck on mars
+1	qid:45	 # 9849	stuck on mars
+1	qid:45	 # 50321	stuck on mars
+1	qid:45	 # 5126	stuck on mars
+1	qid:45	 # 16268	stuck on mars
+0	qid:45	 # 211672	stuck on mars
+0	qid:45	 # 54551	stuck on mars
+0	qid:45	 # 229407	stuck on mars
+0	qid:45	 # 54559	stuck on mars
+0	qid:45	 # 229408	stuck on mars
+1	qid:45	 # 75	stuck on mars
+1	qid:45	 # 289318	stuck on mars
+1	qid:45	 # 29143	stuck on mars
+1	qid:45	 # 43512	stuck on mars
+3	qid:45	 # 7348	stuck on mars
+1	qid:46	 # 60976	world war 2
+3	qid:46	 # 75015	world war 2
+3	qid:46	 # 129405	world war 2
+2	qid:46	 # 288109	world war 2
+0	qid:46	 # 38828	world war 2
