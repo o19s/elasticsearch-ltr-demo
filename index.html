@@ -7,23 +7,85 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
       integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <link rel="stylesheet" href="css/flatly.css">
 
+
 <div class="container">
-    <form>
+	<div class="jumbotron">
+		<h1>Learning to Rank Educational Demo</h1>
+
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" role="tab" href="#welcome">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" role="tab" href="#training">Training Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" role="tab" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" role="tab" href="#boundaries">Up To The Edge</a>
+            </li>
+          </ul>
+        <hr class="my-4">
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="welcome" role="tabpanel">
+              <p>This movie search's relevance is controled by these algorithms you can select:</p>
+                <ol>
+                  <li>Stock Elasticsearch -- basic untuned Elasticsearch settings</li>
+                  <li>Optimal Boosts -- boosts weigh each query, this strategy uses ML to find the best weight</li>
+                  <li>LambdaMART -- decision tree based algorithm that won the Yahoo! challenge.</li>
+                  <li>Random Forests -- a group of LambdaMART models, each trained on random sample</li>
+                </ol>
+              <p>Try searching for 'basketball with cartoon aliens' with each algorithm to see if the movie <a href="https://www.warnerbros.com/archive/spacejam/movie/jam.htm">Space Jam</a> comes up!</p>
+            </div>
+            <div class="tab-pane" id="training" role="tabpanel">
+              <p>LTR works by finding patterns in the training data you've provided.</p>
+              <p>We hand-created training data, focusing on: <em>title searches</em> (ie "rambo"), <em>tip of the tongue searches</em> ("stuck on mars" or "basketball cartoon aliens"), and <em>category searches</em> ("spaceship movies").
+              </p>
+              <p>With search, each use case -- often each keyword! -- has its own unique, nuanced ranking requirements. With enough training data, models can pick up on nuance hand-tuned solutions have.</p> 
+              <p>The key though is "enough training data" -- <a target="_blank" href="https://github.com/o19s/Elasticsearch_LTR_demo/blob/master/train/movie_judgments.txt">Inspect our training data</a>. Do we have enough? Try some searches out with the different algorithms, tell us what you think! </p>
+            </div>
+            <div class="tab-pane" id="features" role="tabpanel">
+              <p>LTR uses the scores of Elasticsearch or Solr queries to make decisions. Training data defines the "ideal". LTR tries to approach the ideal using the provided features (see <a href="https://github.com/o19s/Elasticsearch_LTR_demo/blob/master/train">our features, 1..n.json</a>)</p>
+              
+              <p>Adding/creating new features can improve relevance. "Rambo" is one oddball query. Oddly, the movie titled "Rambo" isn't the most relevant result. Instead "First Blood" should be ranked highest. It came first in the series. New features such as a movies "order" in a series would be needed to help LTR make the right decision</p>
+              
+              <p>Unfortunately, quite often: <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">more features - more problems!</a>. LTR can use new features to fix our "Rambo" query, but you need rich amounts of training data to show it the pattern. Further: you need enough negative examples -- places the pattern doesn't apply -- to avoid the feature being used incorrectly. </p>
+
+            </div>
+            <div class="tab-pane" id="boundaries" role="tabpanel">
+              <p>Some cases would require so much training data that most orgs would be better solving the problem the 'old fashioned' way.</p>
+              <p>Consider the cases of 'world war 2' vs 'world war 1'. The phrase "world war" occurs in both. Both "world" and "war" are themselves not very discriminating terms. Yet clearly most movies are about the first world war, and not the second, and vice versa.</p>
+              <p>With enough training examples and counter examples, LTR could learn direct phrase matching matters overwhelmingly in this case. But sometimes you just know your domain, and need to take the direct approach. </p>
+              <p>Here, traditional feature work may <i>reduce</i> the work LTR needs to do. What if we recognized world war 2 as an <a href="http://opensourceconnections.com/blog/2016/12/02/solr-elasticsearch-synonyms-better-patterns-keyphrases/">idiomatic phrase</a>, turning it into the token world_war_2? </p>
+
+              </ul>
+              
+            </div>
+          </div>
+                
+          
+	</div>
+
+    <form onsubmit='getResults(document.getElementById("inputSearch").value); return false' >
         <div class="form-row align-items-center">
 
-            <div class="form-group row">
+            <div  class="form-group row">
                 <div class="col-auto">
-                    <input type="search" class="form-control" id="inputSearch" value="Rocky">
+                    <input type="search" name="search" class="form-control" id="inputSearch" value="Rocky">
                 </div>
                 <div class="col-auto">
-                    <a class="btn btn-primary" href="#"
-                       onclick='getResults(document.getElementById("inputSearch").value);' role="button">Search</a>
+                  <input type="submit" name="submit" class="btn btn-primary">
                 </div>
             </div>
         </div>
@@ -41,7 +103,15 @@
                                onclick='getResults(document.getElementById("inputSearch").value);'
                                 checked="true">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">None</span>
+                        <span class="custom-control-description">Stock Elasticsearch</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="custom-control custom-radio">
+                        <input id="test_9" name="radio" type="radio" class="custom-control-input"
+                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Optimal Boosts</span>
                     </label>
                 </div>
                 <div class="form-check">
@@ -58,14 +128,6 @@
                                onclick='getResults(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Random Forests</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
-                        <input id="test_9" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Linear Regression</span>
                     </label>
                 </div>
             </fieldset>
@@ -175,7 +237,7 @@
             "query": {
               "multi_match": {
                 "query": search,
-                "fields": ["title", "overview", "tagline"],
+                "fields": ["text_all.en"],
                 "type": "cross_fields"
               }
             },
