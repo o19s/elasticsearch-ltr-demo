@@ -99,7 +99,16 @@ def foldInNewRatings(fullJudgments, origJudgments, newJudgs):
 
 
 if __name__ == "__main__":
-    """ Usage python rateShit.py esURL ratingsFileName """
+    """
+        Prompts console user for judgments
+        Usage python rate.py ratingsFileName
+
+        Prompt guide
+            foo -- searches for "foo" using rateSearch.json.jinja,
+            foo; bar -- rate keyword "foo", but add "bar" to the query
+            foo;; bar -- rate keyword "foo", searching for "bar" instead
+
+    """
     from sys import argv
     import configparser
 
@@ -124,7 +133,9 @@ if __name__ == "__main__":
             currQid = existingQid
             print("Updating judgments for qid:%s" % currQid)
         else:
+            existingKws.add(keywords)
             currQid = newQid
+            print("New Keywords %s qid:%s" % (keywords, currQid))
             newQid += 1
 
         results = getPotentialResults(esUrl, searchWith)
