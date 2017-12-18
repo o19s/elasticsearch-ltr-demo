@@ -44,6 +44,11 @@
 # qid:44: football titans*1
 # qid:45: stuck on mars*1
 # qid:46: world war 2*1
+# qid:47: world war 1*1
+# qid:48: science fiction*1
+# qid:49: world war i*1
+# qid:50: world war ii*1
+# qid:51: korean war*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -892,8 +897,168 @@
 1	qid:45	 # 29143	stuck on mars
 1	qid:45	 # 43512	stuck on mars
 3	qid:45	 # 7348	stuck on mars
+1	qid:45	 # 170632	stuck on mars
+1	qid:45	 # 13848	stuck on mars
+1	qid:45	 # 89883	stuck on mars
+1	qid:45	 # 111969	stuck on mars
+1	qid:45	 # 1792	stuck on mars
 1	qid:46	 # 60976	world war 2
 3	qid:46	 # 75015	world war 2
 3	qid:46	 # 129405	world war 2
 2	qid:46	 # 288109	world war 2
 0	qid:46	 # 38828	world war 2
+4	qid:46	 # 1654	world war 2
+3	qid:46	 # 36571	world war 2
+3	qid:46	 # 36572	world war 2
+3	qid:46	 # 36573	world war 2
+0	qid:46	 # 26652	world war 2
+4	qid:46	 # 1251	world war 2
+3	qid:46	 # 18712	world war 2
+4	qid:46	 # 3683	world war 2
+0	qid:46	 # 211672	world war 2
+0	qid:46	 # 54551	world war 2
+0	qid:46	 # 229407	world war 2
+0	qid:46	 # 54559	world war 2
+0	qid:46	 # 229408	world war 2
+0	qid:46	 # 26204	world war 2
+0	qid:46	 # 39227	world war 2
+0	qid:46	 # 107928	world war 2
+0	qid:46	 # 81836	world war 2
+0	qid:46	 # 48650	world war 2
+2	qid:46	 # 59993	world war 2
+2	qid:46	 # 109970	world war 2
+3	qid:46	 # 17044	world war 2
+0	qid:46	 # 20880	world war 2
+3	qid:46	 # 218305	world war 2
+1	qid:46	 # 72190	world war 2
+3	qid:46	 # 43279	world war 2
+0	qid:46	 # 193687	world war 2
+0	qid:46	 # 39100	world war 2
+0	qid:46	 # 39105	world war 2
+4	qid:46	 # 22311	world war 2
+4	qid:46	 # 16869	world war 2
+1	qid:47	 # 60976	world war 1
+1	qid:47	 # 75015	world war 1
+1	qid:47	 # 129405	world war 1
+1	qid:47	 # 288109	world war 1
+1	qid:47	 # 38828	world war 1
+4	qid:47	 # 143	world war 1
+4	qid:47	 # 10912	world war 1
+0	qid:47	 # 103489	world war 1
+3	qid:47	 # 19728	world war 1
+0	qid:47	 # 63193	world war 1
+4	qid:47	 # 16442	world war 1
+0	qid:47	 # 40045	world war 1
+0	qid:47	 # 21610	world war 1
+0	qid:47	 # 8333	world war 1
+0	qid:47	 # 33474	world war 1
+4	qid:47	 # 8349	world war 1
+0	qid:47	 # 36006	world war 1
+0	qid:47	 # 5485	world war 1
+0	qid:47	 # 41213	world war 1
+0	qid:47	 # 85325	world war 1
+1	qid:47	 # 16869	world war 1
+1	qid:47	 # 228150	world war 1
+0	qid:47	 # 14615	world war 1
+0	qid:47	 # 37776	world war 1
+0	qid:47	 # 92667	world war 1
+0	qid:47	 # 251516	world war 1
+1	qid:47	 # 205596	world war 1
+0	qid:47	 # 47921	world war 1
+0	qid:47	 # 34148	world war 1
+1	qid:47	 # 55863	world war 1
+0	qid:47	 # 157129	world war 1
+4	qid:48	 # 289318	science fiction
+4	qid:48	 # 15990	science fiction
+4	qid:48	 # 22379	science fiction
+4	qid:48	 # 775	science fiction
+1	qid:48	 # 101609	science fiction
+0	qid:48	 # 25651	science fiction
+0	qid:48	 # 10686	science fiction
+0	qid:48	 # 680	science fiction
+0	qid:48	 # 1262	science fiction
+0	qid:48	 # 97251	science fiction
+2	qid:48	 # 320048	science fiction
+0	qid:48	 # 184992	science fiction
+0	qid:48	 # 9074	science fiction
+1	qid:49	 # 60976	world war i
+3	qid:49	 # 75015	world war i
+3	qid:49	 # 129405	world war i
+2	qid:49	 # 288109	world war i
+0	qid:49	 # 38828	world war i
+4	qid:49	 # 1654	world war i
+3	qid:49	 # 36571	world war i
+3	qid:49	 # 36572	world war i
+3	qid:49	 # 36573	world war i
+0	qid:49	 # 26652	world war i
+4	qid:49	 # 1251	world war i
+3	qid:49	 # 18712	world war i
+4	qid:49	 # 3683	world war i
+0	qid:49	 # 211672	world war i
+0	qid:49	 # 54551	world war i
+0	qid:49	 # 229407	world war i
+0	qid:49	 # 54559	world war i
+0	qid:49	 # 229408	world war i
+0	qid:49	 # 26204	world war i
+0	qid:49	 # 39227	world war i
+0	qid:49	 # 107928	world war i
+0	qid:49	 # 81836	world war i
+0	qid:49	 # 48650	world war i
+2	qid:49	 # 59993	world war i
+2	qid:49	 # 109970	world war i
+3	qid:49	 # 17044	world war i
+0	qid:49	 # 20880	world war i
+3	qid:49	 # 218305	world war i
+1	qid:49	 # 72190	world war i
+3	qid:49	 # 43279	world war i
+0	qid:49	 # 193687	world war i
+0	qid:49	 # 39100	world war i
+0	qid:49	 # 39105	world war i
+4	qid:49	 # 22311	world war i
+4	qid:49	 # 16869	world war i
+1	qid:50	 # 60976	world war ii
+1	qid:50	 # 75015	world war ii
+1	qid:50	 # 129405	world war ii
+1	qid:50	 # 288109	world war ii
+1	qid:50	 # 38828	world war ii
+4	qid:50	 # 143	world war ii
+4	qid:50	 # 10912	world war ii
+0	qid:50	 # 103489	world war ii
+3	qid:50	 # 19728	world war ii
+0	qid:50	 # 63193	world war ii
+4	qid:50	 # 16442	world war ii
+0	qid:50	 # 40045	world war ii
+0	qid:50	 # 21610	world war ii
+0	qid:50	 # 8333	world war ii
+0	qid:50	 # 33474	world war ii
+4	qid:50	 # 8349	world war ii
+0	qid:50	 # 36006	world war ii
+0	qid:50	 # 5485	world war ii
+0	qid:50	 # 41213	world war ii
+0	qid:50	 # 85325	world war ii
+1	qid:50	 # 16869	world war ii
+1	qid:50	 # 228150	world war ii
+0	qid:50	 # 14615	world war ii
+0	qid:50	 # 37776	world war ii
+0	qid:50	 # 92667	world war ii
+0	qid:50	 # 251516	world war ii
+1	qid:50	 # 205596	world war ii
+0	qid:50	 # 47921	world war ii
+0	qid:50	 # 34148	world war ii
+1	qid:50	 # 55863	world war ii
+0	qid:50	 # 157129	world war ii
+4	qid:51	 # 79553	korean war
+4	qid:51	 # 45520	korean war
+4	qid:51	 # 11658	korean war
+4	qid:51	 # 84569	korean war
+4	qid:51	 # 46872	korean war
+1	qid:51	 # 60976	korean war
+1	qid:51	 # 75015	korean war
+1	qid:51	 # 129405	korean war
+1	qid:51	 # 288109	korean war
+1	qid:51	 # 38828	korean war
+0	qid:51	 # 211672	korean war
+0	qid:51	 # 54551	korean war
+0	qid:51	 # 229407	korean war
+0	qid:51	 # 54559	korean war
+0	qid:51	 # 229408	korean war
