@@ -171,6 +171,9 @@
     document.getElementById('target').innerHTML = rendered;
   };
 
+  //var esUrl = 'http://localhost:9200/tmdb/_search'
+  var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
+
   function getExpansions(search, searchField, expandField, shardSize, minDocCount, onDone) {
       body = {
           "size": 0,
@@ -197,8 +200,7 @@
       body.query.match[searchField] = search;
       $.ajax({
         method: "GET",
-        //url: "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search",
-        url: "http://localhost:9200/tmdb/_search",
+        url: esUrl,
         crossDomain: true,
         async: false,
         data: "source=" + JSON.stringify(body),
@@ -278,8 +280,7 @@
 
           $.ajax({
             method: "GET",
-            url: "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search",
-            //url: "http://localhost:9200/tmdb/_search",
+            url: esUrl,
             crossDomain: true,
             async: false,
             data: "source=" + JSON.stringify(data),
