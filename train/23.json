@@ -1,0 +1,8 @@
+{
+    "query": {
+        "match": {
+            "text_all.trigramed": "{{keywords}}"
+        }
+    }
+}
+

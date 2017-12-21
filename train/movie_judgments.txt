@@ -35,14 +35,14 @@
 # qid:35: the green mile*1
 # qid:36: forrest gump*1
 # qid:37: spaceship movie*1
-# qid:38: basketball cartoon aliens*1
+# qid:38: basketball cartoon aliens*10
 # qid:39: christmas movie*1
 # qid:40: reindeer movie*1
 # qid:41: alien invasion*1
 # qid:42: video game movie*1
 # qid:43: football sunday*1
 # qid:44: football titans*1
-# qid:45: stuck on mars*1
+# qid:45: stuck on mars*10
 # qid:46: world war 2*1
 # qid:47: world war 1*1
 # qid:48: science fiction*1
@@ -626,6 +626,30 @@
 1	qid:22	 # 850	murray saves christmas
 1	qid:22	 # 13189	murray saves christmas
 1	qid:22	 # 13358	murray saves christmas
+0	qid:22	 # 1366	murray saves christmas
+0	qid:22	 # 1374	murray saves christmas
+0	qid:22	 # 1246	murray saves christmas
+0	qid:22	 # 1367	murray saves christmas
+0	qid:22	 # 1371	murray saves christmas
+0	qid:22	 # 44718	murray saves christmas
+0	qid:22	 # 127451	murray saves christmas
+0	qid:22	 # 87169	murray saves christmas
+0	qid:22	 # 153141	murray saves christmas
+0	qid:22	 # 12493	murray saves christmas
+1	qid:22	 # 81182	murray saves christmas
+1	qid:22	 # 9656	murray saves christmas
+1	qid:22	 # 340402	murray saves christmas
+1	qid:22	 # 16412	murray saves christmas
+0	qid:22	 # 52105	murray saves christmas
+0	qid:22	 # 9871	murray saves christmas
+0	qid:22	 # 27429	murray saves christmas
+0	qid:22	 # 73065	murray saves christmas
+0	qid:22	 # 20077	murray saves christmas
+0	qid:22	 # 192393	murray saves christmas
+0	qid:22	 # 15906	murray saves christmas
+0	qid:22	 # 43532	murray saves christmas
+0	qid:22	 # 36670	murray saves christmas
+0	qid:22	 # 13343	murray saves christmas
 4	qid:23	 # 44214	black swan
 4	qid:23	 # 29882	black swan
 1	qid:23	 # 8966	black swan
@@ -1299,11 +1323,11 @@
 1	qid:45	 # 29143	stuck on mars
 1	qid:45	 # 43512	stuck on mars
 3	qid:45	 # 7348	stuck on mars
-1	qid:45	 # 170632	stuck on mars
-1	qid:45	 # 13848	stuck on mars
-1	qid:45	 # 89883	stuck on mars
-1	qid:45	 # 111969	stuck on mars
-1	qid:45	 # 1792	stuck on mars
+0	qid:45	 # 170632	stuck on mars
+0	qid:45	 # 13848	stuck on mars
+0	qid:45	 # 89883	stuck on mars
+0	qid:45	 # 111969	stuck on mars
+0	qid:45	 # 1792	stuck on mars
 0	qid:45	 # 32308	stuck on mars
 0	qid:45	 # 295315	stuck on mars
 0	qid:45	 # 522	stuck on mars
@@ -1319,6 +1343,19 @@
 0	qid:45	 # 197467	stuck on mars
 0	qid:45	 # 13995	stuck on mars
 0	qid:45	 # 10511	stuck on mars
+0	qid:45	 # 232672	stuck on mars
+0	qid:45	 # 433	stuck on mars
+0	qid:45	 # 43229	stuck on mars
+0	qid:45	 # 365942	stuck on mars
+1	qid:45	 # 105538	stuck on mars
+1	qid:45	 # 55215	stuck on mars
+0	qid:45	 # 217477	stuck on mars
+0	qid:45	 # 105554	stuck on mars
+3	qid:45	 # 190847	stuck on mars
+0	qid:45	 # 250761	stuck on mars
+0	qid:45	 # 34759	stuck on mars
+0	qid:45	 # 310119	stuck on mars
+0	qid:45	 # 20595	stuck on mars
 1	qid:46	 # 60976	world war 2
 3	qid:46	 # 75015	world war 2
 3	qid:46	 # 129405	world war 2

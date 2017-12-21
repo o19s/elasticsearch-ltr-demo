@@ -79,6 +79,11 @@
                             "analyzer": "std_bigrams",
                             "fielddata": true
                         },
+                        "trigramed": {
+                            "type": "text",
+                            "analyzer": "std_trigrams",
+                            "fielddata": true
+                        },
                         "en": {
                             "type": "text",
                             "analyzer": "english"
@@ -99,6 +104,12 @@
                         "max_shingle_size": 2,
                         "min_shingle_size": 2,
                         "output_unigrams": false
+                    },
+                    "trigram_filter": {
+                        "type": "shingle",
+                        "max_shingle_size": 3,
+                        "min_shingle_size": 3,
+                        "output_unigrams": false
                     }
                 },
                 "analyzer": {
@@ -109,6 +120,15 @@
                             "standard",
                             "lowercase",
                             "bigram_filter"
+                        ]
+                    },
+                    "std_trigrams": {
+                        "type": "custom",
+                        "tokenizer": "standard",
+                        "filter": [
+                            "standard",
+                            "lowercase",
+                            "trigram_filter"
                         ]
                     }
                 }

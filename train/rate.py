@@ -1,5 +1,5 @@
 from esUrlParse import parseUrl
-from judgments import Judgment, judgmentsFromFile, judgmentsToFile
+from judgments import Judgment, judgmentsFromFile, judgmentsToFile, judgmentsByQid
 from elasticsearch import Elasticsearch, TransportError
 import json
 
@@ -57,6 +57,14 @@ def loadJudgments(judgFile):
     try:
         currJudgments = [judg for judg in judgmentsFromFile(judgFile)]
         existingKws = set([judg.keywords for judg in currJudgments])
+        judgDict = judgmentsByQid(currJudgments)
+        judgProfile = []
+        for qid, judglist in judgDict.items():
+            judgProfile.append((judglist[0], len(judglist)))
+        judgProfile.sort(key=lambda j: j[1], reverse=True)
+        for prof in judgProfile:
+            print("%s has %s judgments" % (prof[0].keywords, prof[1]))
+
         lastQid = currJudgments[-1].qid
     except FileNotFoundError:
         pass

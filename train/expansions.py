@@ -38,6 +38,9 @@ def getExpansions(es, keywords, minDocCount=3, searchField='text_all', expandFie
 def expansionTextAllBigrams(es, keywords):
     return getExpansions(es, keywords, expandField='text_all.bigramed', minDocCount=1)
 
+def expansionTextAllTrigrams(es, keywords):
+    return getExpansions(es, keywords, expandField='text_all.trigramed', minDocCount=1)
+
 def expansionTextAll(es, keywords):
     return getExpansions(es, keywords, expandField='text_all', minDocCount=1)
 

@@ -3,7 +3,7 @@
         "constant_score": {
             "filter": {
                 "match": {
-                    "overview.en": "{{keywords}}"
+                    "tagline.en": "{{keywords}}"
                 }
             },
             "boost": 1.0

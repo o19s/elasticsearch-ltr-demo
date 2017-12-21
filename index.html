@@ -171,8 +171,8 @@
     document.getElementById('target').innerHTML = rendered;
   };
 
-  //var esUrl = 'http://localhost:9200/tmdb/_search'
-  var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
+  var esUrl = 'http://localhost:9200/tmdb/_search'
+  //var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
 
   function getExpansions(search, searchField, expandField, shardSize, minDocCount, onDone) {
       body = {
@@ -233,68 +233,70 @@
   }
 
   function getResults(search) {
-    getExpansions(search, 'text_all', 'text_all.bigramed', 100, 1, (expansionsTextAllBigrams) => {
-      getExpansions(search, 'text_all', 'text_all', 100, 1, (expansionsTextAll) => {
-        getExpansions(search, 'text_all', 'genre.name', 100, 1, (expansionsGenre) => {
-          
-          var data = {
-            "query": {
-              "multi_match": {
-                "query": search,
-                "fields": ["text_all.en"],
-                "type": "cross_fields"
-              }
-            },
-            "rescore": {
-              "window_size": 500,
+    getExpansions(search, 'text_all', 'text_all.trigramed', 100, 1, (expansionsTextAllTrigrams) => {
+      getExpansions(search, 'text_all', 'text_all.bigramed', 100, 1, (expansionsTextAllBigrams) => {
+        getExpansions(search, 'text_all', 'text_all', 100, 1, (expansionsTextAll) => {
+          getExpansions(search, 'text_all', 'genre.name', 100, 1, (expansionsGenre) => {
+            
+            var data = {
               "query": {
-                "query_weight": 1.0,
-                "rescore_query_weight": 100.0,
-                "rescore_query": {
-                  "sltr": {
-                    "params": {
-                      "keywords": search,
-                      "expansions_text_all_bigrams": expansionsTextAllBigrams,
-                      "expansions_text_all": expansionsTextAll,
-                      "expansions_genre": expansionsGenre,
-                    },
-                    "model": "test_1"
+                "multi_match": {
+                  "query": search,
+                  "fields": ["text_all.en"],
+                  "type": "cross_fields"
+                }
+              },
+              "rescore": {
+                "window_size": 500,
+                "query": {
+                  "query_weight": 1.0,
+                  "rescore_query_weight": 100.0,
+                  "rescore_query": {
+                    "sltr": {
+                      "params": {
+                        "keywords": search,
+                        "expansions_text_all_bigrams": expansionsTextAllBigrams,
+                        "expansions_text_all": expansionsTextAll,
+                        "expansions_genre": expansionsGenre,
+                      },
+                      "model": "test_1"
+                    }
                   }
                 }
               }
+            };
+            switch (true) {
+              case document.getElementById('test_6').checked:
+                data.rescore.query.rescore_query.sltr.model = 'test_6';
+                break;
+              case document.getElementById('test_8').checked:
+                data.rescore.query.rescore_query.sltr.model = 'test_8';
+                break;
+              case document.getElementById('test_9').checked:
+                data.rescore.query.rescore_query.sltr.model = 'test_9';
+                break;
+              default:
+                delete data.rescore;
             }
-          };
-          switch (true) {
-            case document.getElementById('test_6').checked:
-              data.rescore.query.rescore_query.sltr.model = 'test_6';
-              break;
-            case document.getElementById('test_8').checked:
-              data.rescore.query.rescore_query.sltr.model = 'test_8';
-              break;
-            case document.getElementById('test_9').checked:
-              data.rescore.query.rescore_query.sltr.model = 'test_9';
-              break;
-            default:
-              delete data.rescore;
-          }
 
-          $.ajax({
-            method: "GET",
-            url: esUrl,
-            crossDomain: true,
-            async: false,
-            data: "source=" + JSON.stringify(data),
-            dataType: 'json',
-            contentType: 'application/json',
-          })
-            .done(function (data) {
-              renderResults(data, search);
+            $.ajax({
+              method: "GET",
+              url: esUrl,
+              crossDomain: true,
+              async: false,
+              data: "source=" + JSON.stringify(data),
+              dataType: 'json',
+              contentType: 'application/json',
             })
-            .fail(function (data) {
-              console.log(data);
-            });
+              .done(function (data) {
+                renderResults(data, search);
+              })
+              .fail(function (data) {
+                console.log(data);
+              });
 
 
+          })
         })
       })
 
