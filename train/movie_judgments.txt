@@ -49,6 +49,10 @@
 # qid:49: world war i*1
 # qid:50: world war ii*1
 # qid:51: korean war*1
+# qid:52: music industry*1
+# qid:53: historical comedy*1
+# qid:54: second world war*1
+# qid:55: first world war*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -67,6 +71,26 @@
 0	qid:1	 # 13763	rambo
 0	qid:1	 # 62414	rambo
 0	qid:1	 # 21989	rambo
+0	qid:1	 # 210577	rambo
+0	qid:1	 # 56949	rambo
+0	qid:1	 # 79401	rambo
+0	qid:1	 # 117942	rambo
+0	qid:1	 # 223195	rambo
+0	qid:1	 # 70	rambo
+0	qid:1	 # 22777	rambo
+0	qid:1	 # 43189	rambo
+0	qid:1	 # 318	rambo
+0	qid:1	 # 39829	rambo
+1	qid:1	 # 208982	rambo
+1	qid:1	 # 250761	rambo
+1	qid:1	 # 801	rambo
+1	qid:1	 # 78999	rambo
+1	qid:1	 # 600	rambo
+0	qid:1	 # 26397	rambo
+0	qid:1	 # 45046	rambo
+0	qid:1	 # 271110	rambo
+0	qid:1	 # 59401	rambo
+0	qid:1	 # 79773	rambo
 4	qid:2	 # 1366	rocky
 3	qid:2	 # 1374	rocky
 3	qid:2	 # 1371	rocky
@@ -88,6 +112,26 @@
 0	qid:2	 # 140607	rocky
 0	qid:2	 # 1893	rocky
 0	qid:2	 # 330459	rocky
+0	qid:2	 # 152601	rocky
+0	qid:2	 # 17819	rocky
+0	qid:2	 # 198001	rocky
+0	qid:2	 # 170430	rocky
+0	qid:2	 # 18206	rocky
+1	qid:2	 # 47059	rocky
+0	qid:2	 # 18215	rocky
+1	qid:2	 # 70808	rocky
+1	qid:2	 # 351862	rocky
+1	qid:2	 # 154019	rocky
+1	qid:2	 # 70	rocky
+0	qid:2	 # 22777	rocky
+0	qid:2	 # 43189	rocky
+0	qid:2	 # 318	rocky
+0	qid:2	 # 39829	rocky
+1	qid:2	 # 1578	rocky
+0	qid:2	 # 25855	rocky
+1	qid:2	 # 42012	rocky
+0	qid:2	 # 32276	rocky
+0	qid:2	 # 105536	rocky
 3	qid:3	 # 14154	war games
 0	qid:3	 # 365371	war games
 0	qid:3	 # 116059	war games
@@ -98,8 +142,24 @@
 0	qid:3	 # 369885	war games
 0	qid:3	 # 293767	war games
 0	qid:3	 # 381288	war games
+4	qid:3	 # 860	war games
+0	qid:3	 # 9614	war games
+0	qid:3	 # 125842	war games
+0	qid:3	 # 427760	war games
+0	qid:3	 # 4247	war games
+0	qid:3	 # 30335	war games
+0	qid:3	 # 10207	war games
+0	qid:3	 # 24964	war games
+0	qid:3	 # 91893	war games
+0	qid:3	 # 10951	war games
+0	qid:3	 # 126148	war games
+1	qid:3	 # 10428	war games
+1	qid:3	 # 12699	war games
+0	qid:3	 # 136698	war games
+1	qid:3	 # 1557	war games
+1	qid:3	 # 19433	war games
 4	qid:4	 # 9671	crocodile dundee
-3	qid:4	 # 9396	crocodile dundee
+4	qid:4	 # 9396	crocodile dundee
 3	qid:4	 # 9290	crocodile dundee
 1	qid:4	 # 248390	crocodile dundee
 1	qid:4	 # 221737	crocodile dundee
@@ -108,6 +168,24 @@
 1	qid:4	 # 17043	crocodile dundee
 1	qid:4	 # 78402	crocodile dundee
 1	qid:4	 # 25652	crocodile dundee
+0	qid:4	 # 36068	crocodile dundee
+0	qid:4	 # 77680	crocodile dundee
+1	qid:4	 # 6972	crocodile dundee
+1	qid:4	 # 182848	crocodile dundee
+1	qid:4	 # 259311	crocodile dundee
+0	qid:4	 # 293028	crocodile dundee
+0	qid:4	 # 64586	crocodile dundee
+1	qid:4	 # 40466	crocodile dundee
+0	qid:4	 # 104221	crocodile dundee
+0	qid:4	 # 183894	crocodile dundee
+0	qid:4	 # 3573	crocodile dundee
+0	qid:4	 # 12254	crocodile dundee
+0	qid:4	 # 17813	crocodile dundee
+0	qid:4	 # 9835	crocodile dundee
+0	qid:4	 # 70490	crocodile dundee
+0	qid:4	 # 239877	crocodile dundee
+0	qid:4	 # 8995	crocodile dundee
+0	qid:4	 # 47964	crocodile dundee
 4	qid:5	 # 603	matrix
 3	qid:5	 # 604	matrix
 3	qid:5	 # 605	matrix
@@ -116,6 +194,31 @@
 0	qid:5	 # 10999	matrix
 0	qid:5	 # 4247	matrix
 0	qid:5	 # 21874	matrix
+0	qid:5	 # 181886	matrix
+0	qid:5	 # 21208	matrix
+0	qid:5	 # 125607	matrix
+0	qid:5	 # 56441	matrix
+0	qid:5	 # 124080	matrix
+0	qid:5	 # 1487	matrix
+0	qid:5	 # 72867	matrix
+0	qid:5	 # 11253	matrix
+0	qid:5	 # 213110	matrix
+0	qid:5	 # 13805	matrix
+0	qid:5	 # 104221	matrix
+0	qid:5	 # 183894	matrix
+0	qid:5	 # 3573	matrix
+0	qid:5	 # 12254	matrix
+0	qid:5	 # 17813	matrix
+1	qid:5	 # 73262	matrix
+0	qid:5	 # 17960	matrix
+0	qid:5	 # 33068	matrix
+0	qid:5	 # 28377	matrix
+0	qid:5	 # 13300	matrix
+0	qid:5	 # 680	matrix
+0	qid:5	 # 28131	matrix
+0	qid:5	 # 37988	matrix
+0	qid:5	 # 18451	matrix
+0	qid:5	 # 75404	matrix
 4	qid:6	 # 686	contact
 1	qid:6	 # 7011	contact
 1	qid:6	 # 20236	contact
@@ -126,6 +229,35 @@
 1	qid:6	 # 68730	contact
 1	qid:6	 # 340676	contact
 1	qid:6	 # 364433	contact
+1	qid:6	 # 289318	contact
+1	qid:6	 # 15990	contact
+1	qid:6	 # 775	contact
+1	qid:6	 # 22379	contact
+0	qid:6	 # 101609	contact
+0	qid:6	 # 2153	contact
+0	qid:6	 # 339403	contact
+0	qid:6	 # 103	contact
+0	qid:6	 # 9677	contact
+0	qid:6	 # 38187	contact
+1	qid:6	 # 157336	contact
+0	qid:6	 # 11504	contact
+0	qid:6	 # 37910	contact
+1	qid:6	 # 2164	contact
+1	qid:6	 # 26978	contact
+1	qid:6	 # 61591	contact
+0	qid:6	 # 20305	contact
+1	qid:6	 # 98355	contact
+1	qid:6	 # 16203	contact
+0	qid:6	 # 8652	contact
+0	qid:6	 # 15142	contact
+0	qid:6	 # 120271	contact
+0	qid:6	 # 13926	contact
+0	qid:6	 # 47500	contact
+0	qid:6	 # 97397	contact
+0	qid:6	 # 696	contact
+0	qid:6	 # 16988	contact
+0	qid:6	 # 24810	contact
+0	qid:6	 # 61415	contact
 4	qid:7	 # 2300	space jam
 0	qid:7	 # 395992	space jam
 0	qid:7	 # 365942	space jam
@@ -142,11 +274,65 @@
 0	qid:7	 # 1369	space jam
 0	qid:7	 # 1368	space jam
 0	qid:7	 # 288183	space jam
+1	qid:7	 # 10474	space jam
+0	qid:7	 # 105583	space jam
+0	qid:7	 # 267345	space jam
+0	qid:7	 # 93856	space jam
+0	qid:7	 # 12435	space jam
+1	qid:7	 # 14736	space jam
+1	qid:7	 # 20737	space jam
+0	qid:7	 # 267	space jam
+1	qid:7	 # 46094	space jam
+0	qid:7	 # 10575	space jam
+0	qid:7	 # 213985	space jam
+0	qid:7	 # 162442	space jam
+0	qid:7	 # 76155	space jam
+0	qid:7	 # 49001	space jam
+0	qid:7	 # 245950	space jam
+0	qid:7	 # 272165	space jam
+0	qid:7	 # 66118	space jam
+0	qid:7	 # 73351	space jam
+0	qid:7	 # 136741	space jam
+0	qid:8	 # 51999	battlestar galactica
+0	qid:8	 # 24128	battlestar galactica
+0	qid:8	 # 61120	battlestar galactica
+0	qid:8	 # 4584	battlestar galactica
+0	qid:8	 # 315010	battlestar galactica
 4	qid:8	 # 325553	battlestar galactica
 3	qid:8	 # 69315	battlestar galactica
 3	qid:8	 # 105077	battlestar galactica
+1	qid:8	 # 11	battlestar galactica
+1	qid:8	 # 12180	battlestar galactica
+1	qid:8	 # 140607	battlestar galactica
+1	qid:8	 # 1893	battlestar galactica
+1	qid:8	 # 330459	battlestar galactica
+0	qid:8	 # 9876	battlestar galactica
+0	qid:8	 # 34614	battlestar galactica
+0	qid:8	 # 74208	battlestar galactica
+0	qid:8	 # 16384	battlestar galactica
+0	qid:8	 # 1918	battlestar galactica
+0	qid:8	 # 34582	battlestar galactica
+0	qid:8	 # 31546	battlestar galactica
+0	qid:8	 # 99258	battlestar galactica
+0	qid:8	 # 44375	battlestar galactica
+0	qid:8	 # 195617	battlestar galactica
+0	qid:8	 # 143841	battlestar galactica
+0	qid:8	 # 247112	battlestar galactica
+0	qid:8	 # 13371	battlestar galactica
+0	qid:8	 # 77887	battlestar galactica
+0	qid:8	 # 82424	battlestar galactica
+0	qid:8	 # 18238	battlestar galactica
+0	qid:8	 # 105538	battlestar galactica
+0	qid:8	 # 99648	battlestar galactica
+0	qid:8	 # 44479	battlestar galactica
+0	qid:8	 # 138535	battlestar galactica
+0	qid:8	 # 8068	battlestar galactica
+0	qid:8	 # 7085	battlestar galactica
+0	qid:8	 # 43212	battlestar galactica
+0	qid:8	 # 54186	battlestar galactica
+0	qid:8	 # 50479	battlestar galactica
 4	qid:9	 # 152601	her
-1	qid:9	 # 17819	her
+0	qid:9	 # 17819	her
 0	qid:9	 # 198001	her
 0	qid:9	 # 170430	her
 0	qid:9	 # 18206	her
@@ -165,6 +351,21 @@
 0	qid:9	 # 9374	her
 0	qid:9	 # 66113	her
 0	qid:9	 # 265966	her
+1	qid:9	 # 4032	her
+1	qid:9	 # 11317	her
+0	qid:9	 # 73969	her
+0	qid:9	 # 14279	her
+0	qid:9	 # 54198	her
+0	qid:9	 # 47607	her
+0	qid:9	 # 28687	her
+0	qid:9	 # 42757	her
+1	qid:9	 # 11446	her
+0	qid:9	 # 2026	her
+2	qid:9	 # 12223	her
+2	qid:9	 # 9890	her
+0	qid:9	 # 288772	her
+1	qid:9	 # 200236	her
+1	qid:9	 # 60140	her
 4	qid:10	 # 115782	jobs
 4	qid:10	 # 321697	jobs
 3	qid:10	 # 89638	jobs
@@ -445,6 +646,20 @@
 0	qid:23	 # 199818	black swan
 0	qid:23	 # 25757	black swan
 0	qid:23	 # 39914	black swan
+1	qid:23	 # 73191	black swan
+0	qid:23	 # 15167	black swan
+1	qid:23	 # 13759	black swan
+0	qid:23	 # 49852	black swan
+0	qid:23	 # 24696	black swan
+0	qid:23	 # 22582	black swan
+0	qid:23	 # 287233	black swan
+0	qid:23	 # 76891	black swan
+0	qid:23	 # 39853	black swan
+0	qid:23	 # 30669	black swan
+0	qid:23	 # 91292	black swan
+0	qid:23	 # 11816	black swan
+0	qid:23	 # 116983	black swan
+0	qid:23	 # 76346	black swan
 4	qid:24	 # 104221	emma
 4	qid:24	 # 183894	emma
 4	qid:24	 # 3573	emma
@@ -465,6 +680,21 @@
 0	qid:24	 # 24869	emma
 0	qid:24	 # 253161	emma
 0	qid:24	 # 11050	emma
+0	qid:24	 # 14154	emma
+0	qid:24	 # 254464	emma
+0	qid:24	 # 269100	emma
+0	qid:24	 # 80215	emma
+0	qid:24	 # 5000	emma
+0	qid:24	 # 77074	emma
+0	qid:24	 # 35066	emma
+1	qid:24	 # 42266	emma
+0	qid:24	 # 22597	emma
+0	qid:24	 # 26191	emma
+0	qid:24	 # 106402	emma
+0	qid:24	 # 198185	emma
+0	qid:24	 # 20873	emma
+0	qid:24	 # 541	emma
+0	qid:24	 # 1283	emma
 4	qid:25	 # 76341	mad max fury road
 3	qid:25	 # 8810	mad max fury road
 3	qid:25	 # 9659	mad max fury road
@@ -535,6 +765,24 @@
 0	qid:27	 # 55863	mr smith goes to washington
 0	qid:27	 # 909	mr smith goes to washington
 0	qid:27	 # 14434	mr smith goes to washington
+0	qid:27	 # 9928	mr smith goes to washington
+0	qid:27	 # 10681	mr smith goes to washington
+0	qid:27	 # 283995	mr smith goes to washington
+0	qid:27	 # 62994	mr smith goes to washington
+0	qid:27	 # 212849	mr smith goes to washington
+0	qid:27	 # 83735	mr smith goes to washington
+0	qid:27	 # 10107	mr smith goes to washington
+0	qid:27	 # 287991	mr smith goes to washington
+0	qid:27	 # 59744	mr smith goes to washington
+0	qid:27	 # 27297	mr smith goes to washington
+0	qid:27	 # 67750	mr smith goes to washington
+0	qid:27	 # 288153	mr smith goes to washington
+0	qid:27	 # 5424	mr smith goes to washington
+0	qid:27	 # 20980	mr smith goes to washington
+0	qid:27	 # 15292	mr smith goes to washington
+0	qid:27	 # 9067	mr smith goes to washington
+0	qid:27	 # 12629	mr smith goes to washington
+0	qid:27	 # 9804	mr smith goes to washington
 3	qid:28	 # 393	kill bill
 4	qid:28	 # 24	kill bill
 0	qid:28	 # 37517	kill bill
@@ -555,6 +803,26 @@
 0	qid:28	 # 128276	kill bill
 0	qid:28	 # 167305	kill bill
 0	qid:28	 # 54102	kill bill
+0	qid:28	 # 3083	kill bill
+0	qid:28	 # 25058	kill bill
+0	qid:28	 # 909	kill bill
+0	qid:28	 # 24197	kill bill
+0	qid:28	 # 787	kill bill
+0	qid:28	 # 3080	kill bill
+0	qid:28	 # 99875	kill bill
+0	qid:28	 # 10588	kill bill
+0	qid:28	 # 43580	kill bill
+0	qid:28	 # 20239	kill bill
+1	qid:28	 # 25602	kill bill
+1	qid:28	 # 48707	kill bill
+1	qid:28	 # 22484	kill bill
+1	qid:28	 # 12500	kill bill
+1	qid:28	 # 52009	kill bill
+0	qid:28	 # 79118	kill bill
+0	qid:28	 # 15669	kill bill
+0	qid:28	 # 47448	kill bill
+0	qid:28	 # 76960	kill bill
+0	qid:28	 # 293461	kill bill
 4	qid:29	 # 238	the godfather
 3	qid:29	 # 242	the godfather
 3	qid:29	 # 240	the godfather
@@ -575,6 +843,26 @@
 1	qid:29	 # 400	the godfather
 0	qid:29	 # 21469	the godfather
 0	qid:29	 # 1374	the godfather
+0	qid:29	 # 12112	the godfather
+0	qid:29	 # 9469	the godfather
+0	qid:29	 # 27511	the godfather
+0	qid:29	 # 279690	the godfather
+0	qid:29	 # 31556	the godfather
+0	qid:29	 # 603	the godfather
+0	qid:29	 # 605	the godfather
+0	qid:29	 # 604	the godfather
+0	qid:29	 # 10999	the godfather
+0	qid:29	 # 957	the godfather
+0	qid:29	 # 110398	the godfather
+0	qid:29	 # 21147	the godfather
+0	qid:29	 # 12721	the godfather
+0	qid:29	 # 220933	the godfather
+0	qid:29	 # 26789	the godfather
+0	qid:29	 # 13200	the godfather
+0	qid:29	 # 39514	the godfather
+0	qid:29	 # 256876	the godfather
+0	qid:29	 # 9626	the godfather
+0	qid:29	 # 51422	the godfather
 4	qid:30	 # 680	pulp fiction
 1	qid:30	 # 28131	pulp fiction
 0	qid:30	 # 37988	pulp fiction
@@ -741,6 +1029,27 @@
 0	qid:36	 # 13155	forrest gump
 0	qid:36	 # 43688	forrest gump
 0	qid:36	 # 33034	forrest gump
+0	qid:36	 # 9614	forrest gump
+0	qid:36	 # 125842	forrest gump
+0	qid:36	 # 427760	forrest gump
+0	qid:36	 # 4247	forrest gump
+0	qid:36	 # 30335	forrest gump
+0	qid:36	 # 73262	forrest gump
+0	qid:36	 # 17960	forrest gump
+0	qid:36	 # 33068	forrest gump
+0	qid:36	 # 28377	forrest gump
+0	qid:36	 # 13300	forrest gump
+0	qid:36	 # 49874	forrest gump
+0	qid:36	 # 290739	forrest gump
+0	qid:36	 # 284793	forrest gump
+0	qid:36	 # 57811	forrest gump
+0	qid:36	 # 31048	forrest gump
+0	qid:36	 # 46689	forrest gump
+0	qid:36	 # 73952	forrest gump
+0	qid:36	 # 97514	forrest gump
+0	qid:36	 # 29717	forrest gump
+0	qid:36	 # 126141	forrest gump
+0	qid:36	 # 183111	forrest gump
 4	qid:37	 # 13475	spaceship movie
 3	qid:37	 # 200	spaceship movie
 3	qid:37	 # 193	spaceship movie
@@ -779,6 +1088,17 @@
 0	qid:38	 # 1369	basketball cartoon aliens
 0	qid:38	 # 1368	basketball cartoon aliens
 0	qid:38	 # 288183	basketball cartoon aliens
+0	qid:38	 # 19995	basketball cartoon aliens
+0	qid:38	 # 100287	basketball cartoon aliens
+0	qid:38	 # 16220	basketball cartoon aliens
+0	qid:38	 # 49524	basketball cartoon aliens
+0	qid:38	 # 22379	basketball cartoon aliens
+1	qid:38	 # 18443	basketball cartoon aliens
+0	qid:38	 # 348	basketball cartoon aliens
+0	qid:38	 # 8077	basketball cartoon aliens
+0	qid:38	 # 29938	basketball cartoon aliens
+0	qid:38	 # 10128	basketball cartoon aliens
+0	qid:38	 # 258193	basketball cartoon aliens
 3	qid:39	 # 13352	christmas movie
 3	qid:39	 # 35257	christmas movie
 3	qid:39	 # 79818	christmas movie
@@ -794,6 +1114,20 @@
 0	qid:39	 # 56965	christmas movie
 4	qid:39	 # 5825	christmas movie
 0	qid:39	 # 44181	christmas movie
+0	qid:39	 # 325553	christmas movie
+0	qid:39	 # 69315	christmas movie
+0	qid:39	 # 105077	christmas movie
+0	qid:39	 # 243935	christmas movie
+0	qid:39	 # 127451	christmas movie
+0	qid:39	 # 52454	christmas movie
+0	qid:39	 # 16325	christmas movie
+0	qid:39	 # 49637	christmas movie
+0	qid:39	 # 301728	christmas movie
+0	qid:39	 # 3080	christmas movie
+0	qid:39	 # 99875	christmas movie
+0	qid:39	 # 10588	christmas movie
+0	qid:39	 # 43580	christmas movie
+0	qid:39	 # 20239	christmas movie
 4	qid:40	 # 81294	reindeer movie
 4	qid:40	 # 13382	reindeer movie
 3	qid:40	 # 33719	reindeer movie
@@ -809,6 +1143,21 @@
 0	qid:40	 # 313050	reindeer movie
 0	qid:40	 # 9025	reindeer movie
 0	qid:40	 # 33321	reindeer movie
+2	qid:40	 # 105168	reindeer movie
+2	qid:40	 # 42332	reindeer movie
+2	qid:40	 # 13383	reindeer movie
+2	qid:40	 # 238302	reindeer movie
+2	qid:40	 # 10147	reindeer movie
+0	qid:40	 # 273404	reindeer movie
+0	qid:40	 # 78228	reindeer movie
+0	qid:40	 # 21244	reindeer movie
+0	qid:40	 # 13342	reindeer movie
+0	qid:40	 # 69794	reindeer movie
+0	qid:40	 # 27814	reindeer movie
+0	qid:40	 # 56693	reindeer movie
+0	qid:40	 # 34840	reindeer movie
+0	qid:40	 # 244688	reindeer movie
+0	qid:40	 # 27281	reindeer movie
 4	qid:41	 # 602	alien invasion
 3	qid:41	 # 47933	alien invasion
 0	qid:41	 # 125344	alien invasion
@@ -829,6 +1178,24 @@
 0	qid:41	 # 43512	alien invasion
 0	qid:41	 # 29143	alien invasion
 1	qid:41	 # 7348	alien invasion
+0	qid:41	 # 18722	alien invasion
+0	qid:41	 # 15104	alien invasion
+0	qid:41	 # 26131	alien invasion
+0	qid:41	 # 13341	alien invasion
+0	qid:41	 # 51890	alien invasion
+0	qid:41	 # 320048	alien invasion
+0	qid:41	 # 184992	alien invasion
+0	qid:41	 # 9074	alien invasion
+0	qid:41	 # 68200	alien invasion
+0	qid:41	 # 198062	alien invasion
+0	qid:41	 # 245175	alien invasion
+0	qid:41	 # 49511	alien invasion
+0	qid:41	 # 883	alien invasion
+0	qid:41	 # 239573	alien invasion
+0	qid:41	 # 28036	alien invasion
+0	qid:41	 # 13911	alien invasion
+0	qid:41	 # 9346	alien invasion
+0	qid:41	 # 32074	alien invasion
 4	qid:42	 # 82690	video game movie
 0	qid:42	 # 15493	video game movie
 0	qid:42	 # 86295	video game movie
@@ -857,6 +1224,11 @@
 0	qid:42	 # 80919	video game movie
 0	qid:42	 # 91010	video game movie
 0	qid:42	 # 21712	video game movie
+0	qid:43	 # 35555	football sunday
+0	qid:43	 # 16508	football sunday
+0	qid:43	 # 79161	football sunday
+0	qid:43	 # 6472	football sunday
+0	qid:43	 # 13042	football sunday
 0	qid:43	 # 45938	football sunday
 0	qid:43	 # 29251	football sunday
 0	qid:43	 # 70805	football sunday
@@ -872,6 +1244,16 @@
 0	qid:43	 # 91456	football sunday
 0	qid:43	 # 195833	football sunday
 0	qid:43	 # 84177	football sunday
+0	qid:43	 # 46147	football sunday
+0	qid:43	 # 86577	football sunday
+0	qid:43	 # 41870	football sunday
+0	qid:43	 # 339428	football sunday
+0	qid:43	 # 9614	football sunday
+0	qid:43	 # 189277	football sunday
+0	qid:43	 # 55151	football sunday
+0	qid:43	 # 11643	football sunday
+0	qid:43	 # 52867	football sunday
+0	qid:43	 # 53336	football sunday
 0	qid:44	 # 57165	football titans
 0	qid:44	 # 379291	football titans
 0	qid:44	 # 18823	football titans
@@ -882,6 +1264,26 @@
 0	qid:44	 # 183113	football titans
 0	qid:44	 # 9336	football titans
 0	qid:44	 # 38034	football titans
+0	qid:44	 # 51890	football titans
+0	qid:44	 # 18722	football titans
+0	qid:44	 # 250700	football titans
+0	qid:44	 # 15669	football titans
+0	qid:44	 # 252637	football titans
+0	qid:44	 # 1858	football titans
+0	qid:44	 # 1857	football titans
+0	qid:44	 # 91314	football titans
+0	qid:44	 # 335988	football titans
+0	qid:44	 # 38356	football titans
+0	qid:44	 # 47249	football titans
+0	qid:44	 # 38225	football titans
+0	qid:44	 # 197467	football titans
+0	qid:44	 # 13995	football titans
+0	qid:44	 # 10511	football titans
+0	qid:44	 # 562	football titans
+0	qid:44	 # 1573	football titans
+0	qid:44	 # 1572	football titans
+0	qid:44	 # 1571	football titans
+0	qid:44	 # 47964	football titans
 4	qid:45	 # 286217	stuck on mars
 1	qid:45	 # 9849	stuck on mars
 1	qid:45	 # 50321	stuck on mars
@@ -902,6 +1304,21 @@
 1	qid:45	 # 89883	stuck on mars
 1	qid:45	 # 111969	stuck on mars
 1	qid:45	 # 1792	stuck on mars
+0	qid:45	 # 32308	stuck on mars
+0	qid:45	 # 295315	stuck on mars
+0	qid:45	 # 522	stuck on mars
+0	qid:45	 # 41792	stuck on mars
+0	qid:45	 # 154779	stuck on mars
+0	qid:45	 # 44833	stuck on mars
+0	qid:45	 # 10005	stuck on mars
+0	qid:45	 # 10364	stuck on mars
+0	qid:45	 # 100402	stuck on mars
+0	qid:45	 # 34544	stuck on mars
+0	qid:45	 # 47249	stuck on mars
+0	qid:45	 # 38225	stuck on mars
+0	qid:45	 # 197467	stuck on mars
+0	qid:45	 # 13995	stuck on mars
+0	qid:45	 # 10511	stuck on mars
 1	qid:46	 # 60976	world war 2
 3	qid:46	 # 75015	world war 2
 3	qid:46	 # 129405	world war 2
@@ -968,6 +1385,16 @@
 0	qid:47	 # 34148	world war 1
 1	qid:47	 # 55863	world war 1
 0	qid:47	 # 157129	world war 1
+1	qid:47	 # 8741	world war 1
+0	qid:47	 # 14285	world war 1
+0	qid:47	 # 28121	world war 1
+0	qid:47	 # 80046	world war 1
+0	qid:47	 # 3558	world war 1
+1	qid:47	 # 1251	world war 1
+1	qid:47	 # 3683	world war 1
+1	qid:47	 # 18712	world war 1
+0	qid:47	 # 109881	world war 1
+0	qid:47	 # 176069	world war 1
 4	qid:48	 # 289318	science fiction
 4	qid:48	 # 15990	science fiction
 4	qid:48	 # 22379	science fiction
@@ -981,6 +1408,31 @@
 2	qid:48	 # 320048	science fiction
 0	qid:48	 # 184992	science fiction
 0	qid:48	 # 9074	science fiction
+2	qid:48	 # 123	science fiction
+1	qid:48	 # 71506	science fiction
+2	qid:48	 # 122	science fiction
+2	qid:48	 # 120	science fiction
+2	qid:48	 # 121	science fiction
+0	qid:48	 # 13531	science fiction
+0	qid:48	 # 108419	science fiction
+0	qid:48	 # 10156	science fiction
+0	qid:48	 # 201777	science fiction
+0	qid:48	 # 64780	science fiction
+4	qid:48	 # 13475	science fiction
+4	qid:48	 # 200	science fiction
+4	qid:48	 # 193	science fiction
+4	qid:48	 # 199	science fiction
+4	qid:48	 # 201	science fiction
+2	qid:48	 # 2300	science fiction
+0	qid:48	 # 71139	science fiction
+0	qid:48	 # 72744	science fiction
+0	qid:48	 # 18968	science fiction
+0	qid:48	 # 64335	science fiction
+0	qid:48	 # 10207	science fiction
+0	qid:48	 # 24964	science fiction
+0	qid:48	 # 91893	science fiction
+0	qid:48	 # 10951	science fiction
+0	qid:48	 # 126148	science fiction
 1	qid:49	 # 60976	world war i
 3	qid:49	 # 75015	world war i
 3	qid:49	 # 129405	world war i
@@ -1062,3 +1514,143 @@
 0	qid:51	 # 229407	korean war
 0	qid:51	 # 54559	korean war
 0	qid:51	 # 229408	korean war
+0	qid:51	 # 238	korean war
+0	qid:51	 # 242	korean war
+0	qid:51	 # 240	korean war
+0	qid:51	 # 77403	korean war
+0	qid:51	 # 70829	korean war
+0	qid:51	 # 2671	korean war
+0	qid:51	 # 25666	korean war
+0	qid:51	 # 21311	korean war
+0	qid:51	 # 64835	korean war
+0	qid:51	 # 10576	korean war
+3	qid:51	 # 31037	korean war
+1	qid:51	 # 271007	korean war
+0	qid:51	 # 80318	korean war
+0	qid:51	 # 17336	korean war
+1	qid:51	 # 98246	korean war
+0	qid:51	 # 46737	korean war
+0	qid:51	 # 10538	korean war
+0	qid:51	 # 104329	korean war
+0	qid:51	 # 9652	korean war
+0	qid:51	 # 10681	korean war
+4	qid:52	 # 78526	music industry
+4	qid:52	 # 84323	music industry
+3	qid:52	 # 82676	music industry
+4	qid:52	 # 29475	music industry
+2	qid:52	 # 125806	music industry
+0	qid:52	 # 104221	music industry
+0	qid:52	 # 183894	music industry
+0	qid:52	 # 3573	music industry
+0	qid:52	 # 12254	music industry
+0	qid:52	 # 17813	music industry
+2	qid:52	 # 13531	music industry
+0	qid:52	 # 108419	music industry
+0	qid:52	 # 10156	music industry
+0	qid:52	 # 201777	music industry
+0	qid:52	 # 64780	music industry
+0	qid:52	 # 325358	music industry
+0	qid:52	 # 93462	music industry
+0	qid:52	 # 223702	music industry
+0	qid:52	 # 771	music industry
+0	qid:52	 # 9714	music industry
+0	qid:52	 # 12536	music industry
+0	qid:52	 # 134375	music industry
+0	qid:52	 # 772	music industry
+0	qid:52	 # 286217	music industry
+0	qid:52	 # 9849	music industry
+0	qid:52	 # 50321	music industry
+0	qid:52	 # 5126	music industry
+0	qid:52	 # 16268	music industry
+4	qid:53	 # 10156	historical comedy
+0	qid:53	 # 27865	historical comedy
+0	qid:53	 # 330152	historical comedy
+0	qid:53	 # 22905	historical comedy
+0	qid:53	 # 47771	historical comedy
+4	qid:53	 # 8005	historical comedy
+0	qid:53	 # 106825	historical comedy
+0	qid:53	 # 117781	historical comedy
+0	qid:53	 # 159032	historical comedy
+0	qid:53	 # 43341	historical comedy
+1	qid:53	 # 156268	historical comedy
+1	qid:53	 # 77074	historical comedy
+1	qid:53	 # 49974	historical comedy
+1	qid:53	 # 84187	historical comedy
+1	qid:53	 # 16452	historical comedy
+0	qid:53	 # 133790	historical comedy
+0	qid:53	 # 8618	historical comedy
+0	qid:53	 # 61120	historical comedy
+0	qid:53	 # 159140	historical comedy
+0	qid:53	 # 59	historical comedy
+1	qid:53	 # 9665	historical comedy
+0	qid:53	 # 85533	historical comedy
+0	qid:53	 # 31777	historical comedy
+0	qid:53	 # 9918	historical comedy
+0	qid:53	 # 26626	historical comedy
+3	qid:53	 # 11072	historical comedy
+0	qid:53	 # 60438	historical comedy
+0	qid:53	 # 285946	historical comedy
+0	qid:53	 # 83007	historical comedy
+0	qid:53	 # 19348	historical comedy
+3	qid:54	 # 75015	second world war
+3	qid:54	 # 129405	second world war
+3	qid:54	 # 162865	second world war
+0	qid:54	 # 49798	second world war
+3	qid:54	 # 15770	second world war
+4	qid:54	 # 857	second world war
+0	qid:54	 # 49478	second world war
+0	qid:54	 # 89191	second world war
+0	qid:54	 # 15616	second world war
+0	qid:54	 # 45757	second world war
+1	qid:54	 # 60976	second world war
+3	qid:54	 # 288109	second world war
+0	qid:54	 # 38828	second world war
+1	qid:54	 # 70804	second world war
+3	qid:54	 # 5707	second world war
+3	qid:54	 # 16121	second world war
+4	qid:54	 # 1251	second world war
+3	qid:54	 # 18712	second world war
+4	qid:54	 # 3683	second world war
+0	qid:54	 # 1359	second world war
+0	qid:54	 # 10726	second world war
+0	qid:54	 # 35683	second world war
+0	qid:54	 # 11252	second world war
+0	qid:54	 # 12662	second world war
+2	qid:55	 # 51795	first world war
+3	qid:55	 # 70804	first world war
+1	qid:55	 # 23336	first world war
+1	qid:55	 # 5707	first world war
+3	qid:55	 # 47435	first world war
+4	qid:55	 # 143	first world war
+4	qid:55	 # 10912	first world war
+0	qid:55	 # 103489	first world war
+0	qid:55	 # 63193	first world war
+0	qid:55	 # 108213	first world war
+4	qid:55	 # 16442	first world war
+0	qid:55	 # 40045	first world war
+0	qid:55	 # 21610	first world war
+0	qid:55	 # 8333	first world war
+0	qid:55	 # 9417	first world war
+4	qid:55	 # 11646	first world war
+2	qid:55	 # 256917	first world war
+0	qid:55	 # 321741	first world war
+4	qid:55	 # 8349	first world war
+0	qid:55	 # 36006	first world war
+0	qid:55	 # 5485	first world war
+0	qid:55	 # 41213	first world war
+0	qid:55	 # 85325	first world war
+4	qid:55	 # 975	first world war
+0	qid:55	 # 150523	first world war
+0	qid:55	 # 86532	first world war
+0	qid:55	 # 10433	first world war
+1	qid:55	 # 48458	first world war
+1	qid:55	 # 167966	first world war
+0	qid:55	 # 58626	first world war
+0	qid:55	 # 13018	first world war
+0	qid:55	 # 129139	first world war
+0	qid:55	 # 41180	first world war
+0	qid:55	 # 137625	first world war
+0	qid:55	 # 21506	first world war
+0	qid:55	 # 49104	first world war
+0	qid:55	 # 7517	first world war
+0	qid:55	 # 18507	first world war
