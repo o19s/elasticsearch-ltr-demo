@@ -16,123 +16,53 @@
 <link rel="stylesheet" href="css/flatly.css">
 
 
-<div class="container">
+<div class="container-fluid">
 	<div class="jumbotron">
 		<h1>Learning to Rank Demo</h1>
-    <p class="lead">Trained only against 50 user searchers! -- Built by <a href="http://opensourceconnections.com">OpenSource Connections</a></p>
+    <p class="lead">Simple demo built by <a href="http://o19s.com/">OpenSource Connections</a>. View the <a href="http://github.com/o19s/elasticsearch-ltr-demo">demo on github!</a></p>
+    <p class="lead">Try searches for 'stuck on mars' or 'jabba the hutt'</p>
  
 
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" role="tab" href="#welcome">Intro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" role="tab" href="#training">Training Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" role="tab" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" role="tab" href="#boundaries">Up To The Edge</a>
-            </li>
-          </ul>
-        <hr class="my-4">
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div class="tab-pane active" id="welcome" role="tabpanel">
-              <p>This movie search's relevance is controled by these algorithms you can select:</p>
-                <ol>
-                  <li>Stock Elasticsearch -- basic untuned Elasticsearch settings</li>
-                  <li>Optimal Boosts -- boosts weigh each query, this strategy uses ML to find the best weight</li>
-                  <li>LambdaMART -- decision tree based algorithm that won the Yahoo! challenge.</li>
-                  <li>Random Forests -- a group of LambdaMART models, each trained on random sample</li>
-                </ol>
-              <p>Try searching for 'basketball with cartoon aliens' with each algorithm to see if the movie <a href="https://www.warnerbros.com/archive/spacejam/movie/jam.htm">Space Jam</a> comes up!</p>
-            </div>
-            <div class="tab-pane" id="training" role="tabpanel">
-              <p>LTR works by finding patterns in the training data you've provided.</p>
-              <p>We hand-created training data, focusing on: <em>title searches</em> (ie "rambo"), <em>tip of the tongue searches</em> ("stuck on mars" or "basketball cartoon aliens"), and <em>category searches</em> ("spaceship movies").
-              </p>
-              <p>With search, each use case -- often each keyword! -- has its own unique, nuanced ranking requirements. With enough training data, models can pick up on nuance hand-tuned solutions have.</p> 
-              <p>The key though is "enough training data" -- <a target="_blank" href="https://github.com/o19s/Elasticsearch_LTR_demo/blob/master/train/movie_judgments.txt">Inspect our training data</a>. Do we have enough? Try some searches out with the different algorithms, tell us what you think! </p>
-            </div>
-            <div class="tab-pane" id="features" role="tabpanel">
-              <p>LTR uses the scores of Elasticsearch or Solr queries to make decisions. Training data defines the "ideal". LTR tries to approach the ideal using the provided features (see <a href="https://github.com/o19s/Elasticsearch_LTR_demo/blob/master/train">our features, 1..n.json</a>)</p>
-              
-              <p>Adding/creating new features can improve relevance. "Rambo" is one oddball query. Oddly, the movie titled "Rambo" isn't the most relevant result. Instead "First Blood" should be ranked highest. It came first in the series. New features such as a movies "order" in a series would be needed to help LTR make the right decision</p>
-              
-              <p>Unfortunately, quite often: <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">more features - more problems!</a>. LTR can use new features to fix our "Rambo" query, but you need rich amounts of training data to show it the pattern. Further: you need enough negative examples -- places the pattern doesn't apply -- to avoid the feature being used incorrectly. </p>
-
-            </div>
-            <div class="tab-pane" id="boundaries" role="tabpanel">
-              <p>Some cases would require so much training data that most orgs would be better solving the problem the 'old fashioned' way.</p>
-              <p>Consider the cases of 'world war 2' vs 'world war 1'. The phrase "world war" occurs in both. Both "world" and "war" are themselves not very discriminating terms. Yet clearly most movies are about the first world war, and not the second, and vice versa.</p>
-              <p>With enough training examples and counter examples, LTR could learn direct phrase matching matters overwhelmingly in this case. But sometimes you just know your domain, and need to take the direct approach. </p>
-              <p>Here, traditional feature work may <i>reduce</i> the work LTR needs to do. What if we recognized world war 2 as an <a href="http://opensourceconnections.com/blog/2016/12/02/solr-elasticsearch-synonyms-better-patterns-keyphrases/">idiomatic phrase</a>, turning it into the token world_war_2? </p>
-
-              </ul>
-              
-            </div>
-          </div>
-                
-          
-	</div>
-
-    <form onsubmit='getResults(document.getElementById("inputSearch").value); return false' >
+    <form onsubmit='resultsForBoth(); return false' class='form-inline' style="padding-bottom: 10px;">
         <div class="form-row align-items-center">
 
             <div  class="form-group row">
                 <div class="col-auto">
-                    <input type="search" name="search" class="form-control" id="inputSearch" value="basketball with cartoon aliens">
+                    <input type="search" name="search" class="form-control" style="width: 500px;"  id="inputSearch" value="basketball with cartoon aliens">
                 </div>
                 <div class="col-auto">
-                  <input type="submit" name="submit" class="btn btn-primary">
+                  <button type="submit" name="search" class="btn btn-primary">Search</button>
                 </div>
             </div>
-        </div>
-    </form>
-    <div class="row" style="border: 1px solid">
-        <div class="col-md-9">
-            <div id="target"></div>
-        </div>
-        <div class="col-md-3">
-            <fieldset>
-                <legend>Algorithms</legend>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
-                        <input id="text_node" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'
-                                checked="true">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Stock Elasticsearch</span>
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="custom-control custom-radio">
+                    <label style="padding-left: 40px;" class="custom-control custom-radio">
                         <input id="test_9" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                               onclick='resultsForAfter(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Optimal Boosts</span>
                     </label>
-                </div>
-                <div class="form-check">
                     <label class="custom-control custom-radio">
                         <input id="test_6" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                               onclick='resultsForAfter(document.getElementById("inputSearch").value);'
+                               checked="true">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">LambdaMART</span>
                     </label>
-                </div>
-                <div class="form-check">
                     <label class="custom-control custom-radio">
                         <input id="test_8" name="radio" type="radio" class="custom-control-input"
-                               onclick='getResults(document.getElementById("inputSearch").value);'>
+                               onclick='resultsForAfter(document.getElementById("inputSearch").value);'>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Random Forests</span>
                     </label>
-                </div>
-            </fieldset>
+        </div>
+    </form>
+
+
+    <div class="row" style="border: 1px solid">
+        <div class="col-md-6">
+            <div id="after"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="before"></div>
         </div>
     </div>
 
@@ -149,7 +79,6 @@
             <h2>{{ doc._source.title }}</h2>
             <h4>popularity <span class="badge badge-primary">{{doc._source.popularity}}</span></h4>
             <h4>release date <span class="badge badge-primary">{{doc._source.release_date}}</span></h4>
-            <h4>tag line <span class="badge badge-primary">{{doc._source.tagline}}</span></h4>
         </div>
         <div class="col-md-3 text-right">
             <img src="http://image.tmdb.org/t/p/w130/{{doc._source.poster_path}}" />
@@ -160,15 +89,20 @@
     <p>{{doc._source.overview}}</p>
 </script>
 <script>
-  function renderResults(data, search) {
+  function renderResults(data, search, beforeOrAfter) {
     // handle requested data from server
     var template = document.getElementById('template').innerHTML;
     Mustache.parse(template);   // optional, speeds up future uses
-    var rendered = "<h1>" + search + "</h2>";
+    var rendered = ""; //"<h5>" + search + "</h5>";
+    if (beforeOrAfter === 'after') {
+      rendered += "<h3 class=\"pull-right\">Learning to Rank Results</h3>"
+    } else {
+      rendered += "<h3>Stock Elasticsearch</h3>"
+    }
     data.hits.hits.forEach(function (document) {
       rendered = rendered + Mustache.render(template, {doc: document, search: search});
     });
-    document.getElementById('target').innerHTML = rendered;
+    document.getElementById(beforeOrAfter).innerHTML = rendered;
   };
 
   var esUrl = 'http://localhost:9200/tmdb/_search'
@@ -232,7 +166,18 @@
         })
   }
 
-  function getResults(search) {
+  function resultsForAfter() {
+    var search = document.getElementById("inputSearch").value;
+    getResults(search, 'after'); 
+  }
+  
+  function resultsForBoth() {
+    var search = document.getElementById("inputSearch").value;
+    getResults(search, 'after'); 
+    getResults(search, 'before'); 
+  }
+
+  function getResults(search, beforeOrAfter) {
     getExpansions(search, 'text_all', 'text_all.trigramed', 100, 1, (expansionsTextAllTrigrams) => {
       getExpansions(search, 'text_all', 'text_all.bigramed', 100, 1, (expansionsTextAllBigrams) => {
         getExpansions(search, 'text_all', 'text_all', 100, 1, (expansionsTextAll) => {
@@ -265,18 +210,22 @@
                 }
               }
             };
-            switch (true) {
-              case document.getElementById('test_6').checked:
-                data.rescore.query.rescore_query.sltr.model = 'test_6';
-                break;
-              case document.getElementById('test_8').checked:
-                data.rescore.query.rescore_query.sltr.model = 'test_8';
-                break;
-              case document.getElementById('test_9').checked:
-                data.rescore.query.rescore_query.sltr.model = 'test_9';
-                break;
-              default:
-                delete data.rescore;
+            if (beforeOrAfter == 'after') {
+              switch (true) {
+                case document.getElementById('test_6').checked:
+                  data.rescore.query.rescore_query.sltr.model = 'test_6';
+                  break;
+                case document.getElementById('test_8').checked:
+                  data.rescore.query.rescore_query.sltr.model = 'test_8';
+                  break;
+                case document.getElementById('test_9').checked:
+                  data.rescore.query.rescore_query.sltr.model = 'test_9';
+                  break;
+                default:
+                  delete data.rescore;
+              }
+            } else {
+              delete data.rescore;
             }
 
             $.ajax({
@@ -289,7 +238,7 @@
               contentType: 'application/json',
             })
               .done(function (data) {
-                renderResults(data, search);
+                renderResults(data, search, beforeOrAfter);
               })
               .fail(function (data) {
                 console.log(data);
@@ -304,7 +253,7 @@
 
   }
 
-  getResults(document.getElementById("inputSearch").value);
+  resultsForBoth();
 </script>
 </body>
 
