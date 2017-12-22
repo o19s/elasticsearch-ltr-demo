@@ -5,7 +5,7 @@ def enrich(movie):
     if 'title' in movie:
         movie['title_sent'] = 'SENTINEL_BEGIN ' + movie['title']
 
-def reindex(es, movieDict={}, index='tmdb', esUrl='http://localhost:9200'):
+def reindex(es, movieDict={}, index='tmdb'):
     import elasticsearch.helpers
     settings = json.load(open('schema.json'))
 
@@ -44,4 +44,4 @@ if __name__ == "__main__":
         esUrl = argv[1]
     es = Elasticsearch(esUrl, timeout=30)
     movieDict = json.loads(open('tmdb.json').read())
-    reindex(es, movieDict=movieDict, esUrl=esUrl)
+    reindex(es, movieDict=movieDict)
