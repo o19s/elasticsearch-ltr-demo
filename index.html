@@ -105,8 +105,8 @@
     document.getElementById(beforeOrAfter).innerHTML = rendered;
   };
 
-  //var esUrl = 'http://localhost:9200/tmdb/_search'
-  var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
+  var esUrl = 'http://localhost:9200/tmdb/_search'
+  //var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
 
   function getExpansions(search, searchField, expandField, shardSize, minDocCount, onDone) {
       body = {
@@ -179,7 +179,6 @@
 
   function getResults(search, beforeOrAfter) {
     getExpansions(search, 'text_all', 'text_all.trigramed', 100, 1, (expansionsTextAllTrigrams) => {
-      getExpansions(search, 'text_all', 'text_all.bigramed', 100, 1, (expansionsTextAllBigrams) => {
         getExpansions(search, 'text_all', 'text_all', 100, 1, (expansionsTextAll) => {
           getExpansions(search, 'text_all', 'genre.name', 100, 1, (expansionsGenre) => {
             
@@ -200,7 +199,6 @@
                     "sltr": {
                       "params": {
                         "keywords": search,
-                        "expansions_text_all_bigrams": expansionsTextAllBigrams,
                         "expansions_text_all": expansionsTextAll,
                         "expansions_genre": expansionsGenre,
                       },
@@ -250,7 +248,6 @@
 
 
           })
-        })
       })
 
     })

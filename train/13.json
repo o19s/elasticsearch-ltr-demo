@@ -1,7 +1,9 @@
+
 {
     "query": {
-        "match_phrase": {
-            "text_all": "{{keywords}}"
+        "query_string": {
+            "default_field": "genres.name",
+            "query": "{{expansions_genre}}"
         }
     }
 }

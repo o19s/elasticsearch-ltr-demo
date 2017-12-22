@@ -1,12 +1,8 @@
 {
     "query": {
-        "constant_score": {
-            "filter": {
-                "match_phrase": {
-                    "overview.en": "{{keywords}}"
-                }
-            },
-            "boost": 1.0
+        "query_string": {
+            "default_field": "text_all",
+            "query": "{{expansions_text_all_trigrams}}"
         }
     }
 }

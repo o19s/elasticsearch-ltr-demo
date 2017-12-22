@@ -1,12 +1,7 @@
 {
     "query": {
-        "constant_score": {
-            "filter": {
-                "match": {
-                    "title.en": "{{keywords}}"
-                }
-            },
-            "boost": 1.0
+        "match": {
+            "genres.name.en": "{{keywords}}"
         }
     }
 }

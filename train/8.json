@@ -1,12 +1,9 @@
+
 {
     "query": {
-        "constant_score": {
-            "filter": {
-                "match": {
-                    "tagline.en": "{{keywords}}"
-                }
-            },
-            "boost": 1.0
+        "query_string": {
+            "default_field": "text_all",
+            "query": "{{expansions_text_all}}"
         }
     }
 }
