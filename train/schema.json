@@ -22,6 +22,10 @@
                         }
                     }
                 },
+                "mlensId": {
+                    "type": "string",
+                    "fielddata": true
+                },
                 "overview": {
                     "type": "text",
                     "fielddata": true,
