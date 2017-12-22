@@ -1,0 +1,22 @@
+{
+    "size": 0,
+    "query": {
+        "match": {
+            "{{searchField}}": "{{keywords}}"
+        }
+    },
+    "aggs": {
+         "over_top_n" : {
+            "sampler" : {
+                "shard_size" : {{shardSize}}
+            },
+            "aggs": {
+                "mlens": {
+                    "terms": {
+                        "field": "{{expandField}}"
+                    }
+                }
+            }
+         }
+    }
+}

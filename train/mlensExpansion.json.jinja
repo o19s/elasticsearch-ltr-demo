@@ -1,0 +1,23 @@
+{
+    "size": 0,
+    "query": {
+        "terms": {
+            "_id": {{mlensIds}}
+        }
+    },
+    "aggs": {
+         "over_top_n" : {
+            "sampler" : {
+                "shard_size" : {{shardSize}}
+            },
+            "aggs": {
+                "expansions": {
+                    "significant_terms": {
+                        "field": "{{expandField}}",            
+                        "min_doc_count": {{minDocCount}}
+                    }
+                }
+            }
+         }
+    }
+}
