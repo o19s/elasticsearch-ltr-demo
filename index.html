@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
       integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <link rel="stylesheet" href="css/flatly.css">
-
+<a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
 <div class="container-fluid">
 	<div class="jumbotron">
 		<h1>Learning to Rank Demo</h1>
-    <p class="lead">Using machine learning to optimize search relevance. Demo built by <a href="http://o19s.com/">OpenSource Connections</a>. View the <a href="http://github.com/o19s/elasticsearch-ltr-demo">code on github!</a></p>
-    <p class="lead">Try searches for 'stuck on mars' or 'jabba the hutt'</p>
+    <p class="lead">Using machine learning to optimize search relevance. Built by <a href="http://o19s.com/">OpenSource Connections</a>. </p>
+    <p class="lead">Try searches for 'jabba the hutt' or 'basketball with cartoon aliens'</p>
  
 
     <form onsubmit='resultsForBoth(); return false' class='form-inline' style="padding-bottom: 10px;">
@@ -28,7 +28,7 @@
 
             <div  class="form-group row">
                 <div class="col-auto">
-                    <input type="search" name="search" class="form-control" style="width: 500px;"  id="inputSearch" value="basketball with cartoon aliens">
+                    <input type="search" name="search" class="form-control" style="width: 500px;"  id="inputSearch" value="stuck on mars">
                 </div>
                 <div class="col-auto">
                   <button type="submit" name="search" class="btn btn-primary">Search</button>
@@ -79,14 +79,12 @@
             <h2>{{ doc._source.title }}</h2>
             <h4>popularity <span class="badge badge-primary">{{doc._source.popularity}}</span></h4>
             <h4>release date <span class="badge badge-primary">{{doc._source.release_date}}</span></h4>
+            <p>{{doc._source.overview}}</p>
         </div>
         <div class="col-md-3 text-right">
             <img src="http://image.tmdb.org/t/p/w130/{{doc._source.poster_path}}" />
         </div>
     </div>
-    <h4>overview</h4>
-    <hr/>
-    <p>{{doc._source.overview}}</p>
 </script>
 <script>
   function renderResults(data, search, modelName, beforeOrAfter) {
@@ -105,8 +103,8 @@
     document.getElementById(beforeOrAfter).innerHTML = rendered;
   };
 
-  var esUrl = 'http://localhost:9200/tmdb/_search'
-  //var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
+  //var esUrl = 'http://localhost:9200/tmdb/_search'
+  var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
 
   function getExpansions(search, searchField, expandField, shardSize, minDocCount, onDone) {
       body = {
