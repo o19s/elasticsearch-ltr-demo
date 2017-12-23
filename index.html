@@ -75,11 +75,11 @@
     </h4>
 
     <div class="row">
-        <div class="col-md-9">
+        <div title="{{doc._source.overview}}" class="col-md-9">
             <h2>{{ doc._source.title }}</h2>
             <h4>popularity <span class="badge badge-primary">{{doc._source.popularity}}</span></h4>
             <h4>release date <span class="badge badge-primary">{{doc._source.release_date}}</span></h4>
-            <p>{{doc._source.overview}}</p>
+            <p>{{doc.highlight.overview}}</p>
         </div>
         <div class="col-md-3 text-right">
             <img src="http://image.tmdb.org/t/p/w130/{{doc._source.poster_path}}" />
@@ -103,8 +103,8 @@
     document.getElementById(beforeOrAfter).innerHTML = rendered;
   };
 
-  //var esUrl = 'http://localhost:9200/tmdb/_search'
-  var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
+  var esUrl = 'http://localhost:9200/tmdb/_search'
+  //var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
 
   function getExpansions(search, searchField, expandField, shardSize, minDocCount, onDone) {
       body = {
@@ -177,7 +177,6 @@
 
   function getResults(search, beforeOrAfter) {
     getExpansions(search, 'text_all', 'text_all.trigramed', 100, 1, (expansionsTextAllTrigrams) => {
-        getExpansions(search, 'text_all', 'text_all', 100, 1, (expansionsTextAll) => {
           getExpansions(search, 'text_all', 'genre.name', 100, 1, (expansionsGenre) => {
             
             var data = {
@@ -188,6 +187,11 @@
                   "type": "cross_fields"
                 }
               },
+              "highlight" : {
+                  "fields" : {
+                      "overview.en" : {}
+                  }
+              },
               "rescore": {
                 "window_size": 500,
                 "query": {
@@ -197,7 +201,7 @@
                     "sltr": {
                       "params": {
                         "keywords": search,
-                        "expansions_text_all": expansionsTextAll,
+                        "expansions_text_all_trigrams": expansionsTextAllTrigrams,
                         "expansions_genre": expansionsGenre,
                       },
                       "model": "test_1"
@@ -246,7 +250,6 @@
 
 
           })
-      })
 
     })
 

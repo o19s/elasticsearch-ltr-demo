@@ -54,6 +54,7 @@
 # qid:54: second world war*1
 # qid:55: first world war*1
 # qid:56: coco*1
+# qid:57: harts war*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -567,6 +568,12 @@
 0	qid:19	 # 31046	die hard
 0	qid:19	 # 289010	die hard
 0	qid:19	 # 259616	die hard
+0	qid:19	 # 10258	die hard
+0	qid:19	 # 51311	die hard
+0	qid:19	 # 13250	die hard
+0	qid:19	 # 34599	die hard
+0	qid:19	 # 37270	die hard
+0	qid:19	 # 83125	die hard
 4	qid:20	 # 11051	last temptation of christ
 1	qid:20	 # 28169	last temptation of christ
 0	qid:20	 # 23830	last temptation of christ
@@ -1722,3 +1729,57 @@
 0	qid:56	 # 59169	coco
 0	qid:56	 # 19596	coco
 0	qid:56	 # 57563	coco
+0	qid:57	 # 289727	harts war
+0	qid:57	 # 370755	harts war
+0	qid:57	 # 14940	harts war
+1	qid:57	 # 51795	harts war
+0	qid:57	 # 365371	harts war
+4	qid:57	 # 10592	harts war
+0	qid:57	 # 181330	harts war
+0	qid:57	 # 41971	harts war
+0	qid:57	 # 51364	harts war
+0	qid:57	 # 35868	harts war
+0	qid:57	 # 131457	harts war
+0	qid:57	 # 40974	harts war
+0	qid:57	 # 107028	harts war
+0	qid:57	 # 79475	harts war
+0	qid:57	 # 9614	harts war
+0	qid:57	 # 125842	harts war
+0	qid:57	 # 427760	harts war
+0	qid:57	 # 4247	harts war
+0	qid:57	 # 30335	harts war
+0	qid:57	 # 284013	harts war
+0	qid:57	 # 198130	harts war
+0	qid:57	 # 29204	harts war
+0	qid:57	 # 70846	harts war
+0	qid:57	 # 42632	harts war
+0	qid:57	 # 21501	harts war
+0	qid:57	 # 81182	harts war
+0	qid:57	 # 9656	harts war
+0	qid:57	 # 340402	harts war
+0	qid:57	 # 16412	harts war
+0	qid:57	 # 81657	harts war
+0	qid:57	 # 3179	harts war
+0	qid:57	 # 30863	harts war
+0	qid:57	 # 33155	harts war
+0	qid:57	 # 240629	harts war
+0	qid:57	 # 11788	harts war
+0	qid:57	 # 4517	harts war
+0	qid:57	 # 4518	harts war
+0	qid:57	 # 87504	harts war
+0	qid:57	 # 43327	harts war
+0	qid:57	 # 9331	harts war
+0	qid:57	 # 23908	harts war
+0	qid:57	 # 66965	harts war
+0	qid:57	 # 15216	harts war
+0	qid:57	 # 85778	harts war
+0	qid:57	 # 34303	harts war
+0	qid:57	 # 64690	harts war
+0	qid:57	 # 118737	harts war
+0	qid:57	 # 50185	harts war
+0	qid:57	 # 1620	harts war
+0	qid:57	 # 10110	harts war
+0	qid:57	 # 108419	harts war
+0	qid:57	 # 10156	harts war
+0	qid:57	 # 14449	harts war
+0	qid:57	 # 36678	harts war
