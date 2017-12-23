@@ -2087,3 +2087,4 @@
 0	qid:64	 # 18885	sharon stone sylvester stallone
 0	qid:64	 # 13341	sharon stone sylvester stallone
 0	qid:64	 # 15104	sharon stone sylvester stallone
+4	qid:64	 # 8916	sharon stone sylvester stallone
