@@ -55,6 +55,13 @@
 # qid:55: first world war*1
 # qid:56: coco*1
 # qid:57: harts war*1
+# qid:58: football movie*1
+# qid:59: football*1
+# qid:60: stallone sharon stone*1
+# qid:61: patrick stewart*1
+# qid:62: william shatner*1
+# qid:63: stallone*1
+# qid:64: sharon stone sylvester stallone*1
 
 4	qid:1	 # 7555	rambo
 3	qid:1	 # 1370	rambo
@@ -1783,3 +1790,300 @@
 0	qid:57	 # 10156	harts war
 0	qid:57	 # 14449	harts war
 0	qid:57	 # 36678	harts war
+0	qid:58	 # 31534	football movie
+4	qid:58	 # 29355	football movie
+1	qid:58	 # 11397	football movie
+1	qid:58	 # 42359	football movie
+0	qid:58	 # 41402	football movie
+4	qid:58	 # 9563	football movie
+0	qid:58	 # 29251	football movie
+0	qid:58	 # 84309	football movie
+0	qid:58	 # 47161	football movie
+0	qid:58	 # 37690	football movie
+4	qid:58	 # 10637	football movie
+0	qid:58	 # 379291	football movie
+0	qid:58	 # 57165	football movie
+0	qid:58	 # 295830	football movie
+0	qid:58	 # 10323	football movie
+0	qid:58	 # 5693	football movie
+4	qid:58	 # 9766	football movie
+3	qid:58	 # 75074	football movie
+4	qid:58	 # 14709	football movie
+3	qid:58	 # 45852	football movie
+0	qid:58	 # 94794	football movie
+0	qid:58	 # 169869	football movie
+0	qid:58	 # 54546	football movie
+0	qid:58	 # 11019	football movie
+0	qid:58	 # 351862	football movie
+0	qid:58	 # 11643	football movie
+0	qid:58	 # 61263	football movie
+0	qid:58	 # 243881	football movie
+0	qid:58	 # 285025	football movie
+0	qid:58	 # 55551	football movie
+0	qid:58	 # 24782	football movie
+0	qid:58	 # 59572	football movie
+0	qid:58	 # 38830	football movie
+0	qid:58	 # 37360	football movie
+0	qid:58	 # 51366	football movie
+2	qid:58	 # 9319	football movie
+0	qid:58	 # 89	football movie
+0	qid:58	 # 5917	football movie
+0	qid:58	 # 71065	football movie
+0	qid:58	 # 9549	football movie
+4	qid:58	 # 11170	football movie
+0	qid:58	 # 23336	football movie
+0	qid:58	 # 47939	football movie
+0	qid:58	 # 159128	football movie
+0	qid:58	 # 158711	football movie
+0	qid:59	 # 31534	football
+4	qid:59	 # 29355	football
+1	qid:59	 # 11397	football
+1	qid:59	 # 42359	football
+0	qid:59	 # 41402	football
+4	qid:59	 # 9563	football
+0	qid:59	 # 29251	football
+0	qid:59	 # 84309	football
+0	qid:59	 # 47161	football
+0	qid:59	 # 37690	football
+4	qid:59	 # 10637	football
+0	qid:59	 # 379291	football
+0	qid:59	 # 57165	football
+0	qid:59	 # 295830	football
+0	qid:59	 # 10323	football
+0	qid:59	 # 5693	football
+4	qid:59	 # 9766	football
+3	qid:59	 # 75074	football
+4	qid:59	 # 14709	football
+3	qid:59	 # 45852	football
+0	qid:59	 # 94794	football
+0	qid:59	 # 169869	football
+0	qid:59	 # 54546	football
+0	qid:59	 # 11019	football
+0	qid:59	 # 351862	football
+0	qid:59	 # 11643	football
+0	qid:59	 # 61263	football
+0	qid:59	 # 243881	football
+0	qid:59	 # 285025	football
+0	qid:59	 # 55551	football
+0	qid:59	 # 24782	football
+0	qid:59	 # 59572	football
+0	qid:59	 # 38830	football
+0	qid:59	 # 37360	football
+0	qid:59	 # 51366	football
+2	qid:59	 # 9319	football
+0	qid:59	 # 89	football
+0	qid:59	 # 5917	football
+0	qid:59	 # 71065	football
+0	qid:59	 # 9549	football
+4	qid:59	 # 11170	football
+0	qid:59	 # 23336	football
+0	qid:59	 # 47939	football
+0	qid:59	 # 159128	football
+0	qid:59	 # 158711	football
+4	qid:60	 # 2636	stallone sharon stone
+0	qid:60	 # 28180	stallone sharon stone
+0	qid:60	 # 8984	stallone sharon stone
+0	qid:60	 # 9395	stallone sharon stone
+0	qid:60	 # 32726	stallone sharon stone
+2	qid:60	 # 45712	stallone sharon stone
+2	qid:60	 # 31922	stallone sharon stone
+2	qid:60	 # 8916	stallone sharon stone
+2	qid:60	 # 23916	stallone sharon stone
+0	qid:60	 # 9614	stallone sharon stone
+0	qid:60	 # 125842	stallone sharon stone
+0	qid:60	 # 427760	stallone sharon stone
+0	qid:60	 # 30335	stallone sharon stone
+0	qid:60	 # 20178	stallone sharon stone
+0	qid:60	 # 24655	stallone sharon stone
+0	qid:60	 # 310133	stallone sharon stone
+0	qid:60	 # 46989	stallone sharon stone
+0	qid:60	 # 15462	stallone sharon stone
+0	qid:60	 # 13931	stallone sharon stone
+0	qid:60	 # 786	stallone sharon stone
+0	qid:60	 # 8886	stallone sharon stone
+0	qid:60	 # 105586	stallone sharon stone
+0	qid:60	 # 125034	stallone sharon stone
+0	qid:60	 # 257442	stallone sharon stone
+0	qid:60	 # 3179	stallone sharon stone
+0	qid:60	 # 16290	stallone sharon stone
+0	qid:60	 # 102431	stallone sharon stone
+0	qid:60	 # 1574	stallone sharon stone
+0	qid:60	 # 128298	stallone sharon stone
+0	qid:60	 # 43213	stallone sharon stone
+0	qid:60	 # 28816	stallone sharon stone
+0	qid:60	 # 116008	stallone sharon stone
+0	qid:61	 # 13894	patrick stewart
+3	qid:61	 # 25950	patrick stewart
+0	qid:61	 # 19664	patrick stewart
+3	qid:61	 # 47913	patrick stewart
+0	qid:61	 # 133119	patrick stewart
+1	qid:61	 # 13475	patrick stewart
+4	qid:61	 # 193	patrick stewart
+4	qid:61	 # 200	patrick stewart
+4	qid:61	 # 199	patrick stewart
+4	qid:61	 # 201	patrick stewart
+0	qid:61	 # 44233	patrick stewart
+0	qid:61	 # 241554	patrick stewart
+0	qid:61	 # 18702	patrick stewart
+0	qid:61	 # 48864	patrick stewart
+0	qid:61	 # 222649	patrick stewart
+0	qid:61	 # 37292	patrick stewart
+0	qid:61	 # 18264	patrick stewart
+0	qid:61	 # 43882	patrick stewart
+0	qid:61	 # 4934	patrick stewart
+0	qid:61	 # 91419	patrick stewart
+1	qid:61	 # 154	patrick stewart
+0	qid:61	 # 67109	patrick stewart
+0	qid:61	 # 68247	patrick stewart
+0	qid:61	 # 180954	patrick stewart
+0	qid:61	 # 332411	patrick stewart
+4	qid:61	 # 36657	patrick stewart
+1	qid:61	 # 49538	patrick stewart
+3	qid:61	 # 2080	patrick stewart
+1	qid:61	 # 246655	patrick stewart
+3	qid:61	 # 36668	patrick stewart
+0	qid:61	 # 3080	patrick stewart
+0	qid:61	 # 99875	patrick stewart
+0	qid:61	 # 43580	patrick stewart
+0	qid:61	 # 10588	patrick stewart
+0	qid:61	 # 20239	patrick stewart
+0	qid:61	 # 9651	patrick stewart
+0	qid:61	 # 54182	patrick stewart
+0	qid:61	 # 104329	patrick stewart
+0	qid:61	 # 8840	patrick stewart
+0	qid:61	 # 38866	patrick stewart
+0	qid:61	 # 4518	patrick stewart
+0	qid:61	 # 11788	patrick stewart
+0	qid:61	 # 4517	patrick stewart
+0	qid:61	 # 65035	patrick stewart
+0	qid:61	 # 16902	patrick stewart
+0	qid:61	 # 14043	patrick stewart
+0	qid:61	 # 47883	patrick stewart
+0	qid:61	 # 25975	patrick stewart
+0	qid:61	 # 213831	patrick stewart
+0	qid:61	 # 47882	patrick stewart
+0	qid:61	 # 8208	patrick stewart
+0	qid:61	 # 574	patrick stewart
+0	qid:61	 # 9414	patrick stewart
+0	qid:61	 # 2762	patrick stewart
+0	qid:61	 # 86261	patrick stewart
+0	qid:61	 # 11857	patrick stewart
+0	qid:61	 # 84857	patrick stewart
+0	qid:61	 # 185	patrick stewart
+0	qid:61	 # 633	patrick stewart
+0	qid:61	 # 277686	patrick stewart
+0	qid:61	 # 27573	patrick stewart
+0	qid:61	 # 54054	patrick stewart
+0	qid:61	 # 5922	patrick stewart
+0	qid:61	 # 51859	patrick stewart
+0	qid:61	 # 429	patrick stewart
+0	qid:61	 # 20442	patrick stewart
+0	qid:61	 # 38804	patrick stewart
+0	qid:61	 # 19063	patrick stewart
+0	qid:61	 # 81657	patrick stewart
+0	qid:61	 # 635	patrick stewart
+0	qid:61	 # 11697	patrick stewart
+0	qid:61	 # 2165	patrick stewart
+0	qid:61	 # 28638	patrick stewart
+0	qid:61	 # 51594	patrick stewart
+0	qid:61	 # 66600	patrick stewart
+0	qid:61	 # 11836	patrick stewart
+0	qid:61	 # 228165	patrick stewart
+0	qid:61	 # 510	patrick stewart
+0	qid:61	 # 57211	patrick stewart
+0	qid:61	 # 82866	patrick stewart
+0	qid:61	 # 293310	patrick stewart
+0	qid:61	 # 10338	patrick stewart
+3	qid:62	 # 70703	william shatner
+3	qid:62	 # 13533	william shatner
+2	qid:62	 # 21846	william shatner
+3	qid:62	 # 5851	william shatner
+2	qid:62	 # 20305	william shatner
+2	qid:62	 # 13475	william shatner
+4	qid:62	 # 193	william shatner
+1	qid:62	 # 200	william shatner
+1	qid:62	 # 199	william shatner
+1	qid:62	 # 201	william shatner
+4	qid:62	 # 168	william shatner
+1	qid:62	 # 81899	william shatner
+4	qid:62	 # 157	william shatner
+0	qid:62	 # 1075	william shatner
+0	qid:62	 # 25508	william shatner
+0	qid:62	 # 6217	william shatner
+0	qid:62	 # 11694	william shatner
+0	qid:62	 # 25078	william shatner
+0	qid:62	 # 99875	william shatner
+0	qid:62	 # 43580	william shatner
+0	qid:62	 # 10588	william shatner
+0	qid:62	 # 13675	william shatner
+0	qid:62	 # 3080	william shatner
+0	qid:62	 # 513	william shatner
+0	qid:62	 # 139567	william shatner
+0	qid:62	 # 334521	william shatner
+0	qid:62	 # 12503	william shatner
+0	qid:62	 # 13153	william shatner
+0	qid:62	 # 92381	william shatner
+0	qid:62	 # 276518	william shatner
+0	qid:62	 # 39113	william shatner
+0	qid:62	 # 83732	william shatner
+0	qid:62	 # 37843	william shatner
+3	qid:63	 # 23916	stallone
+3	qid:63	 # 38925	stallone
+3	qid:63	 # 81830	stallone
+3	qid:63	 # 1825	stallone
+3	qid:63	 # 9876	stallone
+4	qid:63	 # 1366	stallone
+4	qid:63	 # 1246	stallone
+4	qid:63	 # 1374	stallone
+4	qid:63	 # 1367	stallone
+4	qid:63	 # 1371	stallone
+4	qid:63	 # 7555	stallone
+3	qid:63	 # 1370	stallone
+3	qid:63	 # 1369	stallone
+4	qid:63	 # 1368	stallone
+0	qid:63	 # 31362	stallone
+0	qid:63	 # 22048	stallone
+0	qid:63	 # 52270	stallone
+0	qid:63	 # 17589	stallone
+0	qid:63	 # 25941	stallone
+0	qid:63	 # 84197	stallone
+0	qid:63	 # 10009	stallone
+0	qid:63	 # 81675	stallone
+0	qid:63	 # 2383	stallone
+0	qid:63	 # 125948	stallone
+0	qid:63	 # 41515	stallone
+0	qid:63	 # 74055	stallone
+0	qid:63	 # 36764	stallone
+0	qid:63	 # 171372	stallone
+0	qid:63	 # 4365	stallone
+0	qid:63	 # 71933	stallone
+0	qid:63	 # 57521	stallone
+0	qid:63	 # 118761	stallone
+0	qid:63	 # 128442	stallone
+0	qid:63	 # 126136	stallone
+0	qid:63	 # 91	stallone
+1	qid:64	 # 23916	sharon stone sylvester stallone
+1	qid:64	 # 81830	sharon stone sylvester stallone
+1	qid:64	 # 38925	sharon stone sylvester stallone
+4	qid:64	 # 2636	sharon stone sylvester stallone
+1	qid:64	 # 1825	sharon stone sylvester stallone
+0	qid:64	 # 19575	sharon stone sylvester stallone
+0	qid:64	 # 10608	sharon stone sylvester stallone
+0	qid:64	 # 10276	sharon stone sylvester stallone
+0	qid:64	 # 26030	sharon stone sylvester stallone
+0	qid:64	 # 26520	sharon stone sylvester stallone
+0	qid:64	 # 44874	sharon stone sylvester stallone
+0	qid:64	 # 15016	sharon stone sylvester stallone
+0	qid:64	 # 15167	sharon stone sylvester stallone
+0	qid:64	 # 77499	sharon stone sylvester stallone
+0	qid:64	 # 34564	sharon stone sylvester stallone
+1	qid:64	 # 45712	sharon stone sylvester stallone
+1	qid:64	 # 31922	sharon stone sylvester stallone
+1	qid:64	 # 32067	sharon stone sylvester stallone
+1	qid:64	 # 31700	sharon stone sylvester stallone
+1	qid:64	 # 61265	sharon stone sylvester stallone
+0	qid:64	 # 18722	sharon stone sylvester stallone
+0	qid:64	 # 1792	sharon stone sylvester stallone
+0	qid:64	 # 18885	sharon stone sylvester stallone
+0	qid:64	 # 13341	sharon stone sylvester stallone
+0	qid:64	 # 15104	sharon stone sylvester stallone

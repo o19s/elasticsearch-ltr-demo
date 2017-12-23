@@ -1,0 +1,12 @@
+{
+    "query": {
+        "match_explorer": {
+            "type": "max_raw_ttf",
+            "query": {
+                "match": {
+                    "overview": "{{keywords}}"
+                }
+            }
+        }
+    }
+}
