@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Elasticsearch Learning to Rank Demo</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/flatly.css">
+<a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<div class="container">
+
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" href="base-search.html">Basic Search</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="judgment-lists.html">Defining Good/Bad Results</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="feature-selection.html">Feature Selection</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="training-process.html">Training Process</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ltr-search.html">Try LTR!</a>
+  </li>
+</ul>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+	
+
+    <p>Tools like <a href="https://sourceforge.net/p/lemur/wiki/RankLib/">Ranklib</a> use training data to generate a ranking model. These tools can be run from the command line, ie: 
+    </p>
+    
+    <pre>
+      java -jar RankLib.jar -ranker 6 \ 
+                -train training_set.txt \ 
+                -save model.txt 
+    </pre>
+
+    <p>This command takes as input our training set <code>training_set.txt</code>, to create a model of type "6" (aka LamdbaMART), output to <code>model.txt</code>.</p>
+
+    <p>In this demo, we've trained three types of models:
+    <ol>
+      <li><span style="text-decoration: underline">Linear Model</span> -- A naive way of predicting the appropriatte weight or "boost" to apply to each feature.</li>
+      <li><span style="text-decoration: underline">LambdaMART</span> -- Relevance is rarely linear! More often each use case has it's own ranking requirements. LambdaMART is an ensemble of decision trees. Each level acts as an "if" statement, able to capture nuance specific to each use case. ie If a strong title match THEN rank the most popular movies with strongest title match first. </li>
+      <li><span style="text-decoration: underline">Random Forest</span> -- a collection of LambdaMART models trained on random subset of features and training data. This can prevent overfitting, creating a more generalizable model to use cases outside the training set. </li>
+
+
+    </ol>
+    
+    
+    </p>
+
+  </div>
+  <div class="col-md-3"></div>
+    
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+	
+
+  </div>
+  <div class="col-md-3"></div>
+    
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>

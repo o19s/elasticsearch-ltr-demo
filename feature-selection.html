@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Elasticsearch Learning to Rank Demo</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/flatly.css">
+<a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<div class="container">
+  
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" href="base-search.html">Basic Search</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="judgment-lists.html">Defining Good/Bad Results</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="feature-selection.html">Feature Selection</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="training-process.html">Training Process</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ltr-search.html">Try LTR!</a>
+  </li>
+</ul>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+
+	<p>Next we hypothesize which <em>features</em> might predict the grades in the judgment list. Features here means the scores of Elasticsearch queries.</p>
+
+	<p>Check out a few of the features we'll use below:</p>
+
+
+</div>
+  <div class="col-md-3"></div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card">
+				<div class="card-header" role="tab" id="headingOne">
+					<h5 class="mb-0">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Title Search
+						</a>
+					</h5>
+				</div>
+
+				<div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-block">
+						<iframe width="100%" src="train/10.json"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+  <div class="col-md-3"></div>
+  
+<div class="col-md-3"></div>
+  <div class="col-md-6">
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card">
+				<div class="card-header" role="tab" id="headingOne">
+					<h5 class="mb-0">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+							Text Search, English Stemmed
+						</a>
+					</h5>
+				</div>
+
+				<div id="collapseTwo" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-block">
+						<iframe width="100%" src="train/11.json"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+  <div class="col-md-3"></div>
+
+
+<div class="col-md-3"></div>
+  <div class="col-md-6">
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card">
+				<div class="card-header" role="tab" id="headingOne">
+					<h5 class="mb-0">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+							Number of Users That Rated Movie
+						</a>
+					</h5>
+				</div>
+
+				<div id="collapseThree" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-block">
+						<iframe width="100%" src="train/3.json"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+  <div class="col-md-3"></div>
+
+
+	<div class="col-md-3"></div>
+  <div class="col-md-6">
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card">
+				<div class="card-header" role="tab" id="headingOne">
+					<h5 class="mb-0">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+							Length of Title
+						</a>
+					</h5>
+				</div>
+
+				<div id="collapseFour" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-block">
+						<iframe width="100%" src="train/4.json"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+  <div class="col-md-3"></div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+	
+
+    <p>We need to score feature values for each judgment. This means we:
+
+      <ol>
+        <li>Store our features in the LTR plugin</li>
+        <li>Ask Elasticsearch to log feature values for each judged document</li>
+        <li>Combine the judgments with features to create a full training set</li>
+      </ol>
+    
+    </p>
+
+    <p>Below is our full training set: the judgment list annotated with the value of each feature at that document:</p>
+  </div>
+  <div class="col-md-3"></div>
+    
+</div>
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10"><iframe style="overflow-x: scroll;" width="100%" src="train/movie_judgments_wfeatures_train.txt"></iframe></div>
+  <div class="col-md-1"></div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+
+	<p>Learn more about working with features <a href="http://elasticsearch-learning-to-rank.readthedocs.io/en/latest/building-features.html">the docs</a></p>
+
+
+</div>
+  <div class="col-md-3"></div>
+
+</div>
+
+
+
+
+</div>
+
+</body>
+
+</html>
