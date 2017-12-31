@@ -36,32 +36,113 @@
   </li>
 </ul>
 
+<div class="jumbotron">
 
-<div class="row">
-  <div class="col-md-3"></div>
-  <p class="col-md-6">To start with learning to rank, we collected judgments. <em>Judgments</em> grade how good a document is for the query. "Rambo" is an exact match for the query "Rambo" so we grade it a 4. "First Daughter" has nothing to do with Rambo, we grade it a 0.
-</p>
-  <div class="col-md-3"></div>
+  <h1>You Be The Judge!</h1>
+    
+  <p class="lead">Collect good/bad search examples called <em>judgments</em>. These grade which documents are relevant for each query:</p>
+    
 
-</div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" style="height: 20em; overflow-y: scroll; border: 1px solid">
+      <pre>
 
+# Mapping of Queries -> Keywords
+# qid:1: rambo*1
+# qid:2: rocky*1
+# qid:3: second world war*1
+# qid:4: sharon stone sylvester stallone*1
 
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6"><iframe width="100%" src="train/movie_judgments.txt"></iframe></div>
-  <div class="col-md-3"></div>
+# Grade, query id, # docId
+4	qid:1	 # 7555	rambo
+3	qid:1	 # 1370	rambo
+3	qid:1	 # 1369	rambo
+3	qid:1	 # 13258	rambo
+4	qid:1	 # 1368	rambo
+0	qid:1	 # 319074	rambo
+0	qid:1	 # 10296	rambo
+0	qid:1	 # 35868	rambo
+4	qid:2	 # 1366	rocky
+3	qid:2	 # 1374	rocky
+3	qid:2	 # 1371	rocky
+3	qid:2	 # 1246	rocky
+3	qid:2	 # 1375	rocky
+3	qid:2	 # 1367	rocky
+3	qid:2	 # 60375	rocky
+1	qid:2	 # 110123	rocky
+1	qid:2	 # 36685	rocky
+1	qid:2	 # 17711	rocky
+0	qid:2	 # 2153	rocky
+0	qid:2	 # 339403	rocky
+0	qid:2	 # 21501	rocky
+0	qid:2	 # 81182	rocky
+0	qid:2	 # 62414	rocky
+0	qid:2	 # 21989	rocky
+0	qid:2	 # 11	rocky
+0	qid:2	 # 12180	rocky
+0	qid:2	 # 140607	rocky
+0	qid:2	 # 1893	rocky
+1	qid:3	 # 60976	world war 2
+3	qid:3	 # 75015	world war 2
+3	qid:3	 # 129405	world war 2
+2	qid:3	 # 288109	world war 2
+0	qid:3	 # 38828	world war 2
+4	qid:3	 # 1654	world war 2
+3	qid:3	 # 36571	world war 2
+3	qid:3	 # 36572	world war 2
+3	qid:3	 # 36573	world war 2
+0	qid:3	 # 26652	world war 2
+4	qid:3	 # 1251	world war 2
+3	qid:3	 # 18712	world war 2
+4	qid:3	 # 3683	world war 2
+0	qid:3	 # 211672	world war 2
+0	qid:3	 # 54551	world war 2
+0	qid:3	 # 229407	world war 2
+1	qid:4	 # 23916	sharon stone sylvester stallone
+1	qid:4	 # 81830	sharon stone sylvester stallone
+1	qid:4	 # 38925	sharon stone sylvester stallone
+4	qid:4	 # 2636	sharon stone sylvester stallone
+1	qid:4	 # 1825	sharon stone sylvester stallone
+0	qid:4	 # 19575	sharon stone sylvester stallone
+0	qid:4	 # 10608	sharon stone sylvester stallone
+0	qid:4	 # 10276	sharon stone sylvester stallone
+0	qid:4	 # 26030	sharon stone sylvester stallone
+0	qid:4	 # 26520	sharon stone sylvester stallone
+0	qid:4	 # 44874	sharon stone sylvester stallone
+0	qid:4	 # 15016	sharon stone sylvester stallone
+0	qid:4	 # 15167	sharon stone sylvester stallone
+0	qid:4	 # 77499	sharon stone sylvester stallone
+0	qid:4	 # 34564	sharon stone sylvester stallone
+1	qid:4	 # 45712	sharon stone sylvester stallone
+1	qid:4	 # 31922	sharon stone sylvester stallone
+1	qid:4	 # 32067	sharon stone sylvester stallone
+1	qid:4	 # 31700	sharon stone sylvester stallone
+1	qid:4	 # 61265	sharon stone sylvester stallone
+0	qid:4	 # 18722	sharon stone sylvester stallone
+0	qid:4	 # 1792	sharon stone sylvester stallone
+0	qid:4	 # 18885	sharon stone sylvester stallone
+      </pre>
+    <div class="col-md-2"></div>
 
-</div>
-
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6">Each keyword is given a query id (qid) at the top of the file. Scroll down and you'll see each qid given a grade for a document, in the form <pre>(grade) qid:(qid) # (document identifier) </pre>
-    (This file format is adapted from <a href="https://www.cs.cornell.edu/people/tj/svm_light/svm_rank.html">SVMRank</a>.)
-  
   </div>
-  <div class="col-md-3"></div>
 
-</div>
+  <div>
+  <p class="lead">Each search is given an id (qid). Then each qid is given a grade for each document, in the form:</p>
+  
+  <pre>(grade 0-4) qid:(qid) # (document identifier)
+  </pre>
+
+  </div>
+
+  <h2>How do you get this data?</h2>
+
+  <p class="lead">You can build judgments from clicks, purchases, and events after a search. Judgmens might be built by domain experts (ie doctors). Still others crowdsource judgments.</p>
+
+  <p class="lead">Read more in the <a href="">documentation</a> for tips on good judgment lists.</p>
+
+
+</div> <!-- end jumbotron-->
 
 
 </div>

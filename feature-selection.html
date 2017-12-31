@@ -36,159 +36,161 @@
   </li>
 </ul>
 
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6">
+<div class="jumbotron">
 
-	<p>Next we hypothesize which <em>features</em> might predict the grades in the judgment list. Features here means the scores of Elasticsearch queries.</p>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
 
-	<p>Check out a few of the features we'll use below:</p>
+    <p class="lead">Next we hypothesize which <em>features</em> might predict the grades in the judgment list. Features here means the scores of Elasticsearch queries.</p>
 
-
-</div>
-  <div class="col-md-3"></div>
-
-</div>
-
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6">
-		<div id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="card">
-				<div class="card-header" role="tab" id="headingOne">
-					<h5 class="mb-0">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Title Search
-						</a>
-					</h5>
-				</div>
-
-				<div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne">
-					<div class="card-block">
-						<iframe width="100%" src="train/10.json"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-  <div class="col-md-3"></div>
-  
-<div class="col-md-3"></div>
-  <div class="col-md-6">
-		<div id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="card">
-				<div class="card-header" role="tab" id="headingOne">
-					<h5 class="mb-0">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-							Text Search, English Stemmed
-						</a>
-					</h5>
-				</div>
-
-				<div id="collapseTwo" class="collapse " role="tabpanel" aria-labelledby="headingOne">
-					<div class="card-block">
-						<iframe width="100%" src="train/11.json"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-  <div class="col-md-3"></div>
+    <p class="lead">Check out a few of the features we'll use below:</p>
 
 
-<div class="col-md-3"></div>
-  <div class="col-md-6">
-		<div id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="card">
-				<div class="card-header" role="tab" id="headingOne">
-					<h5 class="mb-0">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-							Number of Users That Rated Movie
-						</a>
-					</h5>
-				</div>
-
-				<div id="collapseThree" class="collapse " role="tabpanel" aria-labelledby="headingOne">
-					<div class="card-block">
-						<iframe width="100%" src="train/3.json"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-  <div class="col-md-3"></div>
-
-
-	<div class="col-md-3"></div>
-  <div class="col-md-6">
-		<div id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="card">
-				<div class="card-header" role="tab" id="headingOne">
-					<h5 class="mb-0">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-							Length of Title
-						</a>
-					</h5>
-				</div>
-
-				<div id="collapseFour" class="collapse " role="tabpanel" aria-labelledby="headingOne">
-					<div class="card-block">
-						<iframe width="100%" src="train/4.json"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-  <div class="col-md-3"></div>
-
-</div>
-
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6">
-	
-
-    <p>We need to score feature values for each judgment. This means we:
-
-      <ol>
-        <li>Store our features in the LTR plugin</li>
-        <li>Ask Elasticsearch to log feature values for each judged document</li>
-        <li>Combine the judgments with features to create a full training set</li>
-      </ol>
-    
-    </p>
-
-    <p>Below is our full training set: the judgment list annotated with the value of each feature at that document:</p>
   </div>
-  <div class="col-md-3"></div>
+    <div class="col-md-2"></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Title Search
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/10.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
     
-</div>
-
-<div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-10"><iframe style="overflow-x: scroll;" width="100%" src="train/movie_judgments_wfeatures_train.txt"></iframe></div>
-  <div class="col-md-1"></div>
-
-</div>
-
-
-<div class="row">
   <div class="col-md-3"></div>
-  <div class="col-md-6">
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Text Search, English Stemmed
+              </a>
+            </h5>
+          </div>
 
-	<p>Learn more about working with features <a href="http://elasticsearch-learning-to-rank.readthedocs.io/en/latest/building-features.html">the docs</a></p>
+          <div id="collapseTwo" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/11.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
 
 
-</div>
   <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                Number of Users That Rated Movie
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseThree" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/3.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+
+
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Length of Title
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseFour" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/4.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+    
+
+      <p class="lead">We need to score feature values for each judgment. This means we:
+
+        <ol>
+          <li>Store our features in the LTR plugin</li>
+          <li>Ask Elasticsearch to log feature values for each judged document</li>
+          <li>Combine the judgments with features to create a full training set</li>
+        </ol>
+      
+      </p>
+
+      <p class="lead">Below is our full training set: the judgment list annotated with the value of each feature at that document:</p>
+    </div>
+    <div class="col-md-2"></div>
+      
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10"><iframe style="overflow-x: scroll;" width="100%" src="train/movie_judgments_wfeatures_train.txt"></iframe></div>
+    <div class="col-md-1"></div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+    <p class="lead">Learn more about working with features <a href="http://elasticsearch-learning-to-rank.readthedocs.io/en/latest/building-features.html">the docs</a></p>
+
+
+</div>
+  <div class="col-md-2"></div>
 
 </div>
 
-
+</div>
 
 
 </div>
