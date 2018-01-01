@@ -6,7 +6,7 @@
     if (beforeOrAfter === 'after') {
       // rendered += "<h3>Learning to Rank Results <small class='text-muted'></br>" + modelName + " model trained with <a href=\"https://github.com/o19s/elasticsearch-ltr-demo/blob/master/train/movie_judgments.txt#L57\">this training data</a></small></h3>"
     } else {
-      // rendered += "<h3>Regular Elasticsearch</br><small class='text-muted'>A basic multi-field Elasticsearch search</small></h3>"
+      // rendered += "<h4><small class='text-muted'>Untuned Elasticsearch</small></h4>"
     }
     data.hits.hits.forEach(function (document) {
       rendered = rendered + Mustache.render(template, {doc: document, search: search});
@@ -99,7 +99,7 @@
               "query": {
                 "multi_match": {
                   "query": search,
-                  "fields": ["text_all.en"],
+                  "fields": ["title.en^" + titleBoost, "overview.en^" + overviewBoost],
                   "type": "cross_fields"
                 }
               },
