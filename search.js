@@ -99,7 +99,7 @@
               "query": {
                 "multi_match": {
                   "query": search,
-                  "fields": ["title.en^" + titleBoost, "overview.en^" + overviewBoost],
+                  "fields": ["text_all.en"],
                   "type": "cross_fields"
                 }
               },
