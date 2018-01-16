@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Elasticsearch Learning to Rank Demo</title>
+    <title>Machine Learning ❤ Search</title>
     <meta charset="utf8"/>
 </head>
 <body>
@@ -10,43 +10,436 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript" src="scrolloverflow.min.js"></script>
 
 <!-- Latest compiled and minified CSS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:900|lato" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
       integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/examples.css">
 <link rel="stylesheet" href="css/flatly.css">
-<a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+<a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:99" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
-<div class="container">
-  
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link active" href="index.html">Welcome!</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="base-search.html">Lonely Search 😕</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="judgment-lists.html">Define Good/Bad Results</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="feature-selection.html">Select Features</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="training-process.html">Train!</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="ltr-search.html">Happy LTR Search! 😀</a>
-    </li>
-  </ul>
+<div id="fullpage">
 
-  <div class="jumbotron">
+  <div class="section " id="section0">
+    <span class="pre-text"><img src="osc-logo.png" style="display: inline; height: 80px; margin: -10px 10px 0 0">OpenSource Connections</span>
+    <h1>Machine Learning <span style="color: #C00">&#9829;</span> Search</h1>
+    <p>All alone, search struggles to address contradictory and nuanced ranking requirements.</p>
+    <span data-menuanchor="secondPage"><a href="#secondPage" class="arrow-down">&#8681;</a></span>
+  </div>
+  <div class="section" id="section1">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#start" role="tab" aria-controls="home" aria-selected="true">Meet Searchy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#problem" role="tab" aria-controls="profile" aria-selected="false">The Problem</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#machinelearning" role="tab" aria-controls="messages" aria-selected="false">Search Meets Machine Learning</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#power" role="tab" aria-controls="messages" aria-selected="false">Search Now Has The Power</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#theend" role="tab" aria-controls="messages" aria-selected="false">The End</a>
+      </li>
+    </ul>
 
-    <h1>Machine Learning ❤️ &nbsp;Search</h1>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="start" role="tabpanel" aria-labelledby="home-tab">
+        <br><br><br>
+        <h1>Origin Story</h1>
+        <p>In the beginning...</p>
+      </div>
+      <div class="tab-pane" id="problem" role="tabpanel" aria-labelledby="profile-tab">
+        <br><br><br>
+        <h1>Searchy Has a Problem</h1>
+        <p>Some text...</p>
+      </div>
+      <div class="tab-pane" id="machinelearning" role="tabpanel" aria-labelledby="messages-tab">
+        <br><br><br>
+        <h1>Machine Learning to the Rescue</h1>
+        <p>Some text...</p>
+      </div>
+      <div class="tab-pane" id="power" role="tabpanel" aria-labelledby="settings-tab">
+        <br><br><br>
+        <h1>"I Have the Power"</h1>
+        <p>Some text...</p>
+      </div>
+      <div class="tab-pane" id="theend" role="tabpanel" aria-labelledby="settings-tab">
+        <br><br><br>
+        <h1>The End</h1>
+        <p>Some text...</p>
+        <span data-menuanchor="3rdPage"><a href="#3rdPage" class="arrow-down">&#8681;</a></span>
+      </div>
+    </div>
+  </div>
 
+  <div class="section fp-auto-height" id="section2">
+    <br>
+    <h1>Let's Look at an Example</h1>
 
-    <p class="lead text-muted">All alone, search struggles to address <em>contradictory and nuanced ranking requirements.</em> </p>
+    <p>😕 This Elasticsearch needs love...</p>
+
+    <p class="lead">Search for "Star Wars", "Patrick Stewart", "Jabba The Hutt" or "Stuck on Mars"...</p>
     
+ 
+    <div class="search-example">
+      <form onsubmit='resultsForBefore(); return false' class='form-inline' style="padding-bottom: 10px;">
+          <div class="form-row align-items-center">
+
+              <div  class="form-group row">
+                  <div class="col-auto">
+                      <input type="search" name="search" class="form-control" style="width: 300px;"  id="inputSearch" value="stuck on mars">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" name="search" class="btn btn-primary">Search</button>
+                  </div>
+              </div>
+          </div>
+      </form>
+
+
+      <div class="row search-results">
+        <div class="col-md-12">
+          <div id="before"></div>
+        </div>
+      </div>
+    </div>
+
+    <span data-menuanchor="4thPage"><a href="#4thPage" class="arrow-down">&#8681;</a></span>
+  </div>
+  <div class="section" id="section3">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#process" role="tab" aria-controls="home" aria-selected="true">The Process</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#define" role="tab" aria-controls="profile" aria-selected="false">Define Good &amp; Bad Results</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#features" role="tab" aria-controls="messages" aria-selected="false">Select Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#train" role="tab" aria-controls="messages" aria-selected="false">Train</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="process" role="tabpanel" aria-labelledby="home-tab">
+        <br>
+        <h1>The Ranking Process</h1>
+        <p>Some text...</p>
+      </div>
+      <div class="tab-pane" id="define" role="tabpanel" aria-labelledby="profile-tab">
+        <br>
+        <h1>Communicating What We Need</h1>
+        <p class="lead">Collect good/bad search examples called <em>judgments</em>. These grade which documents are relevant for each query:</p>
+
+        <div style="width: 600px; padding: 20px; text-align: left; height: 20em; overflow-y: scroll; border: 1px solid; margin: 0 auto">
+      <pre>
+# Mapping of Queries -> Keywords
+# qid:1: rambo*1
+# qid:2: rocky*1
+# qid:3: second world war*1
+# qid:4: sharon stone sylvester stallone*1
+
+# Grade, query id, # docId
+4 qid:1  # 7555 rambo
+3 qid:1  # 1370 rambo
+3 qid:1  # 1369 rambo
+3 qid:1  # 13258  rambo
+4 qid:1  # 1368 rambo
+0 qid:1  # 319074 rambo
+0 qid:1  # 10296  rambo
+0 qid:1  # 35868  rambo
+4 qid:2  # 1366 rocky
+3 qid:2  # 1374 rocky
+3 qid:2  # 1371 rocky
+3 qid:2  # 1246 rocky
+3 qid:2  # 1375 rocky
+3 qid:2  # 1367 rocky
+3 qid:2  # 60375  rocky
+1 qid:2  # 110123 rocky
+1 qid:2  # 36685  rocky
+1 qid:2  # 17711  rocky
+0 qid:2  # 2153 rocky
+0 qid:2  # 339403 rocky
+0 qid:2  # 21501  rocky
+0 qid:2  # 81182  rocky
+0 qid:2  # 62414  rocky
+0 qid:2  # 21989  rocky
+0 qid:2  # 11 rocky
+0 qid:2  # 12180  rocky
+0 qid:2  # 140607 rocky
+0 qid:2  # 1893 rocky
+1 qid:3  # 60976  world war 2
+3 qid:3  # 75015  world war 2
+3 qid:3  # 129405 world war 2
+2 qid:3  # 288109 world war 2
+0 qid:3  # 38828  world war 2
+4 qid:3  # 1654 world war 2
+3 qid:3  # 36571  world war 2
+3 qid:3  # 36572  world war 2
+3 qid:3  # 36573  world war 2
+0 qid:3  # 26652  world war 2
+4 qid:3  # 1251 world war 2
+3 qid:3  # 18712  world war 2
+4 qid:3  # 3683 world war 2
+0 qid:3  # 211672 world war 2
+0 qid:3  # 54551  world war 2
+0 qid:3  # 229407 world war 2
+1 qid:4  # 23916  sharon stone sylvester stallone
+1 qid:4  # 81830  sharon stone sylvester stallone
+1 qid:4  # 38925  sharon stone sylvester stallone
+4 qid:4  # 2636 sharon stone sylvester stallone
+1 qid:4  # 1825 sharon stone sylvester stallone
+0 qid:4  # 19575  sharon stone sylvester stallone
+0 qid:4  # 10608  sharon stone sylvester stallone
+0 qid:4  # 10276  sharon stone sylvester stallone
+0 qid:4  # 26030  sharon stone sylvester stallone
+0 qid:4  # 26520  sharon stone sylvester stallone
+0 qid:4  # 44874  sharon stone sylvester stallone
+0 qid:4  # 15016  sharon stone sylvester stallone
+0 qid:4  # 15167  sharon stone sylvester stallone
+0 qid:4  # 77499  sharon stone sylvester stallone
+0 qid:4  # 34564  sharon stone sylvester stallone
+1 qid:4  # 45712  sharon stone sylvester stallone
+1 qid:4  # 31922  sharon stone sylvester stallone
+1 qid:4  # 32067  sharon stone sylvester stallone
+1 qid:4  # 31700  sharon stone sylvester stallone
+1 qid:4  # 61265  sharon stone sylvester stallone
+0 qid:4  # 18722  sharon stone sylvester stallone
+0 qid:4  # 1792 sharon stone sylvester stallone
+0 qid:4  # 18885  sharon stone sylvester stallone</pre>
+    </div>
+
+        <p class="lead">Each search is given an id (qid). Then each qid is given a grade for each document, in the form:</p>
+  
+        <pre>(grade 0-4) qid:(qid) # (document identifier)</pre>
+
+        <h2>How do you get this data?</h2>
+
+      <p class="lead">You can build judgments from user clicks, purchases, and other events after a search. Domain experts (ie doctors) might manually grade results. Still others crowdsource judgments. You can inspect our full judgment list <a href="https://github.com/o19s/elasticsearch-ltr-demo/blob/master/train/movie_judgments.txt">here.</a></p>
+
+      <p class="lead">Read more in the <a href="">documentation</a> for tips on good judgment lists.</p>
+      </div>
+      <div class="tab-pane" id="features" role="tabpanel" aria-labelledby="messages-tab">
+        <br>
+        <h1>Speaking the Same Language</h1>
+        
+        <p class="lead">Next we hypothesize which <em>features</em> might predict the grades in the judgment list. Features here means the scores of Elasticsearch queries.</p>
+
+        <p class="lead">Check out a few of the features we'll use below:</p>
+
+        <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Title Search
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/10.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+    
+  <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Text Search, English Stemmed
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseTwo" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/11.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+
+
+  <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                Number of Users That Rated Movie
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseThree" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/3.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+
+
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Length of Title
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseFour" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <iframe width="100%" src="train/4.json"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+
+  </div>
+
+  <p class="lead">We need to score feature values for each judgment. This means we:
+
+        <ol>
+          <li>Store our features in the LTR plugin</li>
+          <li>Ask Elasticsearch to log feature values for each judged document</li>
+          <li>Combine the judgments with features to create a full training set</li>
+        </ol>
+      
+      </p>
+
+      <p class="lead">Below is our full training set: the judgment list annotated with the value of each feature at that document:</p>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10"><iframe style="overflow-x: scroll;" width="100%" src="train/movie_judgments_wfeatures_train.txt"></iframe></div>
+        <div class="col-md-1"></div>
+
+      </div>
+
+      <p class="lead">Learn more about working with features <a href="http://elasticsearch-learning-to-rank.readthedocs.io/en/latest/building-features.html">the docs</a></p>
+
+      </div>
+      <div class="tab-pane" id="train" role="tabpanel" aria-labelledby="settings-tab">
+        <br>
+        <h1>Teaching Search to Rank</h1>
+        
+        <p class="lead">Tools like <a href="https://sourceforge.net/p/lemur/wiki/RankLib/">Ranklib</a> use training data to generate a ranking model. Ranklib is run as below: 
+    </p>
+    
+    <pre>
+      java -jar RankLib.jar -ranker 6 \ 
+                -train training_set.txt \ 
+                -save model.txt 
+    </pre>
+
+    <p class="lead">This command takes as input our training set <code>training_set.txt</code>, to create a model of type "6" (aka LamdbaMART), output to <code>model.txt</code>.</p>
+
+    <p class="lead">In this demo, we've trained three types of models:
+    <ol>
+      <li><span style="text-decoration: underline">Linear Model</span> -- A naive way of predicting the appropriatte weight or "boost" to apply to each feature.</li>
+      <li><span style="text-decoration: underline">LambdaMART</span> -- Relevance is rarely linear! More often each use case has it's own ranking requirements. LambdaMART is an ensemble of decision trees. Each level acts as an "if" statement, able to capture nuance specific to each use case. ie If a strong title match THEN rank the most popular movies with strongest title match first. </li>
+      <li><span style="text-decoration: underline">Random Forest</span> -- a collection of LambdaMART models trained on random subset of features and training data. This can prevent overfitting, creating a more generalizable model to use cases outside the training set. </li>
+
+    </ol>
+    
+    </p>
+
+    <span data-menuanchor="5thPage"><a href="#5thPage" class="arrow-down">&#8681;</a></span>
+
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section4">
+    <h1>LTR Search in Action!</h1>
+    
+    <p class="lead text-muted">Using machine learning to optimize search relevance. Built by <a href="http://o19s.com/">OpenSource Connections</a>. </p>
+    <p class="lead">Try searches like 'basketball with cartoon aliens' or 'jabba the hutt'</p>
+
+    <div class="search-example">
+      <form onsubmit='resultsForAfter(); return false' class='form-inline' style="padding-bottom: 10px;">
+          <div class="form-row align-items-center">
+
+              <div  class="form-group row">
+                  <div class="col-auto">
+                      <input type="search" name="search" class="form-control" style="width: 200px;"  id="inputSearch" value="stuck on mars">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" name="search" class="btn btn-primary">Search</button>
+                  </div>
+              </div>
+          </div>
+
+                      <label style="padding-left: 20px;" class="custom-control custom-radio">
+                          <input id="test_9" name="radio" type="radio" class="custom-control-input"
+                                 onclick='resultsForAfter(document.getElementById("inputSearch").value);'>
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Optimal Boosts</span>
+                      </label>
+                      <label class="custom-control custom-radio">
+                          <input id="test_6" name="radio" type="radio" class="custom-control-input"
+                                 onclick='resultsForAfter(document.getElementById("inputSearch").value);'
+                                 checked="true">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">LambdaMART</span>
+                      </label>
+                      <label class="custom-control custom-radio">
+                          <input id="test_8" name="radio" type="radio" class="custom-control-input"
+                                 onclick='resultsForAfter(document.getElementById("inputSearch").value);'>
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Random Forests</span>
+                      </label>
+      </form>
+
+    <div class="row search-results">
+        <div class="col-md-12">
+            <div id="after"></div>
+        </div>
+    </div>
+  </div>
+
+
+    <span data-menuanchor="lastPage"><a href="#lastPage" class="arrow-down">&#8681;</a></span>
+  </div>
+  <div class="section" id="section5">
+    <h1>Next Steps</h1>
     <p class="lead">Follow along this movie search demo-torial of <a href="http://github.com/o19s/elasticsearch-learning-to-rank">Elasticsearch Learning to Rank Plugin</a> to learn where the magic comes from.</p>
 
     <ul>
@@ -57,15 +450,40 @@
       <li>Try the <a href="ltr-search.html">Learning to Rank Search</a>. Let us know what you think!</li>
 
     </ul>
-
-
-    <a href="/base-search.html" class="btn btn-large">Try the Stock Elasticsearch</button>
   </div>
 </div>
 
-
-
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        'verticalCentered': false,
+        'css3': true,
+        'sectionsColor': ['#003366', '#fff', '#006633', '#fff', '#003366'],
+        'navigation': true,
+        'navigationPosition': 'right',
+        'navigationTooltips': ['Welcome', 'The Story', 'The Problem', 'The Process', 'Next Steps'],
+        'anchors': ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
+        'scrollOverflow': true
+      });
+    });
+  </script>
+  <script id="template" type="x-tmpl-mustache">
+    <div class="row">
+        <div title="{{doc._source.overview}}" class="col-md-9">
+            <h2>{{ doc._source.title }} <span class="badge badge-primary">score {{doc._score}}</span></h2>
+            Popularity <span class="badge badge-primary">{{doc._source.popularity}}</span>
+            Release date <span class="badge badge-primary">{{doc._source.release_date}}</span>
+            <p>{{doc._source.overview}}</p>
+        </div>
+        <div class="col-md-3 text-right">
+            <img src="http://image.tmdb.org/t/p/w130/{{doc._source.poster_path}}" />
+        </div>
+    </div>
+</script>
+<script src="search.js" crossorigin="anonymous"></script>
+<script> resultsForBefore(); </script>
 
 </body>
 
