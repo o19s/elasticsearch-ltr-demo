@@ -9,6 +9,10 @@ This demo requires
 - Python 3+
 - Python `elasticsearch` and `requests` libraries
 
+```
+pip3 install requests elasticsearch5 parse jinja
+```
+
 ## Download the TMDB Data & Ranklib Jar
 
 The first time you run this demo, fetch RankLib.jar (used to train model) and tmdb.json (the dataset used)
@@ -20,6 +24,10 @@ python prepare.py
 ## Start Elasticsearch/install plugin
 
 Start a supported version of Elasticsearch and follow the [instructions to install](https://github.com/o19s/elasticsearch-learning-to-rank#installing) the learning to rank plugin.
+
+```
+docker run -d -p 9201:9200 -p 9301:9300 -e "discovery.type=single-node" --name elasticsearch5 elasticsearch:5.6.4
+```
 
 ## Index to Elasticsearch
 
@@ -61,9 +69,9 @@ For traditional Ranklib models, the ordinal is the only way features are identif
 
 ## Gather Judgments (sample_judgments.txt)
 
-The first part of the training data is the *judgment list*. We've provided one in [sample_judgments.txt](sample_judgments.txt). 
+The first part of the training data is the *judgment list*. We've provided one in [sample_judgments.txt](sample_judgments.txt).
 
-What's a judgment list? A judgment list tells us how relevant a document is for a search query. In other words, a three-tuple of 
+What's a judgment list? A judgment list tells us how relevant a document is for a search query. In other words, a three-tuple of
 
 ```
 <grade>,<docId>,<keywords>
