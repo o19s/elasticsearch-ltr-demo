@@ -15,9 +15,10 @@ pip3 install requests elasticsearch5 parse jinja
 
 ## Download the TMDB Data & Ranklib Jar
 
-The first time you run this demo, fetch RankLib.jar (used to train model) and tmdb.json (the dataset used)
+The first time you run this demo, fetch RankyMcRankFace.jar (used to train model) and tmdb.json (the dataset used)
 
 ```
+cd train
 python prepare.py
 ```
 
@@ -67,9 +68,9 @@ In the demo features 1...n json are mustache templates that correspond to the fe
 
 For traditional Ranklib models, the ordinal is the only way features are identified. Other models use feature *names* which make developing, logging, and managing features more maintainable.
 
-## Gather Judgments (sample_judgments.txt)
+## Gather Judgments (movie_judgments.txt)
 
-The first part of the training data is the *judgment list*. We've provided one in [sample_judgments.txt](sample_judgments.txt).
+The first part of the training data is the *judgment list*. We've provided one in [movie_judggments.txt](movie_judggments.txt).
 
 What's a judgment list? A judgment list tells us how relevant a document is for a search query. In other words, a three-tuple of
 
@@ -121,4 +122,12 @@ Try a different model:
 
 ```
 python search.py rambo test_8
+```
+
+## Run the HTTP demo
+
+In the root directory, to run the search page so you can poke and prod run:
+
+```
+python -m http.server 8001
 ```

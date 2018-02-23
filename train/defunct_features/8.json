@@ -3,10 +3,11 @@
         "constant_score": {
             "filter": {
                 "match": {
-                    "cast.name": "{{keywords}}"
+                    "tagline.en": "{{keywords}}"
                 }
             },
             "boost": 1.0
         }
     }
 }
+

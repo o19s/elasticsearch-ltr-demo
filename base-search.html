@@ -18,13 +18,12 @@
 <a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
 <div class="container">
-  
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link active" href="index.html">Welcome!</a>
+      <a class="nav-link" href="index.html">Welcome!</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="base-search.html">Lonely Search 😕</a>
+      <a class="nav-link active" href="base-search.html">Lonely Search 😕</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="judgment-lists.html">Define Good/Bad Results</a>
@@ -39,30 +38,61 @@
       <a class="nav-link" href="ltr-search.html">Happy LTR Search! 😀</a>
     </li>
   </ul>
-
+  
+	
   <div class="jumbotron">
+  
+    <h3>😕 This Elasticsearch needs love...</h3>
 
-    <h1>Machine Learning ❤️ &nbsp;Search</h1>
-
-
-    <p class="lead text-muted">All alone, search struggles to address <em>contradictory and nuanced ranking requirements.</em> </p>
+    <p class="lead">Search for "Star Wars", "Patrick Stewart", "Jabba The Hutt" or "Stuck on Mars"...</p>
     
-    <p class="lead">Follow along this movie search demo-torial of <a href="http://github.com/o19s/elasticsearch-learning-to-rank">Elasticsearch Learning to Rank Plugin</a> to learn where the magic comes from.</p>
+ 
 
-    <ul>
-      <li>Elasticsearch <a href="base-search.html">all alone.</a> Notice the problems!</li>
-      <li><a href="judgment-lists.html">Define good/bad results</a> to train a machine learning model</a></li>
-      <li><a href="">Hypothesize features</a> that can help build a model</li>
-      <li>Learn about <a href="">training a model</a></li>
-      <li>Try the <a href="ltr-search.html">Learning to Rank Search</a>. Let us know what you think!</li>
+    <form onsubmit='resultsForBefore(); return false' class='form-inline' style="padding-bottom: 10px;">
+        <div class="form-row align-items-center">
 
-    </ul>
+            <div  class="form-group row">
+                <div class="col-auto">
+                    <input type="search" name="search" class="form-control" style="width: 300px;"  id="inputSearch" value="stuck on mars">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" name="search" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </form>
 
 
-    <a href="/base-search.html" class="btn btn-large">Try the Stock Elasticsearch</button>
+    <div class="row" style="border: 1px solid">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div id="before"></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
   </div>
-</div>
 
+<script id="template" type="x-tmpl-mustache">
+    <h4 class="text-right">
+        <span class="badge badge-primary">
+        score {{doc._score}}
+        </span>
+    </h4>
+
+    <div class="row">
+        <div title="{{doc._source.overview}}" class="col-md-9">
+            <h2>{{ doc._source.title }}</h2>
+            <h4>popularity <span class="badge badge-primary">{{doc._source.popularity}}</span></h4>
+            <h4>release date <span class="badge badge-primary">{{doc._source.release_date}}</span></h4>
+            <p>{{doc.highlight.overview}}</p>
+        </div>
+        <div class="col-md-3 text-right">
+            <img src="http://image.tmdb.org/t/p/w130/{{doc._source.poster_path}}" />
+        </div>
+    </div>
+</script>
+<script src="search.js" crossorigin="anonymous"></script>
+<script> resultsForBefore(); </script>
 
 
 </div>

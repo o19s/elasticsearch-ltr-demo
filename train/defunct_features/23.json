@@ -1,8 +1,7 @@
-
 {
     "query": {
         "match": {
-            "overview.en": "{{keywords}}"
+            "text_all.trigramed": "{{keywords}}"
         }
     }
 }

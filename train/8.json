@@ -1,13 +1,10 @@
 {
     "query": {
-        "constant_score": {
-            "filter": {
-                "match": {
-                    "tagline.en": "{{keywords}}"
-                }
-            },
-            "boost": 1.0
+        "match_phrase": {
+
+            "title_sent": {
+                "query": "SENTINEL_BEGIN {{keywords}}",
+            "slop": 20}
         }
     }
 }
-

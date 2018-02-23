@@ -1,0 +1,9 @@
+{
+    "query": {
+        "query_string": {
+            "default_field": "mlensId",
+            "query": "{{expansions_mlens}}"
+        }
+    }
+}
+

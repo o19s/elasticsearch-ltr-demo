@@ -1,8 +1,10 @@
-
 {
     "query": {
-        "match":{ 
-            "overview.bigramed": "{{keywords}}"
+        "match_phrase": {
+            "cast.name": {
+                "query": "{{keywords}}",
+                "slop": 3
+            }
         }
     }
 }

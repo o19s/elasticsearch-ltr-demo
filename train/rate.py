@@ -42,6 +42,7 @@ def gradeResults(results, keywords, qid):
             print("## %s %s " % (result['fields'][titleField], result['_id']))
             print("")
             print("   %s " % result['fields'][overviewField])
+            print("     %s " % (" ".join([cast['name'] for cast in result['fields']['cast']])))
             while grade not in ["0", "1", "2", "3", "4"]:
                 grade = input("Rate this shiznit (0-4) ")
             judgment = Judgment(int(grade), qid=qid, keywords=keywords, docId=result['_id'])

@@ -1,7 +1,7 @@
 {
     "query": {
-        "match_phrase": {
-            "text_all.en": "{{keywords}}"
+        "match": {
+            "title.bigramed": "{{keywords}}"
         }
     }
 }

@@ -4,6 +4,8 @@ def enrich(movie):
     """ Enrich for search purposes """
     if 'title' in movie:
         movie['title_sent'] = 'SENTINEL_BEGIN ' + movie['title']
+    if 'overview' in movie and movie['overview'] is not None:
+        movie['overview_sent'] = 'SENTINEL_BEGIN ' + movie['overview']
 
 def reindex(es, movieDict={}, index='tmdb'):
     import elasticsearch.helpers

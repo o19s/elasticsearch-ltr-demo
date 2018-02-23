@@ -1,0 +1,9 @@
+
+{
+    "query": {
+        "match":{ 
+            "overview.bigramed": "{{keywords}}"
+        }
+    }
+}
+

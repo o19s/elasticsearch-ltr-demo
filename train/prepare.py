@@ -14,4 +14,4 @@ def downloadLtrResource(resource):
 
 if __name__ == "__main__":
     downloadLtrResource('tmdb.json')
-    downloadLtrResource('RankLib-2.8.jar')
+    downloadLtrResource('RankyMcRankFace.jar')

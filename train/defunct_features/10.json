@@ -1,7 +1,8 @@
 {
     "query": {
         "match_phrase": {
-            "title.en": "{{keywords}}"
+            "text_all.en": "{{keywords}}"
         }
     }
 }
+

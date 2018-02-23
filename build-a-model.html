@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Elasticsearch Learning to Rank Demo</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/flatly.css">
+<a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<div class="container">
+
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" href="base-search.html">Basic Search</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="judgment-lists.html">Defining Good/Bad Results</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="feature-selection.html">Feature Selection</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="training-process.html">Training Process</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="build-a-model.html">Build a Model</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ltr-search.html">Try LTR!</a>
+  </li>
+</ul>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+
+    <p>With a full training set, we now train a model offline. LTR models try to optimize the ordering of results. This demo uses Ranklib</p>
+
+
+    <p>Below is our judgment list from <a href="judgment-lists.html">earlier</a> annotated with the value of each feature at that document:</p>
+  </div>
+  <div class="col-md-3"></div>
+    
+</div>
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10"><iframe style="overflow-x: scroll;" width="100%" src="train/movie_judgments_wfeatures_train.txt"></iframe></div>
+  <div class="col-md-1"></div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <p>Each feature has a numerical identifier before the colon, followed by the value of that feature. For example, feature 3 is the number of users that rated a movie. You'll note in the first line, 777 people rated this movie.
+    </p>
+  
+  </div>
+  <div class="col-md-3"></div>
+
+</div>
+
+
+
+
+
+</div>
+
+</body>
+
+</html>
