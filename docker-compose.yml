@@ -1,0 +1,14 @@
+# Docker compose file for the application.
+
+#version: '2'   # on CircleCI the version and services cause build to puke.
+#services:
+
+
+
+
+  elasticsearch:
+    build: .
+    dockerfile: ./deploy/elasticsearch/Dockerfile
+    ports:
+     - "9200:9200"
+     - "9300:9300"
