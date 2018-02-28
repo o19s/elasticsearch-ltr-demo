@@ -2,6 +2,15 @@
 
 This demo uses data from [TheMovieDB](http://themoviedb.org) (TMDB) to demonstrate using [Ranklib](https://sourceforge.net/p/lemur/wiki/RankLib/) learning to rank models with Elasticsearch.
 
+You can go through the individual steps, or if you want to just skip to the end, you can use Docker:
+
+```
+docker-compose up
+```
+
+And browse to http://localhost:8000
+
+
 # Install Dependencies and prep data...
 
 This demo requires
@@ -19,7 +28,7 @@ The first time you run this demo, fetch RankyMcRankFace.jar (used to train model
 
 ```
 cd train
-./prepare.py
+./prepare.sh
 ```
 
 ## Start Elasticsearch/install plugin
@@ -126,8 +135,10 @@ python search.py rambo test_8
 
 ## Run the HTTP demo
 
-In the root directory, to run the search page so you can poke and prod run:
+In the /app directory, to run the search page so you can poke and prod run:
 
 ```
-python -m http.server 8001
+./srv.sh
 ```
+
+Browse to http://localhost:8000

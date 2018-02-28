@@ -14,8 +14,12 @@
     document.getElementById(beforeOrAfter).innerHTML = rendered;
   };
 
-  //var esUrl = 'http://localhost:9200/tmdb/_search'
-  var esUrl = "http://es-for-ltr.labs.o19s.com:7271/tmdb/_search";
+  //var esBaseUrl = 'http://localhost:9200'
+  //var esBaseUrl = "http://es-for-ltr.labs.o19s.com:7271";
+  // Variable should be updated by srv.sh startup script.
+  var esBaseUrl = 'http://localhost:9200';
+
+  var esUrl = esBaseUrl + "/tmdb/_search";
 
   function getExpansions(search, searchField, expandField, shardSize, minDocCount, onDone) {
       body = {
@@ -170,4 +174,3 @@
     })
 
   }
-

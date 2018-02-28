@@ -80,12 +80,15 @@ if __name__ == "__main__":
     TEST_JUDGMENTS = 'movie_judgments_wfeatures_test.txt'
 
     import configparser
-    from elasticsearch import Elasticsearch
+    from elasticsearch5 import Elasticsearch
+    from sys import argv
     from judgments import judgmentsFromFile, judgmentsByQid, duplicateJudgmentsByWeight
 
     config = configparser.ConfigParser()
     config.read('settings.cfg')
     esUrl = config['DEFAULT']['ESHost']
+    if len(argv) > 1:
+        esUrl = argv[1]
 
     es = Elasticsearch(esUrl, timeout=1000)
 

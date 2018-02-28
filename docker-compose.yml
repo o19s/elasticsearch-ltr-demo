@@ -3,7 +3,15 @@
 #version: '2'   # on CircleCI the version and services cause build to puke.
 #services:
 
-
+  app:
+    build: .
+    dockerfile: ./deploy/app/Dockerfile
+    environment:
+     - ELASTICSEARCH_URL=http://localhost:9200
+    links:
+     - elasticsearch
+    ports:
+     - "8000:8000"
 
 
   elasticsearch:
@@ -12,3 +20,9 @@
     ports:
      - "9200:9200"
      - "9300:9300"
+
+  init:
+    build: .
+    dockerfile: ./deploy/init/Dockerfile
+    links:
+      - elasticsearch     

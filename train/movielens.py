@@ -1,6 +1,6 @@
 
 import json
-from elasticsearch import Elasticsearch
+from elasticsearch5 import Elasticsearch
 
 def formatTopMlens(keywords, searchField='text_all', expandField='mlensId', shardSize=10):
     from jinja2 import Template

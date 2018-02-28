@@ -1,6 +1,6 @@
 import json
-from elasticsearch import Elasticsearch
-from elasticsearch import TransportError
+from elasticsearch5 import Elasticsearch
+from elasticsearch5 import TransportError
 
 def formatExpansion(keywords, minDocCount=3, searchField='text_all', expandField='text_all', shardSize=100):
     from jinja2 import Template

@@ -8,7 +8,7 @@ def enrich(movie):
         movie['overview_sent'] = 'SENTINEL_BEGIN ' + movie['overview']
 
 def reindex(es, movieDict={}, index='tmdb'):
-    import elasticsearch.helpers
+    import elasticsearch5.helpers
     settings = json.load(open('schema.json'))
 
     es.indices.delete(index, ignore=[400, 404])
@@ -32,11 +32,11 @@ def reindex(es, movieDict={}, index='tmdb'):
             if 'title' in movie:
                 print("%s added to %s" % (movie['title'], index))
 
-    elasticsearch.helpers.bulk(es, bulkDocs(movieDict))
+    elasticsearch5.helpers.bulk(es, bulkDocs(movieDict))
 
 if __name__ == "__main__":
     import configparser
-    from elasticsearch import Elasticsearch
+    from elasticsearch5 import Elasticsearch
     from sys import argv
 
     config = configparser.ConfigParser()
