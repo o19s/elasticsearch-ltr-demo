@@ -45,50 +45,50 @@
     <div class="col-md-2"></div>
     <div class="col-md-8"><h3>Dance!</h3></div>
     <div class="col-md-2"></div>
-  </div> 
+  </div>
 
 
 <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-	
 
-    <p class="lead">Tools like <a href="https://sourceforge.net/p/lemur/wiki/RankLib/">Ranklib</a> use training data to generate a ranking model. Ranklib is run as below: 
+
+    <p class="lead">Tools like <a href="https://sourceforge.net/p/lemur/wiki/RankLib/">Ranklib</a> use training data to generate a ranking model. Ranklib is run as below:
     </p>
-    
+
     <pre>
-      java -jar RankLib.jar -ranker 6 \ 
-                -train training_set.txt \ 
-                -save model.txt 
+      java -jar RankLib.jar -ranker 6 \
+                -train training_set.txt \
+                -save model.txt
     </pre>
 
     <p class="lead">This command takes as input our training set <code>training_set.txt</code>, to create a model of type "6" (aka LamdbaMART), output to <code>model.txt</code>.</p>
 
     <p class="lead">In this demo, we've trained three types of models:
     <ol>
-      <li><span style="text-decoration: underline">Linear Model</span> -- A naive way of predicting the appropriatte weight or "boost" to apply to each feature.</li>
-      <li><span style="text-decoration: underline">LambdaMART</span> -- Relevance is rarely linear! More often each use case has it's own ranking requirements. LambdaMART is an ensemble of decision trees. Each level acts as an "if" statement, able to capture nuance specific to each use case. ie If a strong title match THEN rank the most popular movies with strongest title match first. </li>
-      <li><span style="text-decoration: underline">Random Forest</span> -- a collection of LambdaMART models trained on random subset of features and training data. This can prevent overfitting, creating a more generalizable model to use cases outside the training set. </li>
+      <li><span style="text-decoration: underline">Linear Model</span> -- A naive way of predicting the appropriate weight or "boost" to apply to each feature.</li>
+      <li><span style="text-decoration: underline">LambdaMART</span> -- Relevance is rarely linear! More often each use case has it's own ranking requirements. LambdaMART is an ensemble of decision trees. Each level acts as an "if" statement, able to capture nuance specific to each use case.  <strong>IF</strong> a strong title match <strong>THEN</strong> rank the most popular movies with strongest title match first. </li>
+      <li><span style="text-decoration: underline">Random Forest</span> -- a collection of LambdaMART models trained on random subset of features and training data. This can prevent overfitting, creating a more generalizable model for use cases outside the training set. </li>
 
 
     </ol>
-    
-    
+
+
     </p>
 
   </div>
   <div class="col-md-2"></div>
-    
+
 </div>
 
 <div class="row">
   <div class="col-md-3"></div>
   <div class="col-md-6">
-	
+
 
   </div>
   <div class="col-md-3"></div>
-    
+
 </div>
 
 
