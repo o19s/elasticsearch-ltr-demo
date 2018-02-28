@@ -19,7 +19,7 @@ The first time you run this demo, fetch RankyMcRankFace.jar (used to train model
 
 ```
 cd train
-python prepare.py
+./prepare.py
 ```
 
 ## Start Elasticsearch/install plugin
@@ -70,7 +70,7 @@ For traditional Ranklib models, the ordinal is the only way features are identif
 
 ## Gather Judgments (movie_judgments.txt)
 
-The first part of the training data is the *judgment list*. We've provided one in [movie_judggments.txt](movie_judggments.txt).
+The first part of the training data is the *judgment list*. We've provided one in [movie_judgments.txt](movie_judgments.txt).
 
 What's a judgment list? A judgment list tells us how relevant a document is for a search query. In other words, a three-tuple of
 
