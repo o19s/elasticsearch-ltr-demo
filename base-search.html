@@ -38,15 +38,15 @@
       <a class="nav-link" href="ltr-search.html">Happy LTR Search! 😀</a>
     </li>
   </ul>
-  
-	
+
+
   <div class="jumbotron">
-  
+
     <h3>😕 This Elasticsearch needs love...</h3>
 
     <p class="lead">Search for "Star Wars", "Patrick Stewart", "Jabba The Hutt" or "Stuck on Mars"...</p>
-    
- 
+
+
 
     <form onsubmit='resultsForBefore(); return false' class='form-inline' style="padding-bottom: 10px;">
         <div class="form-row align-items-center">
@@ -87,7 +87,7 @@
             <p>{{doc.highlight.overview}}</p>
         </div>
         <div class="col-md-3 text-right">
-            <img src="http://image.tmdb.org/t/p/w130/{{doc._source.poster_path}}" />
+            <img src="http://image.tmdb.org/t/p/w154/{{doc._source.poster_path}}" />
         </div>
     </div>
 </script>
