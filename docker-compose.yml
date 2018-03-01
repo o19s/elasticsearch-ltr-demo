@@ -17,6 +17,8 @@
   elasticsearch:
     build: .
     dockerfile: ./deploy/elasticsearch/Dockerfile
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ports:
      - "9200:9200"
      - "9300:9300"
@@ -25,4 +27,4 @@
     build: .
     dockerfile: ./deploy/init/Dockerfile
     links:
-      - elasticsearch     
+      - elasticsearch
