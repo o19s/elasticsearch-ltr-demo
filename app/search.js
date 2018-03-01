@@ -17,7 +17,7 @@
   //var esBaseUrl = 'http://localhost:9200'
   //var esBaseUrl = "http://es-for-ltr.labs.o19s.com:7271";
   // Variable should be updated by srv.sh startup script.
-  var esBaseUrl = 'http://localhost:9200';
+  var esBaseUrl = 'DYN_ELASTICSEARCH_URL';
 
   var esUrl = esBaseUrl + "/tmdb/_search";
 
