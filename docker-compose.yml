@@ -13,7 +13,6 @@
     ports:
      - "80:80"
 
-
   elasticsearch:
     build: .
     dockerfile: ./deploy/elasticsearch/Dockerfile
