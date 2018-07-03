@@ -18,9 +18,10 @@
 <a href="https://github.com/o19s/elasticsearch-ltr-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
 <div class="container">
-<ul class="nav nav-pills">
+
+  <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link" href="index.html">Welcome!</a>
+      <a class="nav-link active" href="index.html">Welcome!</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="base-search.html">Lonely Search 😕</a>
@@ -32,72 +33,38 @@
       <a class="nav-link" href="feature-selection.html">Select Features</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="training-process.html">Train!</a>
+      <a class="nav-link" href="training-process.html">Train!</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="ltr-search.html">Happy LTR Search! 😀</a>
+      <a class="nav-link" href="ltr-search.html">Happy LTR Search! 😀</a>
     </li>
   </ul>
 
+  <div class="jumbotron">
 
-<div class="jumbotron">
- <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8"><h3>Dance!</h3></div>
-    <div class="col-md-2"></div>
-  </div> 
+    <h1>Machine Learning ❤️ &nbsp;Search</h1>
 
 
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-	
+    <p class="lead text-muted">All alone, search struggles to address <em>contradictory and nuanced ranking requirements.</em> </p>
 
-    <p class="lead">Tools like <a href="https://sourceforge.net/p/lemur/wiki/RankLib/">Ranklib</a> use training data to generate a ranking model. Ranklib is run as below: 
-    </p>
-    
-    <pre>
-      java -jar RankLib.jar -ranker 6 \ 
-                -train training_set.txt \ 
-                -save model.txt 
-    </pre>
+    <p class="lead">Follow along this movie search demo-torial of <a href="http://github.com/o19s/elasticsearch-learning-to-rank" target="_blank">Elasticsearch Learning to Rank Plugin</a> to learn where the magic comes from.</p>
 
-    <p class="lead">This command takes as input our training set <code>training_set.txt</code>, to create a model of type "6" (aka LamdbaMART), output to <code>model.txt</code>.</p>
+    <ul>
+      <li>Elasticsearch <a href="base-search.html">all alone.</a> Notice the problems!</li>
+      <li><a href="judgment-lists.html">Define good/bad results</a> to train a machine learning model</a></li>
+      <li><a href="">Hypothesize features</a> that can help build a model</li>
+      <li>Learn about <a href="">training a model</a></li>
+      <li>Try the <a href="ltr-search.html">Learning to Rank Search</a>. Let us know what you think!</li>
 
-    <p class="lead">In this demo, we've trained three types of models:
-    <ol>
-      <li><span style="text-decoration: underline">Linear Model</span> -- A naive way of predicting the appropriatte weight or "boost" to apply to each feature.</li>
-      <li><span style="text-decoration: underline">LambdaMART</span> -- Relevance is rarely linear! More often each use case has it's own ranking requirements. LambdaMART is an ensemble of decision trees. Each level acts as an "if" statement, able to capture nuance specific to each use case. ie If a strong title match THEN rank the most popular movies with strongest title match first. </li>
-      <li><span style="text-decoration: underline">Random Forest</span> -- a collection of LambdaMART models trained on random subset of features and training data. This can prevent overfitting, creating a more generalizable model to use cases outside the training set. </li>
+    </ul>
 
 
-    </ol>
-    
-    
-    </p>
-
+    <a href="/base-search.html" class="btn btn-large">Try the Stock Elasticsearch</button>
   </div>
-  <div class="col-md-2"></div>
-    
-</div>
-
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6">
-	
-
-  </div>
-  <div class="col-md-3"></div>
-    
 </div>
 
 
 
-
-</div>
-
-
-</div>
 </div>
 
 </body>

@@ -4,3 +4,5 @@ model.txt
 movie_judgments_wfeatures.*.txt
 movie_judgments_wfeatur*.txt
 tmdb.json
+train/RankyMcRankFace-0.1.1.jar
+train/*.pyc

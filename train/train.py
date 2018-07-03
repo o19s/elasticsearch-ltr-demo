@@ -11,7 +11,7 @@ def trainModel(trainingData, testData, modelOutput, whichModel=8):
     #  - each is trained against a proportion of the training data (-srate)
     #  - each is trained using a subset of the features (-frate)
     #  - each can be either a MART or LambdaMART model (-rtype 6 lambda mart)
-    cmd = "java -jar RankyMcRankFace.jar -metric2t NDCG@10 -bag 10 -srate 0.6 -frate 0.6 -rtype 6 -shrinkage 0.1 -tree 80 -ranker %s -train %s -test %s -save %s -feature features.txt" % (whichModel, trainingData, testData, modelOutput)
+    cmd = "java -jar RankyMcRankFace-0.1.1.jar -metric2t NDCG@10 -bag 10 -srate 0.6 -frate 0.6 -rtype 6 -shrinkage 0.1 -tree 80 -ranker %s -train %s -test %s -save %s -feature features.txt" % (whichModel, trainingData, testData, modelOutput)
     print("*********************************************************************")
     print("*********************************************************************")
     print("Running %s" % cmd)
@@ -80,12 +80,15 @@ if __name__ == "__main__":
     TEST_JUDGMENTS = 'movie_judgments_wfeatures_test.txt'
 
     import configparser
-    from elasticsearch import Elasticsearch
+    from elasticsearch5 import Elasticsearch
+    from sys import argv
     from judgments import judgmentsFromFile, judgmentsByQid, duplicateJudgmentsByWeight
 
     config = configparser.ConfigParser()
     config.read('settings.cfg')
     esUrl = config['DEFAULT']['ESHost']
+    if len(argv) > 1:
+        esUrl = argv[1]
 
     es = Elasticsearch(esUrl, timeout=1000)
 

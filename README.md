@@ -2,6 +2,15 @@
 
 This demo uses data from [TheMovieDB](http://themoviedb.org) (TMDB) to demonstrate using [Ranklib](https://sourceforge.net/p/lemur/wiki/RankLib/) learning to rank models with Elasticsearch.
 
+You can go through the individual steps, or if you want to just skip to the end, you can use Docker:
+
+```
+docker-compose up
+```
+
+And browse to http://localhost:8000
+
+
 # Install Dependencies and prep data...
 
 This demo requires
@@ -9,18 +18,26 @@ This demo requires
 - Python 3+
 - Python `elasticsearch` and `requests` libraries
 
+```
+pip3 install requests elasticsearch5 parse jinja
+```
+
 ## Download the TMDB Data & Ranklib Jar
 
 The first time you run this demo, fetch RankyMcRankFace.jar (used to train model) and tmdb.json (the dataset used)
 
 ```
 cd train
-python prepare.py
+./prepare.sh
 ```
 
 ## Start Elasticsearch/install plugin
 
 Start a supported version of Elasticsearch and follow the [instructions to install](https://github.com/o19s/elasticsearch-learning-to-rank#installing) the learning to rank plugin.
+
+```
+docker run -d -p 9201:9200 -p 9301:9300 -e "discovery.type=single-node" --name elasticsearch5 elasticsearch:5.6.4
+```
 
 ## Index to Elasticsearch
 
@@ -62,9 +79,9 @@ For traditional Ranklib models, the ordinal is the only way features are identif
 
 ## Gather Judgments (movie_judgments.txt)
 
-The first part of the training data is the *judgment list*. We've provided one in [movie_judggments.txt](movie_judggments.txt). 
+The first part of the training data is the *judgment list*. We've provided one in [movie_judgments.txt](movie_judgments.txt).
 
-What's a judgment list? A judgment list tells us how relevant a document is for a search query. In other words, a three-tuple of 
+What's a judgment list? A judgment list tells us how relevant a document is for a search query. In other words, a three-tuple of
 
 ```
 <grade>,<docId>,<keywords>
@@ -118,8 +135,10 @@ python search.py rambo test_8
 
 ## Run the HTTP demo
 
-In the root directory, to run the search page so you can poke and prod run:
+In the /app directory, to run the search page so you can poke and prod run:
 
 ```
-python -m http.server 8001
+./srv.sh
 ```
+
+Browse to http://localhost:8000
