@@ -1,0 +1,29 @@
+# Docker compose file for the application on Digital Ocean.
+# run
+# sudo apt-get -y install python-pip
+# sudo pip install docker-compose
+
+#version: '2'   # on CircleCI the version and services cause build to puke.
+#services:
+
+  app:
+    image: harbor.dev.o19s.com/elasticsearch-ltr-demo/app:latest
+    environment:
+     - ELASTICSEARCH_URL=http://elasticsearch-ltr-demo.dev.o19s.com:9200
+    links:
+     - elasticsearch
+    ports:
+     - "80:80"
+
+  elasticsearch:
+    image: harbor.dev.o19s.com/elasticsearch-ltr-demo/elasticsearch:latest
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"    # seems to deal with crashing out on DigitalOcean
+    ports:
+     - "9200:9200"
+     - "9300:9300"
+
+  init:
+    image: harbor.dev.o19s.com/elasticsearch-ltr-demo/init:latest
+    links:
+      - elasticsearch
