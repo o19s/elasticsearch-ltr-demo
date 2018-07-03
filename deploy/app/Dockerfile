@@ -1,14 +1,11 @@
-FROM worleydl/nginx-grunt:v1
+FROM nginx:alpine
+COPY app /usr/share/nginx/html
+COPY train/*.json /usr/share/nginx/html/train/
+COPY deploy/app/entrypoint.sh /usr/share/nginx/html/entrypoint.sh
+RUN chmod 755 /usr/share/nginx/html/entrypoint.sh
 
-# Copy source to host
-COPY app /app
-WORKDIR /app
+WORKDIR /usr/share/nginx/html
 
-# Get deps
-#RUN npm install
-#RUN bower --allow-root install -g
+ENTRYPOINT ["/usr/share/nginx/html/entrypoint.sh"]
 
-EXPOSE 8000
-
-# Start python
-CMD /app/srv.sh
+CMD ["nginx", "-g", "daemon off;"]
