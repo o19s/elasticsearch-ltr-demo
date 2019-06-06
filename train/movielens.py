@@ -24,7 +24,7 @@ def getTopMlensIds(es, keywords, searchField='text_all', index='tmdb'):
     return rVal
 
 
-def formatMlensExpansion(mlensIds, minDocCount=1, expandField='liked_movies', shardSize=10):
+def formatMlensExpansion(mlensIds, minDocCount=1, expandField='liked_movies.keyword', shardSize=10):
     from jinja2 import Template
     template = Template(open("mlensExpansion.json.jinja").read())
     jsonStr = template.render(mlensIds=json.dumps(mlensIds),
@@ -34,7 +34,7 @@ def formatMlensExpansion(mlensIds, minDocCount=1, expandField='liked_movies', sh
     return json.loads(jsonStr)
 
 
-def getExpansions(es, mlensIds, minDocCount=1, expandField='liked_movies',
+def getExpansions(es, mlensIds, minDocCount=1, expandField='liked_movies.keyword',
                   shardSize=10, index='movielens'):
     query = formatMlensExpansion(mlensIds=mlensIds, minDocCount=minDocCount, expandField=expandField,
                             shardSize=shardSize)
@@ -51,9 +51,9 @@ def getExpansions(es, mlensIds, minDocCount=1, expandField='liked_movies',
 
 
 def expansionMlens(es, keywords):
-    esMlens = Elasticsearch('http://ec2-54-234-184-186.compute-1.amazonaws.com:9616', timeout=1000)
+    esMlens = Elasticsearch('http://elasticsearch:9200', timeout=1000)
     topMlens = getTopMlensIds(es, keywords=keywords, searchField="title", index="tmdb")
-    return getExpansions(es=esMlens, mlensIds=topMlens, expandField="liked_movies", shardSize=10)
+    return getExpansions(es=esMlens, mlensIds=topMlens, expandField="liked_movies.keyword", shardSize=10)
 
 
 if __name__ == "__main__":
