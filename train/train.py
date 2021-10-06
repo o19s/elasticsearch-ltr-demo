@@ -11,12 +11,13 @@ def trainModel(trainingData, testData, modelOutput, whichModel=8):
     #  - each is trained against a proportion of the training data (-srate)
     #  - each is trained using a subset of the features (-frate)
     #  - each can be either a MART or LambdaMART model (-rtype 6 lambda mart)
-    cmd = "java -jar RankyMcRankFace-0.1.1.jar -metric2t NDCG@10 -bag 10 -srate 0.6 -frate 0.6 -rtype 6 -shrinkage 0.1 -tree 80 -ranker %s -train %s -test %s -save %s -feature features.txt" % (whichModel, trainingData, testData, modelOutput)
+    cmd = "java -jar RankyMcRankFace-0.1.0.jar -metric2t NDCG@10 -bag 10 -srate 0.6 -frate 0.6 -rtype 6 -shrinkage 0.1 -tree 80 -ranker %s -train %s -test %s -save %s -feature features.txt" % (whichModel, trainingData, testData, modelOutput)
     print("*********************************************************************")
     print("*********************************************************************")
     print("Running %s" % cmd)
-    os.system(cmd)
-    pass
+    r = os.system(cmd)
+    if r != 0:
+        raise Exception('Unable to execute command cmd %s' % cmd)
 
 
 def partitionJudgments(judgments, testProportion=0.1):
@@ -54,7 +55,7 @@ def saveModel(esHost, scriptName, featureSet, modelFname):
     path = "_ltr/_clearcache"
     fullPath = urljoin(esHost, path)
     print("POST %s" % fullPath)
-    resp = requests.post(fullPath)
+    resp = requests.post(fullPath, headers={'Content-Type': 'application/json'})
     if (resp.status_code >= 300):
         print(resp.text)
 
@@ -64,7 +65,7 @@ def saveModel(esHost, scriptName, featureSet, modelFname):
         fullPath = urljoin(esHost, path)
         modelPayload['model']['model']['definition'] = modelContent
         print("POST %s" % fullPath)
-        resp = requests.post(fullPath, json.dumps(modelPayload))
+        resp = requests.post(fullPath, json.dumps(modelPayload), headers={'Content-Type': 'application/json'})
         print(resp.status_code)
         if (resp.status_code >= 300):
             print(resp.text)

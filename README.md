@@ -2,24 +2,30 @@
 
 This demo uses data from [TheMovieDB](http://themoviedb.org) (TMDB) to demonstrate using [Ranklib](https://sourceforge.net/p/lemur/wiki/RankLib/) learning to rank models with Elasticsearch.
 
-You can go through the individual steps, or if you want to just skip to the end, you can use Docker:
+# Run Everything in One Step
 
 ```
 docker-compose up
 ```
 
+If project files have been modified after the initial run, do this to update the docker images:
+```
+docker-compose build
+docker-compose up
+```
+
 And browse to http://localhost:8000
 
-
-# Install Dependencies and prep data...
+# Run Each Step One by One
 
 This demo requires
 
 - Python 3+
 - Python `elasticsearch` and `requests` libraries
 
+## Install Dependencies
 ```
-pip3 install requests elasticsearch5 parse jinja
+pip3 install requests elasticsearch5 parse jinja2
 ```
 
 ## Download the TMDB Data & Ranklib Jar
@@ -36,7 +42,12 @@ cd train
 Start a supported version of Elasticsearch and follow the [instructions to install](https://github.com/o19s/elasticsearch-learning-to-rank#installing) the learning to rank plugin.
 
 ```
-docker run -d -p 9201:9200 -p 9301:9300 -e "discovery.type=single-node" --name elasticsearch5 elasticsearch:5.6.4
+docker-compose -f docker-compose-no-init.yml up
+```
+## Populate Ratings
+
+```
+python /train/ratingsToES.py http://elasticsearch:9200
 ```
 
 ## Index to Elasticsearch

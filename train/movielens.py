@@ -1,4 +1,3 @@
-
 import json
 from elasticsearch5 import Elasticsearch
 
@@ -51,9 +50,8 @@ def getExpansions(es, mlensIds, minDocCount=1, expandField='liked_movies.keyword
 
 
 def expansionMlens(es, keywords):
-    esMlens = Elasticsearch('http://elasticsearch:9200', timeout=1000)
     topMlens = getTopMlensIds(es, keywords=keywords, searchField="title", index="tmdb")
-    return getExpansions(es=esMlens, mlensIds=topMlens, expandField="liked_movies.keyword", shardSize=10)
+    return getExpansions(es=es, mlensIds=topMlens, expandField="liked_movies.keyword", shardSize=10)
 
 
 if __name__ == "__main__":
