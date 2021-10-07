@@ -34,7 +34,9 @@ def loadFeatures(esHost, featureSetName='movie_features'):
     fullPath = urljoin(esHost, path)
     print("POST %s" % fullPath)
     print(json.dumps(featureSet, indent=2))
-    resp = requests.post(fullPath, json.dumps(featureSet))
+    resp = requests.post(fullPath, json.dumps(featureSet), headers={'Content-Type': 'application/json'})
+    if resp.status_code != 201:
+        raise Exception('Posting to %s is not returning 201, got %s' % (resp.url, resp.status_code))
     print("%s" % resp.status_code)
     print("%s" % resp.text)
 

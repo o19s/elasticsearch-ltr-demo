@@ -21,9 +21,3 @@
     ports:
      - "9200:9200"
      - "9300:9300"
-
-  init:
-    build: .
-    dockerfile: ./deploy/init/Dockerfile
-    links:
-      - elasticsearch

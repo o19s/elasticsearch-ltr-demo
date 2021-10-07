@@ -51,8 +51,12 @@ def indexToElastic(es):
 
 
 if __name__ == "__main__":
-    from sys import argv
-    es_url = argv[1]
+    if len(argv) > 1:
+        es_url = argv[1]
+    else:
+        config = configparser.ConfigParser()
+        config.read('settings.cfg')
+        es_url = config['DEFAULT']['ESHost']
 
     es = Elasticsearch(es_url)
     indexToElastic(es)
